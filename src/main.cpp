@@ -26,7 +26,10 @@ int main() {
 
     SDL_Surface* noptrWindowSurface = SDL_GetWindowSurface(optrWindow);
 
-    uint32_t color = 0XFF0000;
+    SDL_PixelFormat *pixelFormat =noptrWindowSurface->format;
+    std::cout<< "The window pixel format is: " << SDL_GetPixelFormatName(pixelFormat -> format);
+
+    uint32_t color = 0XFF0000; 
 
     SetPixel(noptrWindowSurface, color, SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
 

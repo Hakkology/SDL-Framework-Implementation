@@ -124,7 +124,6 @@ SDL_Framework: CMakeFiles/SDL_Framework.dir/src/main.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
-SDL_Framework: /usr/lib/x86_64-linux-gnu/libSDL2.so
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
