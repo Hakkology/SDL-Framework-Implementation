@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SDL_Framework.dir/src/main.cpp.o -o SDL_Framework 
+/usr/bin/c++ CMakeFiles/SDL_Framework.dir/src/main.cpp.o CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o -o SDL_Framework  /usr/lib/x86_64-linux-gnu/libSDL2.so 

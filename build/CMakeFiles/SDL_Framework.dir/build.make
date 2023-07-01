@@ -83,18 +83,53 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp -o CMakeFiles/SDL_Framework.dir/src/main.cpp.s
 
+CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o: ../src/vector2D.cpp
+CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/vector2D.cpp
+
+CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/vector2D.cpp > CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/vector2D.cpp -o CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.s
+
+CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o: ../src/utilities.cpp
+CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utilities.cpp
+
+CMakeFiles/SDL_Framework.dir/src/utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/utilities.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utilities.cpp > CMakeFiles/SDL_Framework.dir/src/utilities.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utilities.cpp -o CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s
+
 # Object files for target SDL_Framework
 SDL_Framework_OBJECTS = \
-"CMakeFiles/SDL_Framework.dir/src/main.cpp.o"
+"CMakeFiles/SDL_Framework.dir/src/main.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o"
 
 # External object files for target SDL_Framework
 SDL_Framework_EXTERNAL_OBJECTS =
 
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/main.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
+SDL_Framework: /usr/lib/x86_64-linux-gnu/libSDL2.so
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
+	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/Assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build//Assets
 
 # Rule to build all files generated by this target.
 CMakeFiles/SDL_Framework.dir/build: SDL_Framework
