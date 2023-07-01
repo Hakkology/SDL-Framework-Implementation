@@ -3,9 +3,8 @@
 #include <SDL2/SDL.h>
 
 #include "constants.h"
-
-void SetPixel(SDL_Surface * noptrWindowSurface, uint32_t color, int x, int y);
-size_t GetIndex(SDL_Surface * noptrSurface, int r, int c);
+#include "color.h"
+#include "screenbuffer.h"
 
 int main() {
 
@@ -15,6 +14,7 @@ int main() {
         return 1;
     }
 
+    // window initializer
     SDL_Window* optrWindow = SDL_CreateWindow("Bilqe", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
                                                         SCREEN_WIDTH, SCREEN_HEIGHT, 0);
     
@@ -24,14 +24,18 @@ int main() {
         return 1;
     }
 
+    // window surface initializer
     SDL_Surface* noptrWindowSurface = SDL_GetWindowSurface(optrWindow);
 
+    // color and pixel format initializer
     SDL_PixelFormat *pixelFormat =noptrWindowSurface->format;
-    std::cout<< "The window pixel format is: " << SDL_GetPixelFormatName(pixelFormat -> format);
+    Color::InitColorFormat(pixelFormat);
 
-    uint32_t color = 0XFF0000; 
-
-    SetPixel(noptrWindowSurface, color, SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+    // screenbuffer initializer
+    ScreenBuffer screenBuffer;
+    screenBuffer.Init(pixelFormat->format, noptrWindowSurface->w, noptrWindowSurface->h);
+    screenBuffer.SetPixel(Red(), SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+    SDL_BlitSurface(screenBuffer.GetSurface(), nullptr, noptrWindowSurface, nullptr);
 
     SDL_UpdateWindowSurface(optrWindow);
 
@@ -52,21 +56,4 @@ int main() {
     SDL_Quit();
     
     return 0;
-}
-
-void SetPixel(SDL_Surface * noptrWindowSurface, uint32_t color, int x, int y){
-
-    SDL_LockSurface(noptrWindowSurface);
-
-    uint32_t * pixels = (uint32_t*) noptrWindowSurface->pixels;
-    size_t index = GetIndex(noptrWindowSurface, y, x);
-    pixels[index] = color;
-
-    SDL_UnlockSurface(noptrWindowSurface);
-
-}
-
-size_t GetIndex(SDL_Surface * noptrSurface, int r, int c){
-
-    return r * noptrSurface->w +c;
 }

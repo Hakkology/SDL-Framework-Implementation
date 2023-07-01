@@ -9,6 +9,7 @@ set(SOURCES
     src/main.cpp
     src/vector2D.cpp
     src/utilities.cpp
+    src/graphics/color.cpp
 )
 
 # Add header files
@@ -16,14 +17,15 @@ set(HEADERS
     header/constants.h
     header/utilities.h
     header/vector2D.h
+    header/graphics/color.h
 )
 
 # Include directories
-include_directories(${SDL2_INCLUDE_DIRS})
 include_directories(header)
+include_directories(header/graphics)
 
 # Create an executable target
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 # Link SDL2 libraries
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES})

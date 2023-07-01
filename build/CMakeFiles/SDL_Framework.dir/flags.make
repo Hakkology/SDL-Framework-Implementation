@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL2 -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header
+CXX_INCLUDES = -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics
 
 CXX_FLAGS = 
 

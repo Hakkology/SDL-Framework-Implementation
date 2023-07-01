@@ -129,6 +129,30 @@ SDL_Framework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/build
 .PHONY : SDL_Framework/fast
 
+src/graphics/color.o: src/graphics/color.cpp.o
+.PHONY : src/graphics/color.o
+
+# target to build an object file
+src/graphics/color.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o
+.PHONY : src/graphics/color.cpp.o
+
+src/graphics/color.i: src/graphics/color.cpp.i
+.PHONY : src/graphics/color.i
+
+# target to preprocess a source file
+src/graphics/color.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i
+.PHONY : src/graphics/color.cpp.i
+
+src/graphics/color.s: src/graphics/color.cpp.s
+.PHONY : src/graphics/color.s
+
+# target to generate assembly for a file
+src/graphics/color.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s
+.PHONY : src/graphics/color.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SDL_Framework"
+	@echo "... src/graphics/color.o"
+	@echo "... src/graphics/color.i"
+	@echo "... src/graphics/color.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
