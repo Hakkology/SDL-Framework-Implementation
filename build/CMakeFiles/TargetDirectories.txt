@@ -1,0 +1,3 @@
+/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles/SDL_Framework.dir
+/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles/edit_cache.dir
+/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles/rebuild_cache.dir
