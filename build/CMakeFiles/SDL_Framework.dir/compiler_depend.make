@@ -604,6 +604,10 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/SDL2/SDL_locale.h \
   /usr/include/SDL2/SDL_misc.h \
   ../header/constants.h \
+  ../header/graphics/color.h \
+  ../header/graphics/screenbuffer.h \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
   ../header/graphics/color.h
 
 CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o: ../src/utilities.cpp \
@@ -1110,6 +1114,8 @@ CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o: ../src/vector2D.cpp \
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/SDL2/SDL_blendmode.h:
+
+../header/graphics/screenbuffer.h:
 
 /usr/include/strings.h:
 
