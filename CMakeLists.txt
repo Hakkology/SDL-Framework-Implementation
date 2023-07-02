@@ -9,7 +9,7 @@ set(SOURCES
     src/main.cpp
     src/vector2D.cpp
     src/utilities.cpp
-    src/graphics/color.cpp src/graphics/screenbuffer.cpp
+    src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
 )
 
 # Add header files
@@ -17,8 +17,7 @@ set(HEADERS
     header/constants.h
     header/utilities.h
     header/vector2D.h
-    header/graphics/color.h
-    header/graphics/screenbuffer.h
+    header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
 )
 
 # Include directories

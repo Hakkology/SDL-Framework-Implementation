@@ -35,7 +35,6 @@ public:
     uint8_t GetBlue() const;
     uint8_t GetAlpha() const;
 
-
 private:
 
 

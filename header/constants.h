@@ -3,8 +3,9 @@
 
 #include <color.h>
 
-const int SCREEN_WIDTH = 800;
-const int SCREEN_HEIGHT = 600;
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 480;
+const int MAGNIFICATION = 2;
 
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}

@@ -153,6 +153,30 @@ src/graphics/color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s
 .PHONY : src/graphics/color.cpp.s
 
+src/graphics/screen.o: src/graphics/screen.cpp.o
+.PHONY : src/graphics/screen.o
+
+# target to build an object file
+src/graphics/screen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o
+.PHONY : src/graphics/screen.cpp.o
+
+src/graphics/screen.i: src/graphics/screen.cpp.i
+.PHONY : src/graphics/screen.i
+
+# target to preprocess a source file
+src/graphics/screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i
+.PHONY : src/graphics/screen.cpp.i
+
+src/graphics/screen.s: src/graphics/screen.cpp.s
+.PHONY : src/graphics/screen.s
+
+# target to generate assembly for a file
+src/graphics/screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s
+.PHONY : src/graphics/screen.cpp.s
+
 src/graphics/screenbuffer.o: src/graphics/screenbuffer.cpp.o
 .PHONY : src/graphics/screenbuffer.o
 
@@ -261,6 +285,9 @@ help:
 	@echo "... src/graphics/color.o"
 	@echo "... src/graphics/color.i"
 	@echo "... src/graphics/color.s"
+	@echo "... src/graphics/screen.o"
+	@echo "... src/graphics/screen.i"
+	@echo "... src/graphics/screen.s"
 	@echo "... src/graphics/screenbuffer.o"
 	@echo "... src/graphics/screenbuffer.i"
 	@echo "... src/graphics/screenbuffer.s"
