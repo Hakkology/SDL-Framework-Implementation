@@ -10,6 +10,7 @@ set(SOURCES
     src/vector2D.cpp
     src/utilities.cpp
     src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
+    src/shapes/line2D.cpp
 )
 
 # Add header files
@@ -18,11 +19,13 @@ set(HEADERS
     header/utilities.h
     header/vector2D.h
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
+    header/shapes/line2D.h
 )
 
 # Include directories
 include_directories(header)
 include_directories(header/graphics)
+include_directories(header/shapes)
 
 # Create an executable target
 add_executable(${PROJECT_NAME} ${SOURCES})

@@ -225,6 +225,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shapes/line2D.o: src/shapes/line2D.cpp.o
+.PHONY : src/shapes/line2D.o
+
+# target to build an object file
+src/shapes/line2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o
+.PHONY : src/shapes/line2D.cpp.o
+
+src/shapes/line2D.i: src/shapes/line2D.cpp.i
+.PHONY : src/shapes/line2D.i
+
+# target to preprocess a source file
+src/shapes/line2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i
+.PHONY : src/shapes/line2D.cpp.i
+
+src/shapes/line2D.s: src/shapes/line2D.cpp.s
+.PHONY : src/shapes/line2D.s
+
+# target to generate assembly for a file
+src/shapes/line2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s
+.PHONY : src/shapes/line2D.cpp.s
+
 src/utilities.o: src/utilities.cpp.o
 .PHONY : src/utilities.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shapes/line2D.o"
+	@echo "... src/shapes/line2D.i"
+	@echo "... src/shapes/line2D.s"
 	@echo "... src/utilities.o"
 	@echo "... src/utilities.i"
 	@echo "... src/utilities.s"
