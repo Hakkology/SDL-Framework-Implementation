@@ -8,17 +8,17 @@ find_package(SDL2 REQUIRED)
 set(SOURCES
     src/main.cpp
     src/vector2D.cpp
-    src/utilities.cpp
+    src/utilities.cpp src/timer.cpp
     src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
     src/shapes/line2D.cpp
 )
 
 # Add header files
 set(HEADERS
-    header/constants.h
-    header/utilities.h
     header/vector2D.h
+    header/utilities.h header/timer.h
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
+    header/constants.h
     header/shapes/line2D.h
 )
 

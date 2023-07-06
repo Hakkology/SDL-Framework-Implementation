@@ -1,4 +1,4 @@
-#include "line2D.H"
+#include "line2D.h"
 
 Line2D::Line2D(): vP0(Vector2D::Zero), vP1(Vector2D::Zero){
 

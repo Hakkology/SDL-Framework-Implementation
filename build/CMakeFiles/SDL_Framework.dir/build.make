@@ -111,10 +111,24 @@ CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utilities.cpp -o CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s
 
+CMakeFiles/SDL_Framework.dir/src/timer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/timer.cpp.o: ../src/timer.cpp
+CMakeFiles/SDL_Framework.dir/src/timer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_Framework.dir/src/timer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/timer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/timer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/timer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/timer.cpp
+
+CMakeFiles/SDL_Framework.dir/src/timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/timer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/timer.cpp > CMakeFiles/SDL_Framework.dir/src/timer.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/timer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/timer.cpp -o CMakeFiles/SDL_Framework.dir/src/timer.cpp.s
+
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: ../src/graphics/color.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s: cmake_force
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: ../src/graphics/screenbuffer.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s: cmake_force
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: ../src/graphics/screen.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s: cmake_force
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: ../src/shapes/line2D.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i: cmake_force
@@ -172,6 +186,7 @@ SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/timer.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o" \
@@ -183,13 +198,14 @@ SDL_Framework_EXTERNAL_OBJECTS =
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/main.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/timer.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
 	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/Assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build//Assets

@@ -284,8 +284,11 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/constants.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/timer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/vector2D.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/vector2D.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utilities.h

@@ -69,6 +69,64 @@ void Screen::Draw(const Vector2D &point, const Color &color){
     if (moptrWindow) {gBackBuffer.SetPixel(color, point.GetX(), point.GetY());}
 }
 
+void Screen::Draw(const Line2D &line, const Color &color) {
+
+    assert(moptrWindow);
+    if (moptrWindow)
+    {
+        int dx, dy;
+
+        int x0 = roundf(line.GetP0().GetX());
+        int y0 = roundf(line.GetP0().GetY());
+        int x1 = roundf(line.GetP1().GetX());
+        int y1 = roundf(line.GetP1().GetY());
+
+        dx = x1 - x0;
+        dy = y1 - y0;
+
+        // boolean expressions are either 1 or -1 in c++, so these expressions are just -1, 0 or 1, which defines the direction.
+        signed const char ix((dx>0)-(dx<0));
+        signed const char iy((dx>0)-(dx<0));
+
+        // to avoid floating point math, shall be divided by two.
+        dx = abs (dx) * 2;
+        dy = abs (dy) * 2;
+
+        Draw (x0, y0, color);
+        if (dx >= dy)
+        {
+            int d = dy - dx/2;
+            while (x0 != x1){
+                if (d >=0)
+                {
+                    d -= dx;
+                    y0 += iy;
+                }
+                d += dy;
+                x0 += ix;
+
+                Draw(x0, y0, color);
+            }
+        }
+        else
+        {
+            int d = dx - dy/2;
+            while (y0 != y1){
+                if (d >= 0)
+                {
+                    d -= dy;
+                    x0 += ix;
+                }
+                d += dx;
+                x0 += iy;
+
+                Draw(x0, y0, color);
+            }
+        }
+    }
+
+}
+
 void Screen::ClearScreen(){
     assert(moptrWindow);
     if (moptrWindow)

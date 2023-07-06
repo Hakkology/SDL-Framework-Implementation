@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/timer.cpp" "CMakeFiles/SDL_Framework.dir/src/timer.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/timer.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utilities.cpp" "CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/vector2D.cpp" "CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o.d"
   )

@@ -3,12 +3,14 @@
 
 #include <stdint.h>
 #include <cassert>
+#include <cmath>
 
 #include <SDL2/SDL.h>
 
 #include "screenbuffer.h"
 #include "color.h"
 #include "vector2D.h"
+#include "line2D.h"
 
 class Vector2D;
 struct SDL_window;
@@ -32,6 +34,7 @@ public:
 
     void Draw (int x, int y, const Color& color);
     void Draw (const Vector2D& point, const Color& color);
+    void Draw (const Line2D& line, const Color& color);
 
 private:
 

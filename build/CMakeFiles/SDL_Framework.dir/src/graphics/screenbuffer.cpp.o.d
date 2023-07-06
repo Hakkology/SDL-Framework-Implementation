@@ -216,4 +216,5 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/constants.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/timer.h

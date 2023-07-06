@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.H \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
