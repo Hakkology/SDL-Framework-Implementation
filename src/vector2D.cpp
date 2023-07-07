@@ -172,6 +172,12 @@ void Vector2D::Rotate(float angle, const Vector2D aroundPoint){
     Vector2D rotatedVector(xRot, yRot);
 
     *this = rotatedVector + aroundPoint;
+
+    // Debugging print statements
+    std::cout << "sin: " << sin << ", cos: " << cos << std::endl;
+    std::cout << "xRot: " << xRot << ", yRot: " << yRot << std::endl;
+    std::cout << "Old vx: " << thisVec2D.vx << ", old vy: " << thisVec2D.vy << std::endl;
+    std::cout << "New vx: " << vx << ", new vy: " << vy << std::endl;
 }
 
 float Vector2D::MagnitudeSquare() const{

@@ -13,24 +13,26 @@ int main() {
     //pixel draw code
     //theScreen.Draw(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, Yellow());
 
-    //line draw code
-    // Line2D line = {Vector2D(0,0), Vector2D(SCREEN_WIDTH/2, SCREEN_HEIGHT)};
-    // theScreen.Draw(line, White());
+    Line2D line = {Vector2D(0,0), Vector2D(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)};
+    theScreen.Draw(line, Magenta());
+
+    theScreen.SwapBuffers();
 
     //rotating line draw code
-    float rotationSpeed = 60.0f * M_PI / 180.0f;
-    Vector2D rotatingPoint = {0,0};
-    Vector2D originPoint = {SCREEN_WIDTH/2, SCREEN_HEIGHT/2};
+    // float rotationAngle = 0.0f;
+    // float rotationSpeed = 60.0f * M_PI / 180.0f;
+    // Vector2D rotatingPoint = {SCREEN_WIDTH/4, SCREEN_HEIGHT/4};
+    // Vector2D originPoint = {SCREEN_WIDTH/2, SCREEN_HEIGHT/2};
 
     SDL_Event sdlEvent;
     bool running = true;
     while (running){
 
         timer.Start();
-        
-        rotatingPoint.Rotate((timer.DeltaTime() * rotationSpeed), originPoint);
-        Line2D line = {rotatingPoint, originPoint};
-        theScreen.Draw(line, Magenta());
+
+        // rotatingPoint.Rotate(rotationAngle, originPoint);
+        // Line2D line = {rotatingPoint, originPoint};
+        // theScreen.Draw(line, Magenta());
 
         while(SDL_PollEvent(&sdlEvent)){
             switch (sdlEvent.type){
@@ -40,7 +42,6 @@ int main() {
             }
         }
 
-        theScreen.SwapBuffers();
 
         timer.End();
     }

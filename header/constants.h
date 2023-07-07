@@ -7,6 +7,7 @@
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 const int MAGNIFICATION = 2;
+const int FRAME_DELAY = 1000 / 60;
 
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}
