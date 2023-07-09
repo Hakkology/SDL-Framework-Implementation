@@ -249,6 +249,78 @@ src/shapes/line2D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s
 .PHONY : src/shapes/line2D.cpp.s
 
+src/shapes/rectangle.o: src/shapes/rectangle.cpp.o
+.PHONY : src/shapes/rectangle.o
+
+# target to build an object file
+src/shapes/rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o
+.PHONY : src/shapes/rectangle.cpp.o
+
+src/shapes/rectangle.i: src/shapes/rectangle.cpp.i
+.PHONY : src/shapes/rectangle.i
+
+# target to preprocess a source file
+src/shapes/rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.i
+.PHONY : src/shapes/rectangle.cpp.i
+
+src/shapes/rectangle.s: src/shapes/rectangle.cpp.s
+.PHONY : src/shapes/rectangle.s
+
+# target to generate assembly for a file
+src/shapes/rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.s
+.PHONY : src/shapes/rectangle.cpp.s
+
+src/shapes/shape.o: src/shapes/shape.cpp.o
+.PHONY : src/shapes/shape.o
+
+# target to build an object file
+src/shapes/shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o
+.PHONY : src/shapes/shape.cpp.o
+
+src/shapes/shape.i: src/shapes/shape.cpp.i
+.PHONY : src/shapes/shape.i
+
+# target to preprocess a source file
+src/shapes/shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.i
+.PHONY : src/shapes/shape.cpp.i
+
+src/shapes/shape.s: src/shapes/shape.cpp.s
+.PHONY : src/shapes/shape.s
+
+# target to generate assembly for a file
+src/shapes/shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.s
+.PHONY : src/shapes/shape.cpp.s
+
+src/shapes/triangle.o: src/shapes/triangle.cpp.o
+.PHONY : src/shapes/triangle.o
+
+# target to build an object file
+src/shapes/triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o
+.PHONY : src/shapes/triangle.cpp.o
+
+src/shapes/triangle.i: src/shapes/triangle.cpp.i
+.PHONY : src/shapes/triangle.i
+
+# target to preprocess a source file
+src/shapes/triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.i
+.PHONY : src/shapes/triangle.cpp.i
+
+src/shapes/triangle.s: src/shapes/triangle.cpp.s
+.PHONY : src/shapes/triangle.s
+
+# target to generate assembly for a file
+src/shapes/triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s
+.PHONY : src/shapes/triangle.cpp.s
+
 src/timer.o: src/timer.cpp.o
 .PHONY : src/timer.o
 
@@ -345,6 +417,15 @@ help:
 	@echo "... src/shapes/line2D.o"
 	@echo "... src/shapes/line2D.i"
 	@echo "... src/shapes/line2D.s"
+	@echo "... src/shapes/rectangle.o"
+	@echo "... src/shapes/rectangle.i"
+	@echo "... src/shapes/rectangle.s"
+	@echo "... src/shapes/shape.o"
+	@echo "... src/shapes/shape.i"
+	@echo "... src/shapes/shape.s"
+	@echo "... src/shapes/triangle.o"
+	@echo "... src/shapes/triangle.i"
+	@echo "... src/shapes/triangle.s"
 	@echo "... src/timer.o"
 	@echo "... src/timer.i"
 	@echo "... src/timer.s"
