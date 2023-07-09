@@ -133,11 +133,8 @@ void Screen::Draw(const Triangle& triangle, const Color& color){
     Line2D p1p2 = Line2D (triangle.GetP1(), triangle.GetP2());
     Line2D p2p0 = Line2D (triangle.GetP2(), triangle.GetP0());
 
-    std::cout << "Drawing p0p1...\n";
     Draw (p0p1, color);
-    std::cout << "Drawing p1p2...\n";
     Draw (p1p2, color);
-    std::cout << "Drawing p2p0...\n";
     Draw (p2p0, color);
 }
 
