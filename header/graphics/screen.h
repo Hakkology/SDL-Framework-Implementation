@@ -3,7 +3,9 @@
 
 #include <stdint.h>
 #include <cassert>
+#include <vector>
 #include <cmath>
+#include <algorithm>
 
 #include <SDL2/SDL.h>
 
@@ -40,15 +42,16 @@ public:
     void Draw (int x, int y, const Color& color);
     void Draw (const Vector2D& point, const Color& color);
     void Draw (const Line2D& line, const Color& color);
-    void Draw (const Triangle& triangle, const Color& color);
-    void Draw (const Rectangle& rectangle, const Color& color);
-    void Draw (const Circle& circle, const Color& color);
+    void Draw (const Triangle& triangle, const Color& color, bool fill=false, const Color& fillColor = White());
+    void Draw (const Rectangle& rectangle, const Color& color, bool fill=false, const Color& fillColor = White());
+    void Draw (const Circle& circle, const Color& color, bool fill=false, const Color& fillColor = White());
 
 private:
 
     Screen& operator= (const Screen& screen);
     
     void ClearScreen();
+    void FillPoly(const std:: vector<Vector2D>& points, const Color& color);
 
     uint32_t gWidth;
     uint32_t gHeight;

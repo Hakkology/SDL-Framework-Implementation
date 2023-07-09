@@ -12,13 +12,13 @@ int main() {
     theScreen.Init(SCREEN_WIDTH, SCREEN_HEIGHT, MAGNIFICATION);
 
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
-    Rectangle rectangle = {Vector2D(SCREEN_WIDTH/2-125, SCREEN_HEIGHT/2-125),250,250};
-    Circle circle = {Vector2D(SCREEN_WIDTH/2 +80, SCREEN_HEIGHT/2 -140), 100};
+    Rectangle rectangle = {Vector2D(SCREEN_WIDTH/2-100, SCREEN_HEIGHT/2-100),150,200};
+    Circle circle = {Vector2D(SCREEN_WIDTH/2 +200, SCREEN_HEIGHT/2 -150), 80};
     std::cout << "Shapes created...\n";
 
-    theScreen.Draw (triangle, Lilac());
-    theScreen.Draw (rectangle, Green());
-    theScreen.Draw (circle, Orange());
+    theScreen.Draw (triangle, Lilac(), true, Lilac());
+    theScreen.Draw (rectangle, Green(), true, Green());
+    theScreen.Draw (circle, Orange(), true, Orange());
     std::cout << "Shapes drawn...\n";
 
     theScreen.SwapBuffers();
