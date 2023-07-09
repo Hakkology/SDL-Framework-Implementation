@@ -12,7 +12,7 @@ class Triangle: public Shape{
 public:
 
     Triangle();
-    Triangle(const Vector2D p0, const Vector2D p1, const Vector2D p2);
+    Triangle(const Vector2D& p0, const Vector2D& p1, const Vector2D& p2);
 
     inline void SetP0 (const Vector2D& p0) {sPoints[0] = p0;}
     inline void SetP1 (const Vector2D& p1) {sPoints[1] = p1;}
@@ -28,7 +28,7 @@ public:
 
 private:
     float Area() const;
-    float Area(const Vector2D p0, const Vector2D p1, const Vector2D p2) const;
+    float Area(const Vector2D& p0, const Vector2D& p1, const Vector2D& p2) const;
 };
 
 #endif

@@ -11,8 +11,11 @@
 #include "color.h"
 #include "vector2D.h"
 #include "line2D.h"
+#include "triangle.h"
 
 class Vector2D;
+class Line2D;
+class Triangle;
 struct SDL_window;
 struct SDL_Surface;
 
@@ -35,6 +38,7 @@ public:
     void Draw (int x, int y, const Color& color);
     void Draw (const Vector2D& point, const Color& color);
     void Draw (const Line2D& line, const Color& color);
+    void Draw (const Triangle& triangle, const Color& color);
 
 private:
 

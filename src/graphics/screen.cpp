@@ -86,7 +86,7 @@ void Screen::Draw(const Line2D &line, const Color &color) {
 
         // boolean expressions are either 1 or -1 in c++, so these expressions are just -1, 0 or 1, which defines the direction.
         signed const char ix((dx>0)-(dx<0));
-        signed const char iy((dx>0)-(dx<0));
+        signed const char iy((dy>0)-(dy<0));
 
         // to avoid floating point math, shall be divided by two.
         dx = abs (dx) * 2;
@@ -118,13 +118,27 @@ void Screen::Draw(const Line2D &line, const Color &color) {
                     x0 += ix;
                 }
                 d += dx;
-                x0 += iy;
+                y0 += iy;
 
                 Draw(x0, y0, color);
             }
         }
     }
 
+}
+
+void Screen::Draw(const Triangle& triangle, const Color& color){
+
+    Line2D p0p1 = Line2D (triangle.GetP0(), triangle.GetP1());
+    Line2D p1p2 = Line2D (triangle.GetP1(), triangle.GetP2());
+    Line2D p2p0 = Line2D (triangle.GetP2(), triangle.GetP0());
+
+    std::cout << "Drawing p0p1...\n";
+    Draw (p0p1, color);
+    std::cout << "Drawing p1p2...\n";
+    Draw (p1p2, color);
+    std::cout << "Drawing p2p0...\n";
+    Draw (p2p0, color);
 }
 
 void Screen::ClearScreen(){

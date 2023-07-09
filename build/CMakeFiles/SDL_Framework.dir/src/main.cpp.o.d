@@ -291,4 +291,10 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/vector2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utilities.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utilities.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc

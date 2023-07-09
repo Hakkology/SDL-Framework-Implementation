@@ -5,7 +5,7 @@ Triangle::Triangle(): Triangle(Vector2D::Zero,Vector2D::Zero,Vector2D::Zero)
 
 }
 
-Triangle::Triangle(const Vector2D p0, const Vector2D p1, const Vector2D p2)
+Triangle::Triangle(const Vector2D& p0, const Vector2D& p1, const Vector2D& p2)
 {
     sPoints.push_back(p0);
     sPoints.push_back(p1);
@@ -23,7 +23,7 @@ float Triangle::Area() const
     return Area(GetP0(), GetP1(), GetP2());
 }
 
-float Triangle::Area(const Vector2D p0, const Vector2D p1, const Vector2D p2) const
+float Triangle::Area(const Vector2D& p0, const Vector2D& p1, const Vector2D& p2) const
 {
     return fabsf((p0.GetX()*(p1.GetY() - p2.GetY()) + p1.GetX() * (p2.GetY() - p0.GetY()) + p2.GetX() *(p0.GetY() - p1.GetY())) / 2.0f);
 }
