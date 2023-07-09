@@ -11,6 +11,7 @@ set(SOURCES
     src/utilities.cpp src/timer.cpp
     src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
     src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp
+    src/shapes/circle.cpp
 )
 
 # Add header files
@@ -20,6 +21,7 @@ set(HEADERS
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
     header/constants.h
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h
+    header/shapes/circle.h
 )
 
 # Include directories
