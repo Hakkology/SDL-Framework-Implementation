@@ -14,7 +14,7 @@ int main() {
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
     std::cout << "Triangle created...\n";
 
-    theScreen.Draw (triangle, Red());
+    theScreen.Draw (triangle, Lilac());
     std::cout << "Triangle drawn...\n";
 
     theScreen.SwapBuffers();

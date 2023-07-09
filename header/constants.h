@@ -19,5 +19,6 @@ static Color Magenta() {return Color (255, 0, 255, 255);}
 static Color Cyan() {return Color (37, 240, 217, 255);}
 static Color Pink() {return Color (252, 197, 224, 255);}
 static Color Orange() {return Color (245, 190, 100, 255);}
+static Color Lilac() {return Color (160, 100, 160, 255);}
 
 #endif
