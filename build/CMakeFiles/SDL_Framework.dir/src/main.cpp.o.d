@@ -297,4 +297,6 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h

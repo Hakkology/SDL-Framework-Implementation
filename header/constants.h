@@ -9,6 +9,11 @@ const int SCREEN_HEIGHT = 480;
 const int MAGNIFICATION = 2;
 const int FRAME_DELAY = 1000 / 60;
 
+static unsigned int NUM_CIRCLE_SEGMENTS = 30;
+
+const float PI = 3.14159f;
+const float TAU = 2.0f * PI;
+
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}
 static Color Red() {return Color (255, 0, 0, 255);}

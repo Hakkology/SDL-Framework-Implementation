@@ -12,6 +12,8 @@
 #include "vector2D.h"
 #include "line2D.h"
 #include "triangle.h"
+#include "rectangle.h"
+#include "circle.h"
 
 class Vector2D;
 class Line2D;
@@ -39,6 +41,8 @@ public:
     void Draw (const Vector2D& point, const Color& color);
     void Draw (const Line2D& line, const Color& color);
     void Draw (const Triangle& triangle, const Color& color);
+    void Draw (const Rectangle& rectangle, const Color& color);
+    void Draw (const Circle& circle, const Color& color);
 
 private:
 

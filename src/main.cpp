@@ -12,10 +12,14 @@ int main() {
     theScreen.Init(SCREEN_WIDTH, SCREEN_HEIGHT, MAGNIFICATION);
 
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
-    std::cout << "Triangle created...\n";
+    Rectangle rectangle = {Vector2D(SCREEN_WIDTH/2-125, SCREEN_HEIGHT/2-125),250,250};
+    Circle circle = {Vector2D(SCREEN_WIDTH/2 +80, SCREEN_HEIGHT/2 -140), 100};
+    std::cout << "Shapes created...\n";
 
     theScreen.Draw (triangle, Lilac());
-    std::cout << "Triangle drawn...\n";
+    theScreen.Draw (rectangle, Green());
+    theScreen.Draw (circle, Orange());
+    std::cout << "Shapes drawn...\n";
 
     theScreen.SwapBuffers();
 

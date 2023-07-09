@@ -620,7 +620,9 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: ../src/graphics/screen.c
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  ../header/shapes/rectangle.h \
+  ../header/shapes/circle.h
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: ../src/graphics/screenbuffer.cpp \
   /usr/include/stdc-predef.h \
@@ -1247,7 +1249,9 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/vector.tcc \
+  ../header/shapes/rectangle.h \
+  ../header/shapes/circle.h
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp \
   /usr/include/stdc-predef.h \
@@ -3038,17 +3042,17 @@ CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o: ../src/vector2D.cpp \
 
 ../src/shapes/shape.cpp:
 
-../header/shapes/rectangle.h:
-
 ../src/shapes/rectangle.cpp:
-
-../header/shapes/circle.h:
 
 ../src/shapes/circle.cpp:
 
 ../src/main.cpp:
 
 ../src/graphics/screenbuffer.cpp:
+
+../header/shapes/circle.h:
+
+../header/shapes/rectangle.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 

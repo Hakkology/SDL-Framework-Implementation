@@ -49,13 +49,13 @@ public:
     Vector2D Normalize();
     Vector2D ProjectOnto(const Vector2D& vec2D) const;
     Vector2D Reflect(const Vector2D& normal) const;
-    Vector2D RotationResult(float angle, const Vector2D aroundPoint) const;
+    Vector2D RotationResult(float angle, const Vector2D& aroundPoint) const;
 
     float Distance(const Vector2D& vec2D) const;
     float Dot(const Vector2D& vec2D) const;
     float AngleBetween(const Vector2D& vec2D) const;
 
-    void Rotate(float angle, const Vector2D aroundPoint);
+    void Rotate(float angle, const Vector2D& aroundPoint);
 
 
 

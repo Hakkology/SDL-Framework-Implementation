@@ -138,6 +138,40 @@ void Screen::Draw(const Triangle& triangle, const Color& color){
     Draw (p2p0, color);
 }
 
+void Screen::Draw(const Rectangle &rectangle, const Color &color){
+
+    std::vector <Vector2D> points = rectangle.GetPoints();
+
+    Line2D p0p1 = Line2D(points[0], points[1]);
+    Line2D p1p2 = Line2D(points[1], points[2]);
+    Line2D p2p3 = Line2D(points[2], points[3]);
+    Line2D p3p0 = Line2D(points[3], points[0]);
+
+    Draw(p0p1, color);
+    Draw(p1p2, color);
+    Draw(p2p3, color);
+    Draw(p3p0, color);
+}
+
+void Screen::Draw(const Circle &circle, const Color &color){
+
+    float angle = TAU / float(NUM_CIRCLE_SEGMENTS);
+
+    Vector2D p0 = Vector2D(circle.GetCenterPoint().GetX() + circle.GetRadius(), circle.GetCenterPoint().GetY());
+    Vector2D p1 = p0;
+    Line2D nextLineToDraw;
+
+    for (unsigned int i = 0; i < NUM_CIRCLE_SEGMENTS; ++i)
+    {
+        p1.Rotate(angle, circle.GetCenterPoint());
+        nextLineToDraw.SetP1(p1);
+        nextLineToDraw.SetP0(p0);
+
+        Draw(nextLineToDraw, color);
+        p0 = p1;
+    }
+}
+
 void Screen::ClearScreen(){
     assert(moptrWindow);
     if (moptrWindow)
