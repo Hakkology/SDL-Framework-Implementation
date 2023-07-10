@@ -300,14 +300,7 @@ void Screen::FillPoly(const std::vector<Vector2D> &points, const Color &color){
             }
             
         }
-    
-    
-        
     }
-
-
-    
-    
 }
 
 Screen::~Screen(){

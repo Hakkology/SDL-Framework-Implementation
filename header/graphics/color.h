@@ -15,6 +15,7 @@ public:
 
     static const SDL_PixelFormat* gFormat;
     static void InitColorFormat(const SDL_PixelFormat *format);
+    static Color Evaluate1MinusSourceAlpha(const Color& source, const Color& destination);
 
     Color(): gColor(0){}
     Color (uint32_t color): gColor(color){};
