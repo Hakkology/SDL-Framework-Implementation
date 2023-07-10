@@ -9,7 +9,7 @@ const int SCREEN_HEIGHT = 480;
 const int MAGNIFICATION = 2;
 const int FRAME_DELAY = 1000 / 60;
 
-static unsigned int NUM_CIRCLE_SEGMENTS = 30;
+static unsigned int NUM_CIRCLE_SEGMENTS = 48;
 
 const float PI = 3.14159f;
 const float TAU = 2.0f * PI;
