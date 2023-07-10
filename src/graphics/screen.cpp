@@ -31,7 +31,7 @@ SDL_Window *Screen::Init(uint32_t w, uint32_t h, uint32_t mag){
         monoptrWindowSurface = SDL_GetWindowSurface(moptrWindow);
 
         // color and pixel format initializer
-        SDL_PixelFormat *pixelFormat = monoptrWindowSurface->format;
+        SDL_PixelFormat* pixelFormat = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA8888);
         Color::InitColorFormat(pixelFormat);
         gClearColor = Black();
         gBackBuffer.Init(pixelFormat -> format, gWidth, gHeight);
