@@ -249,6 +249,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/scenes/arcadeScene.o: src/scenes/arcadeScene.cpp.o
+.PHONY : src/scenes/arcadeScene.o
+
+# target to build an object file
+src/scenes/arcadeScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o
+.PHONY : src/scenes/arcadeScene.cpp.o
+
+src/scenes/arcadeScene.i: src/scenes/arcadeScene.cpp.i
+.PHONY : src/scenes/arcadeScene.i
+
+# target to preprocess a source file
+src/scenes/arcadeScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i
+.PHONY : src/scenes/arcadeScene.cpp.i
+
+src/scenes/arcadeScene.s: src/scenes/arcadeScene.cpp.s
+.PHONY : src/scenes/arcadeScene.s
+
+# target to generate assembly for a file
+src/scenes/arcadeScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s
+.PHONY : src/scenes/arcadeScene.cpp.s
+
 src/shapes/circle.o: src/shapes/circle.cpp.o
 .PHONY : src/shapes/circle.o
 
@@ -441,6 +465,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scenes/arcadeScene.o"
+	@echo "... src/scenes/arcadeScene.i"
+	@echo "... src/scenes/arcadeScene.s"
 	@echo "... src/shapes/circle.o"
 	@echo "... src/shapes/circle.i"
 	@echo "... src/shapes/circle.s"

@@ -237,6 +237,20 @@ CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp -o CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
 
+CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: ../src/scenes/arcadeScene.cpp
+CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp
+
+CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s
+
 # Object files for target SDL_Framework
 SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" \
@@ -250,7 +264,8 @@ SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o" \
-"CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o"
+"CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
 
 # External object files for target SDL_Framework
 SDL_Framework_EXTERNAL_OBJECTS =
@@ -267,9 +282,10 @@ SDL_Framework: CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
 	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/Assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build//Assets

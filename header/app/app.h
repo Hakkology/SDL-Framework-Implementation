@@ -2,7 +2,6 @@
 #define APP_APP_H
 
 #include <stdint.h>
-
 #include "screen.h"
 
 struct SDL_Window;

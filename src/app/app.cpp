@@ -1,4 +1,5 @@
 #include "app.h"
+#include "arcadeScene.h"
 
 App& App::Singleton(){
 
@@ -16,14 +17,13 @@ void App::Run(){
 
     if (anoptrWindow)
     {
-        Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
-        Rectangle rectangle = {Vector2D(aScreen.Width()/2-100, aScreen.Height()/2-100),150,200};
-        Circle circle = {Vector2D(aScreen.Width()/2 +50, aScreen.Height()/2 -150), 80};
-        std::cout << "Shapes created...\n";
 
         uint32_t lastTick = SDL_GetTicks();
         uint32_t currentTick = lastTick;
         uint32_t accumulator = 0;
+
+        std::unique_ptr<ArcadeScene> arcadeScene = std::make_unique<ArcadeScene>();
+        arcadeScene -> Init();
 
         SDL_Event sdlEvent;
         bool running = true;
@@ -53,15 +53,12 @@ void App::Run(){
             while (accumulator >= DELTA_TIME)
             {
                 //update current scene by dt
+                arcadeScene->Update(DELTA_TIME);
                 std::cout << "Delta time step: " << DELTA_TIME << std::endl;
                 accumulator -= DELTA_TIME;
             }
 
-            // Render
-            aScreen.Draw (triangle, Lilac(), true, Lilac());
-            aScreen.Draw (rectangle, Green(), true, Green());
-            aScreen.Draw (circle, Color (245, 190, 100, 100), true, Color (245, 190, 100, 100));
-
+            arcadeScene->Draw(aScreen);
             aScreen.SwapBuffers();
             
         }

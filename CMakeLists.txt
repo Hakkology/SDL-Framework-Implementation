@@ -11,6 +11,7 @@ set(SOURCES
     src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
     src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp src/shapes/circle.cpp
     src/app/app.cpp
+    src/scenes/arcadeScene.cpp
 )
 
 # Add header files
@@ -19,6 +20,7 @@ set(HEADERS
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
     header/app/app.h
+    header/scenes/scene.h header/scenes/arcadeScene.h
 )
 
 # Include directories
@@ -26,6 +28,7 @@ include_directories(header)
 include_directories(header/utils)
 include_directories(header/graphics)
 include_directories(header/shapes)
+include_directories(header/scenes)
 include_directories(header/app)
 
 # Create an executable target
