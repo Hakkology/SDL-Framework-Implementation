@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes
+CXX_INCLUDES = -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app
 
 CXX_FLAGS = 
 

@@ -7,27 +7,26 @@ find_package(SDL2 REQUIRED)
 # Add source files
 set(SOURCES
     src/main.cpp
-    src/vector2D.cpp
-    src/utilities.cpp src/timer.cpp
+    src/shapes/vector2D.cpp src/utils/utilities.cpp
     src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
-    src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp
-    src/shapes/circle.cpp
+    src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp src/shapes/circle.cpp
+    src/app/app.cpp
 )
 
 # Add header files
 set(HEADERS
-    header/vector2D.h
-    header/utilities.h header/timer.h
+    header/shapes/vector2D.h header/utils/utilities.h header/utils/constants.h
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
-    header/constants.h
-    header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h
-    header/shapes/circle.h
+    header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
+    header/app/app.h
 )
 
 # Include directories
 include_directories(header)
+include_directories(header/utils)
 include_directories(header/graphics)
 include_directories(header/shapes)
+include_directories(header/app)
 
 # Create an executable target
 add_executable(${PROJECT_NAME} ${SOURCES})

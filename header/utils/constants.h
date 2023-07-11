@@ -2,7 +2,6 @@
 #define CONSTANTS_H
 
 #include "color.h"
-#include "timer.h"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -13,6 +12,9 @@ static unsigned int NUM_CIRCLE_SEGMENTS = 48;
 
 const float PI = 3.14159f;
 const float TAU = 2.0f * PI;
+
+const uint32_t DELTA_TIME = 10;
+const uint32_t MAX_FRAME_RATE = 300;
 
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}

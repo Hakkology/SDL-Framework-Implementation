@@ -129,6 +129,30 @@ SDL_Framework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/build
 .PHONY : SDL_Framework/fast
 
+src/app/app.o: src/app/app.cpp.o
+.PHONY : src/app/app.o
+
+# target to build an object file
+src/app/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o
+.PHONY : src/app/app.cpp.o
+
+src/app/app.i: src/app/app.cpp.i
+.PHONY : src/app/app.i
+
+# target to preprocess a source file
+src/app/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/app.cpp.i
+.PHONY : src/app/app.cpp.i
+
+src/app/app.s: src/app/app.cpp.s
+.PHONY : src/app/app.s
+
+# target to generate assembly for a file
+src/app/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
+.PHONY : src/app/app.cpp.s
+
 src/graphics/color.o: src/graphics/color.cpp.o
 .PHONY : src/graphics/color.o
 
@@ -345,77 +369,53 @@ src/shapes/triangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s
 .PHONY : src/shapes/triangle.cpp.s
 
-src/timer.o: src/timer.cpp.o
-.PHONY : src/timer.o
+src/shapes/vector2D.o: src/shapes/vector2D.cpp.o
+.PHONY : src/shapes/vector2D.o
 
 # target to build an object file
-src/timer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/timer.cpp.o
-.PHONY : src/timer.cpp.o
+src/shapes/vector2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o
+.PHONY : src/shapes/vector2D.cpp.o
 
-src/timer.i: src/timer.cpp.i
-.PHONY : src/timer.i
+src/shapes/vector2D.i: src/shapes/vector2D.cpp.i
+.PHONY : src/shapes/vector2D.i
 
 # target to preprocess a source file
-src/timer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/timer.cpp.i
-.PHONY : src/timer.cpp.i
+src/shapes/vector2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.i
+.PHONY : src/shapes/vector2D.cpp.i
 
-src/timer.s: src/timer.cpp.s
-.PHONY : src/timer.s
+src/shapes/vector2D.s: src/shapes/vector2D.cpp.s
+.PHONY : src/shapes/vector2D.s
 
 # target to generate assembly for a file
-src/timer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/timer.cpp.s
-.PHONY : src/timer.cpp.s
+src/shapes/vector2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s
+.PHONY : src/shapes/vector2D.cpp.s
 
-src/utilities.o: src/utilities.cpp.o
-.PHONY : src/utilities.o
+src/utils/utilities.o: src/utils/utilities.cpp.o
+.PHONY : src/utils/utilities.o
 
 # target to build an object file
-src/utilities.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utilities.cpp.o
-.PHONY : src/utilities.cpp.o
+src/utils/utilities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o
+.PHONY : src/utils/utilities.cpp.o
 
-src/utilities.i: src/utilities.cpp.i
-.PHONY : src/utilities.i
-
-# target to preprocess a source file
-src/utilities.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utilities.cpp.i
-.PHONY : src/utilities.cpp.i
-
-src/utilities.s: src/utilities.cpp.s
-.PHONY : src/utilities.s
-
-# target to generate assembly for a file
-src/utilities.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utilities.cpp.s
-.PHONY : src/utilities.cpp.s
-
-src/vector2D.o: src/vector2D.cpp.o
-.PHONY : src/vector2D.o
-
-# target to build an object file
-src/vector2D.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.o
-.PHONY : src/vector2D.cpp.o
-
-src/vector2D.i: src/vector2D.cpp.i
-.PHONY : src/vector2D.i
+src/utils/utilities.i: src/utils/utilities.cpp.i
+.PHONY : src/utils/utilities.i
 
 # target to preprocess a source file
-src/vector2D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.i
-.PHONY : src/vector2D.cpp.i
+src/utils/utilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.i
+.PHONY : src/utils/utilities.cpp.i
 
-src/vector2D.s: src/vector2D.cpp.s
-.PHONY : src/vector2D.s
+src/utils/utilities.s: src/utils/utilities.cpp.s
+.PHONY : src/utils/utilities.s
 
 # target to generate assembly for a file
-src/vector2D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/vector2D.cpp.s
-.PHONY : src/vector2D.cpp.s
+src/utils/utilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.s
+.PHONY : src/utils/utilities.cpp.s
 
 # Help Target
 help:
@@ -426,6 +426,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SDL_Framework"
+	@echo "... src/app/app.o"
+	@echo "... src/app/app.i"
+	@echo "... src/app/app.s"
 	@echo "... src/graphics/color.o"
 	@echo "... src/graphics/color.i"
 	@echo "... src/graphics/color.s"
@@ -453,15 +456,12 @@ help:
 	@echo "... src/shapes/triangle.o"
 	@echo "... src/shapes/triangle.i"
 	@echo "... src/shapes/triangle.s"
-	@echo "... src/timer.o"
-	@echo "... src/timer.i"
-	@echo "... src/timer.s"
-	@echo "... src/utilities.o"
-	@echo "... src/utilities.i"
-	@echo "... src/utilities.s"
-	@echo "... src/vector2D.o"
-	@echo "... src/vector2D.i"
-	@echo "... src/vector2D.s"
+	@echo "... src/shapes/vector2D.o"
+	@echo "... src/shapes/vector2D.i"
+	@echo "... src/shapes/vector2D.s"
+	@echo "... src/utils/utilities.o"
+	@echo "... src/utils/utilities.i"
+	@echo "... src/utils/utilities.s"
 .PHONY : help
 
 

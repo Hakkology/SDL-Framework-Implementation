@@ -1,7 +1,7 @@
-CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp \
+CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -17,6 +17,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
  /usr/include/c++/11/cassert \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

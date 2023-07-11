@@ -86,7 +86,7 @@ CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utilities.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
@@ -104,7 +104,7 @@ CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/vector2D.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
