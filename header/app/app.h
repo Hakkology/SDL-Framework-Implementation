@@ -2,7 +2,11 @@
 #define APP_APP_H
 
 #include <stdint.h>
+#include <vector>
+#include <memory>
+
 #include "screen.h"
+#include "scene.h"
 
 struct SDL_Window;
 
@@ -16,10 +20,17 @@ public:
     inline uint32_t Width() const {return aScreen.Width();}
     inline uint32_t Height() const {return aScreen.Height();}
 
+    // Scene controllers
+    void PushScene(std::unique_ptr<Scene> scene);
+    void PopScene();
+    Scene* TopScene(); // current scene
+
 
 private:
     Screen aScreen;
     SDL_Window* anoptrWindow;
+
+    std::vector<std::unique_ptr<Scene>> aSceneStack;
 };
 
 #endif

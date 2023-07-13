@@ -17,10 +17,10 @@ void ArcadeScene::Update(uint32_t dt){
 
 void ArcadeScene::Draw(Screen& theScreen){
 
+    // Shapes
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
     Rectangle rectangle = {Vector2D(theScreen.Width()/2-100, theScreen.Height()/2-100),150,200};
     Circle circle = {Vector2D(theScreen.Width()/2 +50, theScreen.Height()/2 -150), 80};
-    std::cout << "Shapes created...\n";
 
     // Render
     theScreen.Draw (triangle, Lilac(), true, Lilac());
@@ -30,7 +30,8 @@ void ArcadeScene::Draw(Screen& theScreen){
 
 const std::string& ArcadeScene::GetSceneName() const{
 
-    return "Arcade Scene";
+    static std::string sceneName = "Arcade Scene";
+    return sceneName;
 }
 
 std::unique_ptr<Scene> ArcadeScene::GetScene(eGame game){
