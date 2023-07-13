@@ -225,6 +225,30 @@ src/graphics/screenbuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s
 .PHONY : src/graphics/screenbuffer.cpp.s
 
+src/input/gamecontroller.o: src/input/gamecontroller.cpp.o
+.PHONY : src/input/gamecontroller.o
+
+# target to build an object file
+src/input/gamecontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o
+.PHONY : src/input/gamecontroller.cpp.o
+
+src/input/gamecontroller.i: src/input/gamecontroller.cpp.i
+.PHONY : src/input/gamecontroller.i
+
+# target to preprocess a source file
+src/input/gamecontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.i
+.PHONY : src/input/gamecontroller.cpp.i
+
+src/input/gamecontroller.s: src/input/gamecontroller.cpp.s
+.PHONY : src/input/gamecontroller.s
+
+# target to generate assembly for a file
+src/input/gamecontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s
+.PHONY : src/input/gamecontroller.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -462,6 +486,9 @@ help:
 	@echo "... src/graphics/screenbuffer.o"
 	@echo "... src/graphics/screenbuffer.i"
 	@echo "... src/graphics/screenbuffer.s"
+	@echo "... src/input/gamecontroller.o"
+	@echo "... src/input/gamecontroller.i"
+	@echo "... src/input/gamecontroller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

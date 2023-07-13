@@ -44,7 +44,7 @@ target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES})
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
-        ${CMAKE_SOURCE_DIR}/src/Assets
-        ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}/Assets
+        ${CMAKE_SOURCE_DIR}/src/assets
+        ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}/assets
     COMMENT "Copying Assets folder to build directory"
 )
