@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <vector>
 
+#include <SDL2/SDL.h>
+
 using InputKey = uint8_t;
 using InputState = uint8_t;
 

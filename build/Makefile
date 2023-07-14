@@ -249,6 +249,30 @@ src/input/gamecontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s
 .PHONY : src/input/gamecontroller.cpp.s
 
+src/input/inputcontroller.o: src/input/inputcontroller.cpp.o
+.PHONY : src/input/inputcontroller.o
+
+# target to build an object file
+src/input/inputcontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o
+.PHONY : src/input/inputcontroller.cpp.o
+
+src/input/inputcontroller.i: src/input/inputcontroller.cpp.i
+.PHONY : src/input/inputcontroller.i
+
+# target to preprocess a source file
+src/input/inputcontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.i
+.PHONY : src/input/inputcontroller.cpp.i
+
+src/input/inputcontroller.s: src/input/inputcontroller.cpp.s
+.PHONY : src/input/inputcontroller.s
+
+# target to generate assembly for a file
+src/input/inputcontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.s
+.PHONY : src/input/inputcontroller.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -489,6 +513,9 @@ help:
 	@echo "... src/input/gamecontroller.o"
 	@echo "... src/input/gamecontroller.i"
 	@echo "... src/input/gamecontroller.s"
+	@echo "... src/input/inputcontroller.o"
+	@echo "... src/input/inputcontroller.i"
+	@echo "... src/input/inputcontroller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

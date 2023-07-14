@@ -7,6 +7,7 @@
 
 #include "screen.h"
 #include "scene.h"
+#include "inputcontroller.h"
 
 struct SDL_Window;
 
@@ -31,6 +32,7 @@ private:
     SDL_Window* anoptrWindow;
 
     std::vector<std::unique_ptr<Scene>> aSceneStack;
+    InputController aInputController;
 };
 
 #endif

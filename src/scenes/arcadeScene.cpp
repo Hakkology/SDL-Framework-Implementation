@@ -7,7 +7,17 @@ ArcadeScene::ArcadeScene(){
 
 void ArcadeScene::Init (){
 
+    ButtonAction action;
+    action.key = GameController::ActionKey();
+    action.action = [](uint32_t dt, InputState state){
 
+        if (GameController::IsPressed(state))
+        {
+            std::cout << "Action button is pressed" << std::endl;
+        }
+    };
+
+    sGameController.AddInputActionForKey(action);
 }
 
 void ArcadeScene::Update(uint32_t dt){

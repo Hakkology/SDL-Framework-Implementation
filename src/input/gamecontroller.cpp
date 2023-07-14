@@ -32,42 +32,42 @@ void GameController::ClearAll(){
     gButtonActions.clear();
 }
 
-bool IsPressed(InputState state){
+bool GameController::IsPressed(InputState state){
 
     return state == SDL_PRESSED;
 }
 
-bool IsReleased(InputState state){
+bool GameController::IsReleased(InputState state){
 
     return state == SDL_RELEASED;
 }
 
-InputKey ActionKey(){
+InputKey GameController::ActionKey(){
 
     return static_cast<InputKey>(SDLK_e);
 }
 
-static InputKey CancelKey(){
+InputKey GameController::CancelKey(){
 
     return static_cast<InputKey>(SDLK_q);
 }
 
-static InputKey LeftKey(){
+InputKey GameController::LeftKey(){
 
     return static_cast<InputKey>(SDLK_a);
 }
 
-static InputKey RightKey(){
+InputKey GameController::RightKey(){
 
     return static_cast<InputKey>(SDLK_r);
 }
 
-static InputKey UpKey(){
+InputKey GameController::UpKey(){
 
     return static_cast<InputKey>(SDLK_w);
 }
 
-static InputKey DownKey(){
+InputKey GameController::DownKey(){
 
     return static_cast<InputKey>(SDLK_s);
 }

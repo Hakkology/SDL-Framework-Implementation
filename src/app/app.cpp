@@ -20,13 +20,17 @@ void App::Run(){
 
     if (anoptrWindow)
     {
+        SDL_Event sdlEvent;
+        bool running = true;
 
         uint32_t lastTick = SDL_GetTicks();
         uint32_t currentTick = lastTick;
         uint32_t accumulator = 0;
 
-        SDL_Event sdlEvent;
-        bool running = true;
+        aInputController.init([&running](uint32_t DELTA_TIME, InputState state){
+            running = false;
+        });
+
         while (running){
 
             currentTick = SDL_GetTicks();
@@ -41,13 +45,7 @@ void App::Run(){
             accumulator += frameTime;
             
             //Input
-            while(SDL_PollEvent(&sdlEvent)){
-                switch (sdlEvent.type){
-                    case SDL_QUIT:
-                        running = false;
-                        break;
-                }
-            }
+            aInputController.Update(DELTA_TIME);
 
             Scene* topScene = App::TopScene();
             assert(topScene && "What is a scene?");
@@ -59,7 +57,6 @@ void App::Run(){
                 {
                     //update current scene by dt
                     topScene->Update(DELTA_TIME);
-                    std::cout << "Delta time step: " << DELTA_TIME << std::endl;
                     accumulator -= DELTA_TIME;
                 }
 
@@ -78,6 +75,7 @@ void App::PushScene(std::unique_ptr<Scene> scene){
     if (scene)
     {
         scene->Init();
+        aInputController.SetGameController(scene->GetGameController());
         aSceneStack.emplace_back(std::move(scene));
         SDL_SetWindowTitle(anoptrWindow, TopScene() -> GetSceneName().c_str());
     }
@@ -93,6 +91,7 @@ void App::PopScene(){
 
     if (TopScene())
     {
+        aInputController.SetGameController(TopScene()->GetGameController());
         SDL_SetWindowTitle(anoptrWindow, TopScene() -> GetSceneName().c_str());
     }
 }

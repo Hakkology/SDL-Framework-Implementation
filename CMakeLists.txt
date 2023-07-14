@@ -12,7 +12,7 @@ set(SOURCES
     src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp src/shapes/circle.cpp
     src/app/app.cpp
     src/scenes/arcadeScene.cpp
-    src/input/gamecontroller.cpp
+    src/input/gamecontroller.cpp src/input/inputcontroller.cpp
 )
 
 # Add header files
@@ -22,7 +22,7 @@ set(HEADERS
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
     header/app/app.h
     header/scenes/scene.h header/scenes/arcadeScene.h
-    header/input/inputaction.h header/input/gamecontroller.h
+    header/input/inputaction.h header/input/gamecontroller.h header/input/inputcontroller.h
 )
 
 # Include directories

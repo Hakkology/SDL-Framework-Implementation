@@ -2,10 +2,12 @@
 #define SCENES_ARCADESCENE_H
 
 #include <memory>
+#include <iostream>
 
 #include "scene.h"
 #include "screen.h"
 #include "color.h"
+#include "gamecontroller.h"
 
 enum eGame{
     TETRIS = 0,
