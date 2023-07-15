@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o.d"
   "SDL_Framework"

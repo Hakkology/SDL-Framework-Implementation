@@ -489,6 +489,30 @@ src/shapes/vector2D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s
 .PHONY : src/shapes/vector2D.cpp.s
 
+src/utils/filecommandloader.o: src/utils/filecommandloader.cpp.o
+.PHONY : src/utils/filecommandloader.o
+
+# target to build an object file
+src/utils/filecommandloader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o
+.PHONY : src/utils/filecommandloader.cpp.o
+
+src/utils/filecommandloader.i: src/utils/filecommandloader.cpp.i
+.PHONY : src/utils/filecommandloader.i
+
+# target to preprocess a source file
+src/utils/filecommandloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.i
+.PHONY : src/utils/filecommandloader.cpp.i
+
+src/utils/filecommandloader.s: src/utils/filecommandloader.cpp.s
+.PHONY : src/utils/filecommandloader.s
+
+# target to generate assembly for a file
+src/utils/filecommandloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.s
+.PHONY : src/utils/filecommandloader.cpp.s
+
 src/utils/utilities.o: src/utils/utilities.cpp.o
 .PHONY : src/utils/utilities.o
 
@@ -567,6 +591,9 @@ help:
 	@echo "... src/shapes/vector2D.o"
 	@echo "... src/shapes/vector2D.i"
 	@echo "... src/shapes/vector2D.s"
+	@echo "... src/utils/filecommandloader.o"
+	@echo "... src/utils/filecommandloader.i"
+	@echo "... src/utils/filecommandloader.s"
 	@echo "... src/utils/utilities.o"
 	@echo "... src/utils/utilities.i"
 	@echo "... src/utils/utilities.s"
