@@ -4,7 +4,7 @@
 #include "inputaction.h"
 #include "gamecontroller.h"
 
-struct GameController;
+class GameController;
 
 class InputController{
 

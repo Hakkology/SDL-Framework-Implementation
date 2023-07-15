@@ -20,7 +20,6 @@ void App::Run(){
 
     if (anoptrWindow)
     {
-        SDL_Event sdlEvent;
         bool running = true;
 
         uint32_t lastTick = SDL_GetTicks();

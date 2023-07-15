@@ -28,6 +28,7 @@ set(HEADERS
 # Include directories
 include_directories(header)
 include_directories(header/utils)
+include_directories(header/games)
 include_directories(header/graphics)
 include_directories(header/shapes)
 include_directories(header/scenes)
