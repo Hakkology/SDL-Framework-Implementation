@@ -47,5 +47,6 @@
         "typeinfo": "cpp",
         "cstring": "cpp",
         "map": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

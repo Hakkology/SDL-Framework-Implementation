@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"

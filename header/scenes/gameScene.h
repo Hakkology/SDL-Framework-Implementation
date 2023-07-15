@@ -6,22 +6,22 @@
 
 #include <memory>
 
-class Screen;
-
-class Scene{
+class GameScene : public Scene{
 
 public:
 
-    virtual ~Scene() {}
-    virtual void Init () = 0;
-    virtual void Update(uint32_t dt) = 0;
-    virtual void Draw(Screen& theScreen) =0;
-    virtual const std::string& GetSceneName() const = 0;
+    GameScene(std::unique_ptr<Game> optrGame);
+
+    virtual ~GameScene() {};
+    virtual void Init() override;
+    virtual void Update (uint32_t dt) override;
+    virtual void Draw (Screen& screen) override;
+
+    virtual const std::string& GetSceneName() const override;
 
 
-
-protected:
-
+private:
+    std::unique_ptr<Game> sGame;
 
 };
 
