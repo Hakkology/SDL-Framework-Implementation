@@ -337,4 +337,9 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h

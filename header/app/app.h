@@ -8,6 +8,8 @@
 #include "screen.h"
 #include "scene.h"
 #include "inputcontroller.h"
+#include "gameScene.h"
+#include "breakout.h"
 
 struct SDL_Window;
 

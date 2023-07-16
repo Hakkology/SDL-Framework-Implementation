@@ -412,8 +412,12 @@ CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: ../src/app/app.cpp \
   ../header/input/inputaction.h \
   ../header/input/inputcontroller.h \
   ../header/input/gamecontroller.h \
-  ../header/scenes/arcadeScene.h \
-  ../header/scenes/scene.h
+  ../header/scenes/gameScene.h \
+  ../header/scenes/scene.h \
+  ../header/games/game.h \
+  ../header/games/breakout.h \
+  ../header/games/game.h \
+  ../header/scenes/arcadeScene.h
 
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: ../src/graphics/color.cpp \
   /usr/include/stdc-predef.h \
@@ -2335,7 +2339,12 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: ../src/main.cpp \
   ../header/input/gamecontroller.h \
   ../header/input/inputaction.h \
   ../header/input/inputcontroller.h \
-  ../header/input/gamecontroller.h
+  ../header/input/gamecontroller.h \
+  ../header/scenes/gameScene.h \
+  ../header/scenes/scene.h \
+  ../header/games/game.h \
+  ../header/games/breakout.h \
+  ../header/games/game.h
 
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: ../src/scenes/arcadeScene.cpp \
   /usr/include/stdc-predef.h \
@@ -5046,8 +5055,6 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 ../src/shapes/circle.cpp:
 
-../header/scenes/gameScene.h:
-
 ../src/scenes/gameScene.cpp:
 
 ../src/main.cpp:
@@ -5057,6 +5064,10 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 ../src/input/gamecontroller.cpp:
 
 ../src/graphics/color.cpp:
+
+../header/games/breakout.h:
+
+../header/scenes/gameScene.h:
 
 ../header/scenes/scene.h:
 

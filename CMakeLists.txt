@@ -13,6 +13,7 @@ set(SOURCES
     src/app/app.cpp
     src/scenes/arcadeScene.cpp src/scenes/gameScene.cpp
     src/input/gamecontroller.cpp src/input/inputcontroller.cpp
+    src/games/breakout.cpp
 )
 
 # Add header files
@@ -23,6 +24,7 @@ set(HEADERS
     header/app/app.h
     header/scenes/scene.h header/scenes/arcadeScene.h header/games/game.h header/scenes/gameScene.h 
     header/input/inputaction.h header/input/gamecontroller.h header/input/inputcontroller.h
+    header/games/breakout.h
 )
 
 # Include directories

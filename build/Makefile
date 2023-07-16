@@ -153,6 +153,30 @@ src/app/app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
 .PHONY : src/app/app.cpp.s
 
+src/games/breakout.o: src/games/breakout.cpp.o
+.PHONY : src/games/breakout.o
+
+# target to build an object file
+src/games/breakout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout.cpp.o
+.PHONY : src/games/breakout.cpp.o
+
+src/games/breakout.i: src/games/breakout.cpp.i
+.PHONY : src/games/breakout.i
+
+# target to preprocess a source file
+src/games/breakout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout.cpp.i
+.PHONY : src/games/breakout.cpp.i
+
+src/games/breakout.s: src/games/breakout.cpp.s
+.PHONY : src/games/breakout.s
+
+# target to generate assembly for a file
+src/games/breakout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout.cpp.s
+.PHONY : src/games/breakout.cpp.s
+
 src/graphics/color.o: src/graphics/color.cpp.o
 .PHONY : src/graphics/color.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... src/app/app.o"
 	@echo "... src/app/app.i"
 	@echo "... src/app/app.s"
+	@echo "... src/games/breakout.o"
+	@echo "... src/games/breakout.i"
+	@echo "... src/games/breakout.s"
 	@echo "... src/graphics/color.o"
 	@echo "... src/graphics/color.i"
 	@echo "... src/graphics/color.s"
