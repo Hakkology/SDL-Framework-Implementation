@@ -13,7 +13,7 @@ set(SOURCES
     src/app/app.cpp
     src/scenes/arcadeScene.cpp src/scenes/gameScene.cpp
     src/input/gamecontroller.cpp src/input/inputcontroller.cpp
-    src/games/breakout.cpp
+    src/games/breakout/breakout.cpp src/games/breakout/excluder.cpp
 )
 
 # Add header files
@@ -21,16 +21,17 @@ set(HEADERS
     header/shapes/vector2D.h header/utils/utilities.h header/utils/constants.h header/utils/filecommandloader.h
     header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
-    header/app/app.h
+    header/app/app.h header/games/game.h
     header/scenes/scene.h header/scenes/arcadeScene.h header/games/game.h header/scenes/gameScene.h 
     header/input/inputaction.h header/input/gamecontroller.h header/input/inputcontroller.h
-    header/games/breakout.h
+    header/games/breakout/breakout.h header/games/breakout/excluder.h header/games/breakout/boundaryedge.h
 )
 
 # Include directories
 include_directories(header)
 include_directories(header/utils)
 include_directories(header/games)
+include_directories(header/games/breakout)
 include_directories(header/graphics)
 include_directories(header/shapes)
 include_directories(header/scenes)

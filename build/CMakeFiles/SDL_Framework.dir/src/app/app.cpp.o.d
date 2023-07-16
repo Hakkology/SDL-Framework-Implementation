@@ -342,6 +342,5 @@ CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h

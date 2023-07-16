@@ -2,6 +2,7 @@
 #define CONSTANTS_H
 
 #include "color.h"
+#include "vector2D.h"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -15,6 +16,11 @@ const float TAU = 2.0f * PI;
 
 const uint32_t DELTA_TIME = 10;
 const uint32_t MAX_FRAME_RATE = 300;
+
+static const Vector2D UP_DIR = {0, -1};
+static const Vector2D DOWN_DIR = {0, 1};
+static const Vector2D LEFT_DIR =  {-1, 0};
+static const Vector2D RIGHT_DIR = {-1, 0};
 
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}

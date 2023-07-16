@@ -39,7 +39,7 @@ Vector2D Rectangle::GetCenterPoint() const{
     return Vector2D((GetTopLeftPoint().GetX() + GetBottomRightPoint().GetX()) / 2.0f, (GetTopLeftPoint().GetY() + GetBottomRightPoint().GetY()) / 2.0f);
 }
 
-bool Rectangle::Intersects(const Rectangle& otherRectangle){
+bool Rectangle::Intersects(const Rectangle& otherRectangle) const{
 
     return !(otherRectangle.GetBottomRightPoint().GetX() < GetTopLeftPoint().GetX() ||
             otherRectangle.GetTopLeftPoint().GetX() > GetBottomRightPoint().GetX() ||

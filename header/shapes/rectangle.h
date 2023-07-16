@@ -28,7 +28,7 @@ public:
 
     virtual Vector2D GetCenterPoint() const override;
 
-    bool Intersects(const Rectangle& otherRectangle);
+    bool Intersects(const Rectangle& otherRectangle) const;
     bool ContainsPoint(const Vector2D& point) const;
 
     static Rectangle Inset (const Rectangle& rect, Vector2D insets);
