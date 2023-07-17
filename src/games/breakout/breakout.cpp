@@ -39,6 +39,7 @@
 void BreakOut::Init(GameController &controller){
 
     controller.ClearAll();
+    ResetGame();
 
     ButtonAction leftKeyAction;
     ButtonAction rightKeyAction;
@@ -92,7 +93,7 @@ std::string BreakOut::GetName() const{
 
 void BreakOut::ResetGame(){
 
-    Rectangle paddleRect = {App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight, paddleWidth, paddleHeight}
+    Rectangle paddleRect = {Vector2D(App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight), paddleWidth, paddleHeight};
 
     bPaddle.Init(paddleRect);
 }

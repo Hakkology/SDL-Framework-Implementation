@@ -93,5 +93,10 @@
   "directory": "/home/hakan/Desktop/Hakan/Programming/C++/SDL/build",
   "command": "/usr/bin/c++  -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app -g -o CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/excluder.cpp",
   "file": "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/excluder.cpp"
+},
+{
+  "directory": "/home/hakan/Desktop/Hakan/Programming/C++/SDL/build",
+  "command": "/usr/bin/c++  -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input -I/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app -g -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp",
+  "file": "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp"
 }
 ]

@@ -335,6 +335,20 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/excluder.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s
 
+CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: ../src/games/breakout/paddle.cpp
+CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp
+
+CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
+
 # Object files for target SDL_Framework
 SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" \
@@ -355,7 +369,8 @@ SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o" \
-"CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o"
+"CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o"
 
 # External object files for target SDL_Framework
 SDL_Framework_EXTERNAL_OBJECTS =
@@ -379,9 +394,10 @@ SDL_Framework: CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
 	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build/Debug/assets

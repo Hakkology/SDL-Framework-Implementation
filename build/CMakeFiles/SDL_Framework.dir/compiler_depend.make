@@ -416,6 +416,9 @@ CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: ../src/app/app.cpp \
   ../header/scenes/scene.h \
   ../header/games/game.h \
   ../header/games/breakout/breakout.h \
+  ../header/games/breakout/paddle.h \
+  ../header/games/breakout/excluder.h \
+  ../header/games/breakout/boundaryedge.h \
   ../header/scenes/arcadeScene.h
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/breakout/breakout.cpp \
@@ -599,7 +602,243 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/bre
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../header/games/game.h
+  ../header/games/game.h \
+  ../header/app/app.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  ../header/graphics/screen.h \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/SDL2/SDL.h \
+  /usr/include/SDL2/SDL_main.h \
+  /usr/include/SDL2/SDL_stdinc.h \
+  /usr/include/SDL2/SDL_config.h \
+  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
+  /usr/include/SDL2/SDL_platform.h \
+  /usr/include/SDL2/begin_code.h \
+  /usr/include/SDL2/close_code.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/inttypes.h \
+  /usr/include/c++/11/math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/include/SDL2/SDL_assert.h \
+  /usr/include/SDL2/SDL_atomic.h \
+  /usr/include/SDL2/SDL_platform.h \
+  /usr/include/SDL2/SDL_audio.h \
+  /usr/include/SDL2/SDL_error.h \
+  /usr/include/SDL2/SDL_endian.h \
+  /usr/include/SDL2/SDL_mutex.h \
+  /usr/include/SDL2/SDL_thread.h \
+  /usr/include/SDL2/SDL_rwops.h \
+  /usr/include/SDL2/SDL_clipboard.h \
+  /usr/include/SDL2/SDL_cpuinfo.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
+  /usr/include/SDL2/SDL_events.h \
+  /usr/include/SDL2/SDL_video.h \
+  /usr/include/SDL2/SDL_pixels.h \
+  /usr/include/SDL2/SDL_rect.h \
+  /usr/include/SDL2/SDL_surface.h \
+  /usr/include/SDL2/SDL_blendmode.h \
+  /usr/include/SDL2/SDL_keyboard.h \
+  /usr/include/SDL2/SDL_keycode.h \
+  /usr/include/SDL2/SDL_scancode.h \
+  /usr/include/SDL2/SDL_mouse.h \
+  /usr/include/SDL2/SDL_joystick.h \
+  /usr/include/SDL2/SDL_gamecontroller.h \
+  /usr/include/SDL2/SDL_sensor.h \
+  /usr/include/SDL2/SDL_quit.h \
+  /usr/include/SDL2/SDL_gesture.h \
+  /usr/include/SDL2/SDL_touch.h \
+  /usr/include/SDL2/SDL_filesystem.h \
+  /usr/include/SDL2/SDL_haptic.h \
+  /usr/include/SDL2/SDL_hidapi.h \
+  /usr/include/SDL2/SDL_hints.h \
+  /usr/include/SDL2/SDL_loadso.h \
+  /usr/include/SDL2/SDL_log.h \
+  /usr/include/SDL2/SDL_messagebox.h \
+  /usr/include/SDL2/SDL_metal.h \
+  /usr/include/SDL2/SDL_power.h \
+  /usr/include/SDL2/SDL_render.h \
+  /usr/include/SDL2/SDL_shape.h \
+  /usr/include/SDL2/SDL_system.h \
+  /usr/include/SDL2/SDL_timer.h \
+  /usr/include/SDL2/SDL_version.h \
+  /usr/include/SDL2/SDL_locale.h \
+  /usr/include/SDL2/SDL_misc.h \
+  ../header/graphics/screenbuffer.h \
+  ../header/graphics/color.h \
+  ../header/utils/constants.h \
+  ../header/graphics/color.h \
+  ../header/shapes/vector2D.h \
+  ../header/shapes/line2D.h \
+  ../header/shapes/vector2D.h \
+  ../header/utils/utilities.h \
+  ../header/shapes/triangle.h \
+  ../header/shapes/shape.h \
+  ../header/shapes/rectangle.h \
+  ../header/shapes/circle.h \
+  ../header/scenes/scene.h \
+  ../header/input/gamecontroller.h \
+  ../header/input/inputaction.h \
+  ../header/input/inputcontroller.h \
+  ../header/input/gamecontroller.h \
+  ../header/scenes/gameScene.h \
+  ../header/scenes/scene.h \
+  ../header/games/breakout/paddle.h \
+  ../header/games/breakout/excluder.h \
+  ../header/games/breakout/boundaryedge.h
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o: ../src/games/breakout/excluder.cpp \
   /usr/include/stdc-predef.h \
@@ -2982,7 +3221,10 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: ../src/main.cpp \
   ../header/scenes/gameScene.h \
   ../header/scenes/scene.h \
   ../header/games/game.h \
-  ../header/games/breakout/breakout.h
+  ../header/games/breakout/breakout.h \
+  ../header/games/breakout/paddle.h \
+  ../header/games/breakout/excluder.h \
+  ../header/games/breakout/boundaryedge.h
 
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: ../src/scenes/arcadeScene.cpp \
   /usr/include/stdc-predef.h \
@@ -6034,6 +6276,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/c++/11/bit:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+../header/games/breakout/paddle.h:
 
 /usr/include/SDL2/SDL_joystick.h:
 

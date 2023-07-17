@@ -201,6 +201,30 @@ src/games/breakout/excluder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s
 .PHONY : src/games/breakout/excluder.cpp.s
 
+src/games/breakout/paddle.o: src/games/breakout/paddle.cpp.o
+.PHONY : src/games/breakout/paddle.o
+
+# target to build an object file
+src/games/breakout/paddle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o
+.PHONY : src/games/breakout/paddle.cpp.o
+
+src/games/breakout/paddle.i: src/games/breakout/paddle.cpp.i
+.PHONY : src/games/breakout/paddle.i
+
+# target to preprocess a source file
+src/games/breakout/paddle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i
+.PHONY : src/games/breakout/paddle.cpp.i
+
+src/games/breakout/paddle.s: src/games/breakout/paddle.cpp.s
+.PHONY : src/games/breakout/paddle.s
+
+# target to generate assembly for a file
+src/games/breakout/paddle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
+.PHONY : src/games/breakout/paddle.cpp.s
+
 src/graphics/color.o: src/graphics/color.cpp.o
 .PHONY : src/graphics/color.o
 
@@ -603,6 +627,9 @@ help:
 	@echo "... src/games/breakout/excluder.o"
 	@echo "... src/games/breakout/excluder.i"
 	@echo "... src/games/breakout/excluder.s"
+	@echo "... src/games/breakout/paddle.o"
+	@echo "... src/games/breakout/paddle.i"
+	@echo "... src/games/breakout/paddle.s"
 	@echo "... src/graphics/color.o"
 	@echo "... src/graphics/color.i"
 	@echo "... src/graphics/color.s"

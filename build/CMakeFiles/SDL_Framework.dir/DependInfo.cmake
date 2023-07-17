@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/breakout.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/excluder.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d"
