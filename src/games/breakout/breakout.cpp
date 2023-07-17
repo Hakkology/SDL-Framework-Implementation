@@ -1,5 +1,6 @@
  #include "breakout.h"
 
+
  /*
  
     Paddle
@@ -37,20 +38,61 @@
 
 void BreakOut::Init(GameController &controller){
 
-    std::cout << "Break Out Game Init()" << std::endl;
+    controller.ClearAll();
+
+    ButtonAction leftKeyAction;
+    ButtonAction rightKeyAction;
+
+    leftKeyAction.key = GameController::LeftKey();
+    rightKeyAction.key = GameController::RightKey();
+
+    leftKeyAction.action = [this](uint32_t dt, InputState state){
+
+        if (GameController::IsPressed(state))
+        {
+            bPaddle.SetMovementDirection(PaddleDirection::LEFT);
+        }
+        else
+        {
+            bPaddle.SetMovementDirection(PaddleDirection::NONE);
+        }
+    };
+    
+    rightKeyAction.action = [this] (uint32_t dt, InputState state){
+
+        if (GameController::IsPressed(state))
+        {
+            bPaddle.SetMovementDirection(PaddleDirection::RIGHT);
+        }
+        else
+        {
+            bPaddle.SetMovementDirection(PaddleDirection::NONE);
+        }
+    };
+
+    controller.AddInputActionForKey(leftKeyAction);
+    controller.AddInputActionForKey(rightKeyAction);
+
 }
 
 void BreakOut::Update(uint32_t dt){
 
-    std::cout << "Break Out Game Update()" << std::endl;
+    bPaddle.Update(dt);
 }
 
 void BreakOut::Draw(Screen &screen){
 
-    std::cout << "Break Out Game Draw()" << std::endl;
+    bPaddle.Draw(screen);
 }
 
 std::string BreakOut::GetName() const{
 
     return "Break Out!";
+}
+
+void BreakOut::ResetGame(){
+
+    Rectangle paddleRect = {App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight, paddleWidth, paddleHeight}
+
+    bPaddle.Init(paddleRect);
 }

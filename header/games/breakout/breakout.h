@@ -6,6 +6,9 @@
 #include <iostream>
 
 #include "game.h"
+#include "app.h"
+#include "gamecontroller.h"
+#include "paddle.h"
 
 class GameController;
 class Screen;
@@ -14,11 +17,17 @@ class BreakOut : public Game{
 
 public:
 
-    virtual ~BreakOut() {};
+    //virtual ~BreakOut() {};
     virtual void Init(GameController& controller) override;
     virtual void Update(uint32_t dt) override;
     virtual void Draw (Screen& screen) override;
     virtual std::string GetName() const override;
+
+private:
+
+    void ResetGame();
+
+    Paddle bPaddle;
 
 };
 

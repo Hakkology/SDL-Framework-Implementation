@@ -31,6 +31,11 @@ Vector2D Vector2D::operator*(float scalar) const{
     return Vector2D (vx * scalar, vy * scalar);
 }
 
+// Vector2D operator*(float scalar, const Vector2D& vec2D) {
+    
+//     return vec2D * scalar; 
+// }
+
 Vector2D operator*=(float scalar, const Vector2D& vec2D){
 
     return vec2D * scalar;

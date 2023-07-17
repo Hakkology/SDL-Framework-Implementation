@@ -11,6 +11,7 @@
 
 class Excluder {
 
+public:
     virtual ~Excluder() {}
 
     void Init(const Rectangle& rect, bool reverseNormals = false);
@@ -21,9 +22,6 @@ class Excluder {
     void MoveBy(const Vector2D& delta);
     void MoveTo(const Vector2D& point);
     const BoundaryEdge& GetEdge(EdgeType edge) const;
-
-public:
-
 
 private:
 

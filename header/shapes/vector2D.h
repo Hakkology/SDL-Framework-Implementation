@@ -57,8 +57,6 @@ public:
 
     void Rotate(float angle, const Vector2D& aroundPoint);
 
-
-
 private:
 
     float vx, vy;
