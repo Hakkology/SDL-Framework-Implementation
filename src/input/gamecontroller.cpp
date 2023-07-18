@@ -59,7 +59,7 @@ InputKey GameController::LeftKey(){
 
 InputKey GameController::RightKey(){
 
-    return static_cast<InputKey>(SDLK_r);
+    return static_cast<InputKey>(SDLK_d);
 }
 
 InputKey GameController::UpKey(){
@@ -76,7 +76,7 @@ MouseInputAction GameController::GetMouseButtonActionForMouseButton(MouseButton 
 
     for (const auto& ButtonAction: gMouseButtonActions)
     {
-        if (button = ButtonAction.mouseButton)
+        if (button == ButtonAction.mouseButton)
         {
             return ButtonAction.mouseInputAction;
         }

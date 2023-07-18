@@ -109,9 +109,9 @@ void Excluder::SetupEdges(){
                             bRectangle.GetBottomRightPoint().GetX(), bRectangle.GetBottomRightPoint().GetY()};
     bEdges[BOTTOM_EDGE].normal = DOWN_DIR;
 
-    bEdges[BOTTOM_EDGE].edge = {bRectangle.GetBottomRightPoint().GetX(), bRectangle.GetBottomRightPoint().GetY(), 
-                            bRectangle.GetBottomRightPoint().GetX(), bRectangle.GetTopLeftPoint().GetY()};
-    bEdges[BOTTOM_EDGE].normal = RIGHT_DIR;
+    bEdges[RIGHT_EDGE].edge = {bRectangle.GetBottomRightPoint().GetX(), bRectangle.GetTopLeftPoint().GetY(), 
+                            bRectangle.GetBottomRightPoint().GetX(), bRectangle.GetBottomRightPoint().GetY()};
+    bEdges[RIGHT_EDGE].normal = RIGHT_DIR;
 
     if (bReverseNormals)
     {

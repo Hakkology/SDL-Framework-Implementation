@@ -42,11 +42,8 @@ void BreakOut::Init(GameController &controller){
     ResetGame();
 
     ButtonAction leftKeyAction;
-    ButtonAction rightKeyAction;
 
     leftKeyAction.key = GameController::LeftKey();
-    rightKeyAction.key = GameController::RightKey();
-
     leftKeyAction.action = [this](uint32_t dt, InputState state){
 
         if (GameController::IsPressed(state))
@@ -58,7 +55,11 @@ void BreakOut::Init(GameController &controller){
             bPaddle.SetMovementDirection(PaddleDirection::NONE);
         }
     };
+    controller.AddInputActionForKey(leftKeyAction);
+
+    ButtonAction rightKeyAction;
     
+    rightKeyAction.key = GameController::RightKey();
     rightKeyAction.action = [this] (uint32_t dt, InputState state){
 
         if (GameController::IsPressed(state))
@@ -70,8 +71,6 @@ void BreakOut::Init(GameController &controller){
             bPaddle.SetMovementDirection(PaddleDirection::NONE);
         }
     };
-
-    controller.AddInputActionForKey(leftKeyAction);
     controller.AddInputActionForKey(rightKeyAction);
 
 }

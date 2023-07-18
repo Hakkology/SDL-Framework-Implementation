@@ -58,9 +58,6 @@ void InputController::Update(uint32_t dt){
             break;
         }
     }
-    
-
-
 }
 
 void InputController::SetGameController(GameController* controller){

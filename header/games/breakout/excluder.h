@@ -12,6 +12,7 @@
 class Excluder {
 
 public:
+
     virtual ~Excluder() {}
 
     void Init(const Rectangle& rect, bool reverseNormals = false);

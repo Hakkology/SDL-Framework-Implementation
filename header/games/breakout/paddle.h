@@ -28,7 +28,7 @@ public:
     inline bool IsMovingLeft() const {return bPaddleDirection == PaddleDirection::LEFT;}
     inline bool IsMovingRight() const {return bPaddleDirection == PaddleDirection::RIGHT;}
     inline void StopMovement() {bPaddleDirection = PaddleDirection::NONE;}
-    inline void SetMovementDirection (PaddleDirection dir) {bPaddleDirection == dir;}
+    inline void SetMovementDirection (PaddleDirection dir) {bPaddleDirection = dir;}
 
 
 private:

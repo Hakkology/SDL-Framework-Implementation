@@ -17,10 +17,10 @@ const float TAU = 2.0f * PI;
 const uint32_t DELTA_TIME = 10;
 const uint32_t MAX_FRAME_RATE = 300;
 
-static const Vector2D UP_DIR = {0, -1};
-static const Vector2D DOWN_DIR = {0, 1};
+static const Vector2D UP_DIR = {0, 1};
+static const Vector2D DOWN_DIR = {0, -1};
 static const Vector2D LEFT_DIR =  {-1, 0};
-static const Vector2D RIGHT_DIR = {-1, 0};
+static const Vector2D RIGHT_DIR = {1, 0};
 
 static Color Black() {return Color (0, 0, 0, 255);}
 static Color White() {return Color (255, 255, 255, 255);}
@@ -37,7 +37,7 @@ static Color Lilac() {return Color (160, 100, 160, 255);}
 // Breakout constants
 
 // Paddle
-static const float paddleVelocity = 50.0f;
+const float paddleVelocity = 50.0f;
 static const uint32_t paddleWidth = 100;
 static const uint32_t paddleHeight = 10;
 

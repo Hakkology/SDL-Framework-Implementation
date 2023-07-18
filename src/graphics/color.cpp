@@ -85,7 +85,7 @@ uint8_t Color::GetRed() const {
     uint8_t a;
 
     SDL_GetRGBA(gColor, gFormat, &r, &g, &b, &a);
-    return a;
+    return r;
 }
 
 uint8_t Color::GetGreen() const{
