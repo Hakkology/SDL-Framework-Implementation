@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o"

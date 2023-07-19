@@ -77,17 +77,20 @@ void BreakOut::Init(GameController &controller){
 
 void BreakOut::Update(uint32_t dt){
 
+    bBall.Update(dt);
     bPaddle.Update(dt);
 }
 
 void BreakOut::Draw(Screen &screen){
 
+    bBall.Draw(screen);
     bPaddle.Draw(screen);
 }
 
-std::string BreakOut::GetName() const{
+const std::string& BreakOut::GetName() const{
 
-    return "Break Out!";
+    static std::string name = "Break Out";
+    return name;
 }
 
 void BreakOut::ResetGame(){
@@ -96,4 +99,5 @@ void BreakOut::ResetGame(){
     Rectangle levelBoundary = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
 
     bPaddle.Init(paddleRect, levelBoundary);
+    bBall.MoveTo(Vector2D(App::Singleton().Width()/2, App::Singleton().Height()/2));
 }

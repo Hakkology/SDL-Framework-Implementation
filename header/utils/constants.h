@@ -41,4 +41,7 @@ const float paddleVelocity = 250.0f;
 static const uint32_t paddleWidth = 100;
 static const uint32_t paddleHeight = 10;
 
+// Ball
+static const float ballRadius = 5.0f;
+
 #endif

@@ -344,4 +344,5 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h
