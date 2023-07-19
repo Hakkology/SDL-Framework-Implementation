@@ -1,17 +1,23 @@
 #include "paddle.h"
 
-void Paddle::Init(const Rectangle &rect){
+void Paddle::Init(const Rectangle &rect, const Rectangle& boundary){
 
     Excluder::Init(rect);
-    bPaddleDirection = PaddleDirection::NONE;
+    bBoundary = boundary;
+    bPaddleDirection = 0;
 }
 
 void Paddle::Update(uint32_t dt){
      
-     if (bPaddleDirection != PaddleDirection::NONE)
+     if (bPaddleDirection != 0)
      {
         Vector2D direction;
-        if (bPaddleDirection == PaddleDirection::LEFT){
+
+        if ((bPaddleDirection & PaddleDirection::LEFT) == PaddleDirection::LEFT && (bPaddleDirection & PaddleDirection::RIGHT) == PaddleDirection::RIGHT)
+        {
+            direction = Vector2D::Zero;
+        }
+        else if (bPaddleDirection == PaddleDirection::LEFT){
             direction = LEFT_DIR;
         }
         else{
@@ -21,6 +27,19 @@ void Paddle::Update(uint32_t dt){
         Vector2D dx = direction * paddleVelocity * MillisecondstoSeconds(dt);
 
         MoveBy(dx);
+
+        const Rectangle& bRect = GetRectangle();
+
+        if (IsGreaterThanOrEqual(bBoundary.GetTopLeftPoint().GetX(), bRect.GetTopLeftPoint().GetX()))
+        {
+            MoveTo(Vector2D(bBoundary.GetTopLeftPoint().GetX(), bRect.GetTopLeftPoint().GetY()));
+        }
+        else if (IsGreaterThanOrEqual(bRect.GetBottomRightPoint().GetX(), bBoundary.GetBottomRightPoint().GetX()))
+        {
+            MoveTo(Vector2D(bBoundary.GetBottomRightPoint().GetX() - bRect.GetWidth(), bRect.GetTopLeftPoint().GetY()));
+        }
+        
+        
      } 
 }
 

@@ -37,7 +37,7 @@ static Color Lilac() {return Color (160, 100, 160, 255);}
 // Breakout constants
 
 // Paddle
-const float paddleVelocity = 50.0f;
+const float paddleVelocity = 250.0f;
 static const uint32_t paddleWidth = 100;
 static const uint32_t paddleHeight = 10;
 

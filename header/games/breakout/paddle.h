@@ -12,28 +12,30 @@
 class Screen;
 
 enum PaddleDirection{
-    NONE = 0,
-    LEFT,
-    RIGHT
+    LEFT = 1 << 0,
+    RIGHT = 1 << 1
 };
 
 class Paddle : public Excluder{
 
 public:
 
-    void Init (const Rectangle& rect);
+    void Init (const Rectangle& rect, const Rectangle& boundary);
     void Update (uint32_t dt);
     void Draw (Screen& screen);
 
     inline bool IsMovingLeft() const {return bPaddleDirection == PaddleDirection::LEFT;}
     inline bool IsMovingRight() const {return bPaddleDirection == PaddleDirection::RIGHT;}
-    inline void StopMovement() {bPaddleDirection = PaddleDirection::NONE;}
-    inline void SetMovementDirection (PaddleDirection dir) {bPaddleDirection = dir;}
+    inline void StopMovement() {bPaddleDirection = 0;}
+
+    inline void SetMovementDirection (PaddleDirection dir) {bPaddleDirection |= dir;}
+    inline void UnsetMovementDirection (PaddleDirection dir) {bPaddleDirection &= ~dir;}
 
 
 private:
 
-    PaddleDirection bPaddleDirection;
+    uint32_t bPaddleDirection;
+    Rectangle bBoundary;
 
 };
 

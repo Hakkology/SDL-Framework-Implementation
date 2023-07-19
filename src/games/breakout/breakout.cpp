@@ -52,7 +52,7 @@ void BreakOut::Init(GameController &controller){
         }
         else
         {
-            bPaddle.SetMovementDirection(PaddleDirection::NONE);
+            bPaddle.UnsetMovementDirection(PaddleDirection::LEFT);
         }
     };
     controller.AddInputActionForKey(leftKeyAction);
@@ -68,7 +68,7 @@ void BreakOut::Init(GameController &controller){
         }
         else
         {
-            bPaddle.SetMovementDirection(PaddleDirection::NONE);
+            bPaddle.UnsetMovementDirection(PaddleDirection::RIGHT);
         }
     };
     controller.AddInputActionForKey(rightKeyAction);
@@ -93,6 +93,7 @@ std::string BreakOut::GetName() const{
 void BreakOut::ResetGame(){
 
     Rectangle paddleRect = {Vector2D(App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight), paddleWidth, paddleHeight};
+    Rectangle levelBoundary = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
 
-    bPaddle.Init(paddleRect);
+    bPaddle.Init(paddleRect, levelBoundary);
 }
