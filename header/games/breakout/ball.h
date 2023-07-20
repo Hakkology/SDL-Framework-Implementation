@@ -22,6 +22,8 @@ public:
     void Update(uint32_t dt);
     void Draw(Screen& screen);
 
+    void Bounce(const BoundaryEdge& edge);
+
     void MakeFlushWithEdge (const BoundaryEdge& edge, Vector2D& pointOnEdge, bool limitToEdge);
     void MoveTo (const Vector2D& point);
 

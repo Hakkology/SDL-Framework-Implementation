@@ -43,5 +43,6 @@ static const uint32_t paddleHeight = 10;
 
 // Ball
 static const float ballRadius = 5.0f;
+const Vector2D initBallVelocity = Vector2D(100, -100);
 
 #endif

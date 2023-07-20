@@ -98,6 +98,9 @@ void BreakOut::ResetGame(){
     Rectangle paddleRect = {Vector2D(App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight), paddleWidth, paddleHeight};
     Rectangle levelBoundary = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
 
+    bLevelBoundary = {levelBoundary};
+
     bPaddle.Init(paddleRect, levelBoundary);
     bBall.MoveTo(Vector2D(App::Singleton().Width()/2, App::Singleton().Height()/2));
+    bBall.SetVelocity(bBallVelocity);
 }

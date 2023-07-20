@@ -19,11 +19,20 @@ void Ball::Draw(Screen &screen){
     screen.Draw(circle, Red(), true, Red());
 }
 
+void Ball::Bounce(const BoundaryEdge &edge){
+
+    Vector2D pointonEdge;
+
+    MakeFlushWithEdge (edge, pointonEdge, false);
+
+    bVelocity = bVelocity.Reflect(edge.normal);
+}
+
 void Ball::MakeFlushWithEdge(const BoundaryEdge &edge, Vector2D &pointOnEdge, bool limitToEdge){
 
     if (edge.normal == DOWN_DIR)
     {
-        bBoundingBox.MoveTo(Vector2D(bBoundingBox.GetTopLeftPoint().GetX(), edge.edge.GetP0().GetY() + bBoundingBox.GetHeight()));
+        bBoundingBox.MoveTo(Vector2D(bBoundingBox.GetTopLeftPoint().GetX(), edge.edge.GetP0().GetY() + edge.normal.GetY()));
     }
     else if (edge.normal == UP_DIR)
     {
