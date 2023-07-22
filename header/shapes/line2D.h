@@ -26,7 +26,7 @@ public:
 
     bool operator == (const Line2D& line) const;
 
-    float MinDistanceFrom (const Vector2D& p, bool limitToSegment = false);
+    float MinDistanceFrom (const Vector2D& p, bool limitToSegment = false) const;
     float Slope () const;
     float Length () const;
 

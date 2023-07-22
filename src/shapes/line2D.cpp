@@ -21,7 +21,7 @@ bool Line2D::operator == (const Line2D& line) const{
     return line.GetP0() ==  vP0 && line.GetP1() == vP1;
 }
 
-float Line2D::MinDistanceFrom (const Vector2D& p, bool limitToSegment){
+float Line2D::MinDistanceFrom (const Vector2D& p, bool limitToSegment) const{
 
     return p.Distance(ClosestPoint(p, limitToSegment));
 }
