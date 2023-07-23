@@ -11,6 +11,7 @@ class LevelBoundary {
 
 public:
 
+    LevelBoundary(){}
     LevelBoundary(const Rectangle& boundary);
     bool HasCollided (const Ball& ball, BoundaryEdge& edge);
     

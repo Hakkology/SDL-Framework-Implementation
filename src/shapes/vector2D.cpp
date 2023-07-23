@@ -157,7 +157,7 @@ Vector2D Vector2D::RotationResult(float angle, const Vector2D& aroundPoint) cons
     float xRot = thisVec2D.vx * cos - thisVec2D.vy * sin;
     float yRot = thisVec2D.vx * sin + thisVec2D.vy * cos;
 
-    Vector2D rotatedVector(xRot, yRot);
+    Vector2D rotatedVector = Vector2D (xRot, yRot);
 
     return rotatedVector + aroundPoint;
 }
@@ -174,7 +174,7 @@ void Vector2D::Rotate(float angle, const Vector2D& aroundPoint){
     float xRot = thisVec2D.vx * cos - thisVec2D.vy * sin;
     float yRot = thisVec2D.vx * sin + thisVec2D.vy * cos;
 
-    Vector2D rotatedVector(xRot, yRot);
+    Vector2D rotatedVector = Vector2D (xRot, yRot);
 
     *this = rotatedVector + aroundPoint;
 }

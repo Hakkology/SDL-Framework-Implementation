@@ -11,7 +11,7 @@ bool LevelBoundary::HasCollided(const Ball &ball, BoundaryEdge &edge){
     {
         BoundaryEdge collisionEdge = bIncluder.GetEdge(static_cast<EdgeType>(i));
 
-        if (HasCollidedWithEdge(ball, edge))
+        if (HasCollidedWithEdge(ball, collisionEdge))
         {
             edge = collisionEdge;
             return true;

@@ -1,5 +1,4 @@
 #include "app.h"
-#include "arcadeScene.h"
 
 App& App::Singleton(){
 

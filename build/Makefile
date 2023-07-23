@@ -225,6 +225,30 @@ src/games/breakout/excluder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s
 .PHONY : src/games/breakout/excluder.cpp.s
 
+src/games/breakout/levelboundary.o: src/games/breakout/levelboundary.cpp.o
+.PHONY : src/games/breakout/levelboundary.o
+
+# target to build an object file
+src/games/breakout/levelboundary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o
+.PHONY : src/games/breakout/levelboundary.cpp.o
+
+src/games/breakout/levelboundary.i: src/games/breakout/levelboundary.cpp.i
+.PHONY : src/games/breakout/levelboundary.i
+
+# target to preprocess a source file
+src/games/breakout/levelboundary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.i
+.PHONY : src/games/breakout/levelboundary.cpp.i
+
+src/games/breakout/levelboundary.s: src/games/breakout/levelboundary.cpp.s
+.PHONY : src/games/breakout/levelboundary.s
+
+# target to generate assembly for a file
+src/games/breakout/levelboundary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.s
+.PHONY : src/games/breakout/levelboundary.cpp.s
+
 src/games/breakout/paddle.o: src/games/breakout/paddle.cpp.o
 .PHONY : src/games/breakout/paddle.o
 
@@ -654,6 +678,9 @@ help:
 	@echo "... src/games/breakout/excluder.o"
 	@echo "... src/games/breakout/excluder.i"
 	@echo "... src/games/breakout/excluder.s"
+	@echo "... src/games/breakout/levelboundary.o"
+	@echo "... src/games/breakout/levelboundary.i"
+	@echo "... src/games/breakout/levelboundary.s"
 	@echo "... src/games/breakout/paddle.o"
 	@echo "... src/games/breakout/paddle.i"
 	@echo "... src/games/breakout/paddle.s"

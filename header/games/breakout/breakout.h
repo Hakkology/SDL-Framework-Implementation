@@ -30,10 +30,8 @@ private:
     void ResetGame();
 
     Paddle bPaddle;
-
     Ball bBall;
     const Vector2D bBallVelocity = initBallVelocity;
-
     LevelBoundary bLevelBoundary;
 
 };

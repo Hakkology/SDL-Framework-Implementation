@@ -346,7 +346,9 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h
