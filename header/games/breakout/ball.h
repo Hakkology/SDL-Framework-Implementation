@@ -29,6 +29,7 @@ public:
 
     inline const Rectangle GetBoundingRect() const {return bBoundingBox;};
     inline void Stop() {bVelocity = Vector2D::Zero;}
+    inline Vector2D GetVelocity() {return bVelocity;}
     inline void SetVelocity(const Vector2D& vel) {bVelocity=vel;}
     inline float GetRadius() const {return bBoundingBox.GetWidth()/2.0f;}
     inline Vector2D GetPosition() const {return bBoundingBox.GetCenterPoint();}

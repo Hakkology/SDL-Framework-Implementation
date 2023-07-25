@@ -40,6 +40,7 @@ static Color Lilac() {return Color (160, 100, 160, 255);}
 const float paddleVelocity = 250.0f;
 static const uint32_t paddleWidth = 100;
 static const uint32_t paddleHeight = 10;
+const float corner_bounce_amt = 0.2f;
 
 // Ball
 static const float ballRadius = 5.0f;

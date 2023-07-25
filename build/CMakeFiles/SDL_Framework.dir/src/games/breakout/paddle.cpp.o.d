@@ -150,7 +150,8 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cassert \
+ /usr/include/assert.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -174,8 +175,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/cassert \
- /usr/include/assert.h \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
@@ -328,4 +328,5 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h
