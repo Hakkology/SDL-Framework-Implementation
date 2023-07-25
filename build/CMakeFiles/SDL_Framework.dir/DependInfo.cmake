@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/breakout.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/excluder.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d"

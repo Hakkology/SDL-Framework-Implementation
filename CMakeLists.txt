@@ -15,6 +15,7 @@ set(SOURCES
     src/input/gamecontroller.cpp src/input/inputcontroller.cpp
     src/games/breakout/breakout.cpp src/games/breakout/excluder.cpp 
     src/games/breakout/paddle.cpp src/games/breakout/ball.cpp src/games/breakout/levelboundary.cpp
+    src/games/breakout/block.cpp
 )
 
 # Add header files
@@ -27,6 +28,7 @@ set(HEADERS
     header/input/inputaction.h header/input/gamecontroller.h header/input/inputcontroller.h
     header/games/breakout/breakout.h header/games/breakout/excluder.h header/games/breakout/boundaryedge.h 
     header/games/breakout/paddle.h header/games/breakout/ball.h header/games/breakout/levelboundary.h
+    header/games/breakout/block.h
     )
 
 
