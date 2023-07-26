@@ -114,7 +114,7 @@ const std::string& BreakOut::GetName() const{
 void BreakOut::ResetGame(){
 
     bLevels =  BGameLevel::LoadLevelsFromFile(App::GetBasePath() + LEVELS_PATH);
-    bCurrentLevel = 0;
+    bCurrentLevel = LEVEL_NO;
 
     Rectangle paddleRect = {Vector2D(App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight), paddleWidth, paddleHeight};
     Rectangle levelBoundary = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
