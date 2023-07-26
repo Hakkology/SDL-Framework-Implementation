@@ -34,7 +34,7 @@ bool Excluder::HasCollided(const Rectangle &rect, BoundaryEdge &edge) const
         }
         else
         {
-            if (rect.GetCenterPoint().GetX() > bRectangle.GetCenterPoint().GetX())
+            if (rect.GetCenterPoint().GetX() < bRectangle.GetCenterPoint().GetX())
             {
                 edge = bEdges [LEFT_EDGE];
             }

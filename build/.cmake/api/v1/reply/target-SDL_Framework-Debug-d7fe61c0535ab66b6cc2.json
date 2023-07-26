@@ -164,7 +164,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -224,7 +225,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -366,6 +368,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/games/breakout/block.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/breakout/bgamelevel.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -21,11 +21,11 @@ void Ball::Draw(Screen &screen){
 
 void Ball::Bounce(const BoundaryEdge &edge){
 
-    Vector2D normal = edge.normal;
-    float dotProduct = bVelocity.Dot(normal);
-    Vector2D reflection = bVelocity - (normal * (2.0f * dotProduct));
+	Vector2D pointOnEdge;
 
-    bVelocity = reflection;
+	MakeFlushWithEdge(edge, pointOnEdge, false);
+
+	bVelocity = bVelocity.Reflect(edge.normal);
 }
 
 void Ball::MakeFlushWithEdge(const BoundaryEdge &edge, Vector2D &pointOnEdge, bool limitToEdge){

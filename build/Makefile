@@ -177,6 +177,30 @@ src/games/breakout/ball.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.s
 .PHONY : src/games/breakout/ball.cpp.s
 
+src/games/breakout/bgamelevel.o: src/games/breakout/bgamelevel.cpp.o
+.PHONY : src/games/breakout/bgamelevel.o
+
+# target to build an object file
+src/games/breakout/bgamelevel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o
+.PHONY : src/games/breakout/bgamelevel.cpp.o
+
+src/games/breakout/bgamelevel.i: src/games/breakout/bgamelevel.cpp.i
+.PHONY : src/games/breakout/bgamelevel.i
+
+# target to preprocess a source file
+src/games/breakout/bgamelevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.i
+.PHONY : src/games/breakout/bgamelevel.cpp.i
+
+src/games/breakout/bgamelevel.s: src/games/breakout/bgamelevel.cpp.s
+.PHONY : src/games/breakout/bgamelevel.s
+
+# target to generate assembly for a file
+src/games/breakout/bgamelevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s
+.PHONY : src/games/breakout/bgamelevel.cpp.s
+
 src/games/breakout/block.o: src/games/breakout/block.cpp.o
 .PHONY : src/games/breakout/block.o
 
@@ -696,6 +720,9 @@ help:
 	@echo "... src/games/breakout/ball.o"
 	@echo "... src/games/breakout/ball.i"
 	@echo "... src/games/breakout/ball.s"
+	@echo "... src/games/breakout/bgamelevel.o"
+	@echo "... src/games/breakout/bgamelevel.i"
+	@echo "... src/games/breakout/bgamelevel.s"
 	@echo "... src/games/breakout/block.o"
 	@echo "... src/games/breakout/block.i"
 	@echo "... src/games/breakout/block.s"

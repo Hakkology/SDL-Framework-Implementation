@@ -4,8 +4,8 @@
 #include "color.h"
 #include "vector2D.h"
 
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
+const int SCREEN_WIDTH = 480;
+const int SCREEN_HEIGHT = 320;
 const int MAGNIFICATION = 2;
 const int FRAME_DELAY = 1000 / 60;
 
@@ -14,7 +14,7 @@ static unsigned int NUM_CIRCLE_SEGMENTS = 48;
 const float PI = 3.14159f;
 const float TAU = 2.0f * PI;
 
-const uint32_t DELTA_TIME = 10;
+const uint32_t DELTA_TIME = 15;
 const uint32_t MAX_FRAME_RATE = 300;
 
 static const Vector2D UP_DIR = {0, 1};
@@ -45,5 +45,11 @@ const float corner_bounce_amt = 0.2f;
 // Ball
 static const float ballRadius = 5.0f;
 const Vector2D initBallVelocity = Vector2D(100, -100);
+
+// Blocks
+
+const int BLOCK_WIDTH = 40;
+const int BLOCK_HEIGHT = 20;
+
 
 #endif

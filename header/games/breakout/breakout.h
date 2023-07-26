@@ -11,6 +11,7 @@
 #include "paddle.h"
 #include "ball.h"
 #include "levelboundary.h"
+#include "bgamelevel.h"
 
 class GameController;
 class Screen;
@@ -33,6 +34,7 @@ private:
     Ball bBall;
     const Vector2D bBallVelocity = initBallVelocity;
     LevelBoundary bLevelBoundary;
+    BGameLevel bLevel;
 
 };
 
