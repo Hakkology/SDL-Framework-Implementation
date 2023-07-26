@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <iostream>
 
+#include "constants.h"
 #include "game.h"
 #include "app.h"
 #include "gamecontroller.h"
@@ -29,12 +30,16 @@ public:
 private:
 
     void ResetGame();
+    BGameLevel& GetCurrentLevel() {return bLevels[bCurrentLevel];}
 
+    const Vector2D bBallVelocity = initBallVelocity;
     Paddle bPaddle;
     Ball bBall;
-    const Vector2D bBallVelocity = initBallVelocity;
     LevelBoundary bLevelBoundary;
     BGameLevel bLevel;
+
+    std::vector<BGameLevel> bLevels;
+    size_t bCurrentLevel;
 
 };
 

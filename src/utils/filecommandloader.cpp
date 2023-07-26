@@ -1,131 +1,131 @@
 #include "filecommandloader.h"
 
-void FileCommandLoader::AddCommand(const Command &command)
+void FileCommandLoader::AddCommand(const Command& command)
 {
-    gCommands.push_back(command);
+	gCommands.push_back(command);
 }
 
-bool FileCommandLoader::LoadFile(const std::string &filePath)
+bool FileCommandLoader::LoadFile(const std::string& filePath)
 {
-    std::ifstream inFile;
+	std::ifstream inFile;
 
-    inFile.open(filePath);
+	inFile.open(filePath);
 
-    std::string line = "";
+	std::string line = "";
 
-    if (!inFile.is_open())
-    {
-        std::cout << "Could not open the file: " << filePath << std::endl;
-        return false;
-    }
-    
-    while (!inFile.eof())
-    {
-        std::getline(inFile, line);
+	if(!inFile.is_open())
+	{
+		std::cout << "Could not open the file: " << filePath << std::endl;
+		return false;
+	}
 
-        size_t commandPos = std::string::npos;
+	while(!inFile.eof())
+	{
+		std::getline(inFile, line);
 
-        if ((commandPos) = line.find(":") != std::string::npos)
-        {
-            size_t dilimitPos = line.find_first_of(" ", commandPos);
+		size_t commandPos = std::string::npos;
 
-            if (dilimitPos == std::string::npos)
-            {
-                dilimitPos = line.length();
-            }
-            else
-            {
-                dilimitPos = -1;
-            }
-            
-            std::string commandStr = line.substr(commandPos + 1, dilimitPos);
-            dilimitPos += 1;
+		if((commandPos = line.find(":")) != std::string::npos)
+		{
+			size_t dilimitPos = line.find_first_of(" ", commandPos);
 
-            for (size_t commandIndex = 0; commandIndex < gCommands.size(); ++commandIndex)
-            {
-                if (commandStr == gCommands[commandIndex].command)
-                {
-                    if (gCommands[commandIndex].commandType == COMMAND_ONE_LINE)
-                    {
-                        ParseFuncParams params;
-                        params.dilimitPos = dilimitPos;
-                        params.lineNum = 0;
-                        params.line = line;
-                        gCommands[commandIndex].parseFunc(params);
-                    }
-                    else
-                    {
-                        std::string numLines = line.substr(dilimitPos+1);
-                        int totalLines = std::stoi(numLines);
-                        int lineNum = 0;
-                        
-                        while (lineNum < totalLines)
-                        {
-                            std::getline(inFile, line);
+			if(dilimitPos == std::string::npos)
+			{
+				dilimitPos = line.length();
+			}
+			else
+			{
+				dilimitPos -= 1;
+			}
 
-                            if (line.empty())
-                            {
-                                continue;
-                            }
-                            else
-                            {
-                                ParseFuncParams params;
-                                params.dilimitPos = 0;
-                                params.lineNum = lineNum;
-                                params.line = line;
-                                gCommands[commandIndex].parseFunc(params);
-                                ++lineNum;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return true;
+			std::string commandStr = line.substr(commandPos+1, dilimitPos);
+			dilimitPos += 1;
+
+			for(size_t commandIndex = 0; commandIndex < gCommands.size(); ++commandIndex)
+			{
+				if(commandStr == gCommands[commandIndex].command)
+				{
+					if(gCommands[commandIndex].commandType == COMMAND_ONE_LINE)
+					{
+						ParseFuncParams params;
+						params.dilimitPos = dilimitPos;
+						params.lineNum = 0;
+						params.line = line;
+						gCommands[commandIndex].parseFunc(params);
+					}
+					else
+					{
+						std::string numLines = line.substr(dilimitPos+1);
+						int totalLines = std::stoi(numLines);
+						int lineNum = 0;
+
+						while(lineNum < totalLines)
+						{
+							std::getline(inFile, line);
+
+							if(line.empty())
+							{
+								continue;
+							}
+							else
+							{
+								ParseFuncParams params;
+								params.dilimitPos = dilimitPos;
+								params.lineNum = lineNum;
+								params.line = line;
+								gCommands[commandIndex].parseFunc(params);
+								++lineNum;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+	return true;
 }
 
-Color FileCommandLoader::ReadColor(const ParseFuncParams &params)
+Color FileCommandLoader::ReadColor(const ParseFuncParams& params)
 {
-    size_t nextSpacePos = params.line.find_first_of(" ", params.dilimitPos + 1);
-    int r = std::stoi(params.line.substr(params.dilimitPos, (nextSpacePos - params.dilimitPos)));
+	size_t nextSpacePos = params.line.find_first_of(" ", params.dilimitPos+1);
+	int r = std::stoi(params.line.substr(params.dilimitPos, (nextSpacePos - params.dilimitPos)));
 
-    size_t lastSpacePos = nextSpacePos;
-    nextSpacePos = params.line.find_first_of(" ", lastSpacePos + 1);
-    int g = std::stoi (params.line.substr(lastSpacePos + 1, nextSpacePos - lastSpacePos));
+	size_t lastSpacePos = nextSpacePos;
+	nextSpacePos = params.line.find_first_of(" ", lastSpacePos + 1);
+	int g = std::stoi(params.line.substr(lastSpacePos+1, nextSpacePos - lastSpacePos));
 
-    lastSpacePos = nextSpacePos;
-    nextSpacePos = params.line.find_first_of(" ", lastSpacePos + 1);
-    int b = std::stoi(params.line.substr(lastSpacePos +1, nextSpacePos - lastSpacePos));
-    int a = std::stoi(params.line.substr(nextSpacePos +1));
+	lastSpacePos = nextSpacePos;
+	nextSpacePos = params.line.find_first_of(" ", lastSpacePos + 1);
+	int b = std::stoi(params.line.substr(lastSpacePos + 1, nextSpacePos - lastSpacePos));
+	int a = std::stoi(params.line.substr(nextSpacePos+1));
 
-    return Color(r, g, b, a);
+	return Color(r, g, b, a);
 }
 
-Vector2D FileCommandLoader::ReadSize(const ParseFuncParams &params)
+Vector2D FileCommandLoader::ReadSize(const ParseFuncParams& params)
 {
-    size_t nextSpacePos = params.line.find_first_of(" ", params.dilimitPos + 1);
-    int width = std::stoi(params.line.substr(params.dilimitPos, nextSpacePos - params.dilimitPos));
+	size_t nextSpacePos = params.line.find_first_of(" ", params.dilimitPos+1);
+	int width = std::stoi(params.line.substr(params.dilimitPos, nextSpacePos - params.dilimitPos));
+	size_t lastSpacePos = nextSpacePos;
+	nextSpacePos = params.line.find_first_of(" ", lastSpacePos + 1);
+	int height = std::stoi(params.line.substr(lastSpacePos+1, nextSpacePos - lastSpacePos));
 
-    size_t lastSpacePos = nextSpacePos;
-    nextSpacePos = params.line.find_first_of(" ", lastSpacePos +1);
-    int height = std::stoi(params.line.substr(lastSpacePos +1, nextSpacePos - lastSpacePos));
-
-    return Vector2D(width,height);
+	return Vector2D(width, height);
 }
 
-int FileCommandLoader::ReadInt(const ParseFuncParams &params)
+int FileCommandLoader::ReadInt(const ParseFuncParams& params)
 {
-    std::string intStr = params.line.substr(params.dilimitPos + 1);
-    return std::stoi(intStr);
+	std::string intStr = params.line.substr(params.dilimitPos+1);
+	return std::stoi(intStr);
 }
 
-std::string FileCommandLoader::ReadString(const ParseFuncParams &params)
+std::string FileCommandLoader::ReadString(const ParseFuncParams& params)
 {
-    return params.line.substr(params.dilimitPos +1);
+	return params.line.substr(params.dilimitPos+1);
 }
 
-char FileCommandLoader::ReadChar(const ParseFuncParams &params)
+char FileCommandLoader::ReadChar(const ParseFuncParams& params)
 {
-    return params.line.substr(params.dilimitPos +1) [0];
+	return params.line.substr(params.dilimitPos+1)[0];
 }

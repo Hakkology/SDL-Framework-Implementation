@@ -47,9 +47,10 @@ static const float ballRadius = 5.0f;
 const Vector2D initBallVelocity = Vector2D(100, -100);
 
 // Blocks
+static const int BLOCK_WIDTH = 30;
+static const int BLOCK_HEIGHT = 15;
 
-const int BLOCK_WIDTH = 40;
-const int BLOCK_HEIGHT = 20;
-
+// Levels Path
+static const std::string LEVELS_PATH = "Assets/BreakoutLevels.txt";
 
 #endif
