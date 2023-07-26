@@ -67,11 +67,11 @@ Vector2D Excluder::GetCollisionOffset(const Rectangle &rect) const
 
         if (!IsEqual(edge.normal.GetY(), 0))
         {
-            offset = edge.normal * (ySize +1);
+            offset = edge.normal * (ySize);
         }
         else
         {
-            offset = edge.normal * (xSize +1);
+            offset = edge.normal * (xSize);
         }
     }
     return offset;

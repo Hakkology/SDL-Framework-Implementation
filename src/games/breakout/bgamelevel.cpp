@@ -28,36 +28,33 @@ void BGameLevel::Update(uint32_t dt, Ball &ball){
     for(auto& block: bBlocks){
 
         BoundaryEdge edge;
-
         if (!block.IsDestroyed() && block.HasCollided(ball.GetBoundingRect(), edge))
         {
             collidedBlocks.push_back(block);
-
             float magnitude = block.GetCollisionOffset(ball.GetBoundingRect()).Magnitude();
 
             if (magnitude > largestMagnitude)
             {
+                largestMagnitude = magnitude;
                 edgeToBounceOffOf = edge;
                 noptrBlockToBounceOffOf = &block;
             }
-            
         }
-        
-        if (noptrBlockToBounceOffOf != nullptr)
+    }
+
+    if (noptrBlockToBounceOffOf != nullptr)
+    {
+        noptrBlockToBounceOffOf->Bounce(ball, edgeToBounceOffOf);
+        noptrBlockToBounceOffOf->ReduceHP();
+    }
+
+    for(const auto & block : collidedBlocks){
+
+        BoundaryEdge edge;
+        if (block.HasCollided(ball.GetBoundingRect(), edge))
         {
-            noptrBlockToBounceOffOf->Bounce(ball, edgeToBounceOffOf);
-            noptrBlockToBounceOffOf->ReduceHP();
-        }
-
-        for(const auto & block : collidedBlocks){
-
-            BoundaryEdge edge;
-            if (block.HasCollided(ball.GetBoundingRect(), edge))
-            {
-                Vector2D p;
-                ball.MakeFlushWithEdge(edge, p , true);
-            }
-            
+            Vector2D p;
+            ball.MakeFlushWithEdge(edge, p , true);
         }
         
     }
