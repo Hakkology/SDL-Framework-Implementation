@@ -44,7 +44,8 @@ const float corner_bounce_amt = 0.2f;
 
 // Ball
 static const float ballRadius = 5.0f;
-const Vector2D initBallVelocity = Vector2D(100, -100);
+const Vector2D initBallVelocity = Vector2D(200, -200);
+static const float INIT_BALL_SPEED = 150;
 
 // Blocks
 static const int BLOCK_WIDTH = 30;

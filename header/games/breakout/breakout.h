@@ -14,6 +14,13 @@
 #include "levelboundary.h"
 #include "bgamelevel.h"
 
+enum BreakOutGameStates{
+
+    IN_PLAY = 0,
+    IN_SERVE,
+    IN_GAME_OVER
+};
+
 class GameController;
 class Screen;
 
@@ -32,6 +39,8 @@ private:
     void ResetGame();
     BGameLevel& GetCurrentLevel() {return bLevels[bCurrentLevel];}
 
+    void SetToServeState();
+
     const Vector2D bBallVelocity = initBallVelocity;
     Paddle bPaddle;
     Ball bBall;
@@ -40,6 +49,7 @@ private:
 
     std::vector<BGameLevel> bLevels;
     size_t bCurrentLevel;
+    BreakOutGameStates bGameState;
 
 };
 

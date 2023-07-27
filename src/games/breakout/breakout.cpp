@@ -41,18 +41,53 @@ void BreakOut::Init(GameController &controller){
     controller.ClearAll();
     ResetGame();
 
+    ButtonAction serveAction;
+    
+    serveAction.key = GameController::ActionKey();
+    serveAction.action = [this](uint32_t dt, InputState state){
+
+        if (bGameState == IN_SERVE)
+        {
+            if (GameController::IsPressed(state)){
+                
+                bGameState = IN_PLAY;
+
+                if (bPaddle.IsMovingLeft())
+                {
+                    bBall.SetVelocity(Vector2D(-INIT_BALL_SPEED, -INIT_BALL_SPEED));
+                }
+                else
+                {
+                    bBall.SetVelocity(Vector2D(INIT_BALL_SPEED, -INIT_BALL_SPEED));
+                }
+            }
+        }
+        else if (bGameState == IN_GAME_OVER){
+            
+            if (GameController::IsPressed(state))
+            {
+                ResetGame();
+            }
+        }
+    };
+
+    controller.AddInputActionForKey(serveAction);
+
     ButtonAction leftKeyAction;
 
     leftKeyAction.key = GameController::LeftKey();
     leftKeyAction.action = [this](uint32_t dt, InputState state){
 
-        if (GameController::IsPressed(state))
+        if (bGameState == IN_PLAY || bGameState == IN_SERVE)
         {
-            bPaddle.SetMovementDirection(PaddleDirection::LEFT);
-        }
-        else
-        {
-            bPaddle.UnsetMovementDirection(PaddleDirection::LEFT);
+            if (GameController::IsPressed(state))
+            {
+                bPaddle.SetMovementDirection(PaddleDirection::LEFT);
+            }
+            else
+            {
+                bPaddle.UnsetMovementDirection(PaddleDirection::LEFT);
+            }
         }
     };
     controller.AddInputActionForKey(leftKeyAction);
@@ -62,38 +97,47 @@ void BreakOut::Init(GameController &controller){
     rightKeyAction.key = GameController::RightKey();
     rightKeyAction.action = [this] (uint32_t dt, InputState state){
 
-        if (GameController::IsPressed(state))
+        if (bGameState == IN_PLAY || bGameState == IN_SERVE)
         {
-            bPaddle.SetMovementDirection(PaddleDirection::RIGHT);
-        }
-        else
-        {
-            bPaddle.UnsetMovementDirection(PaddleDirection::RIGHT);
+            if (GameController::IsPressed(state))
+            {
+                bPaddle.SetMovementDirection(PaddleDirection::RIGHT);
+            }
+            else
+            {
+                bPaddle.UnsetMovementDirection(PaddleDirection::RIGHT);
+            }
         }
     };
     controller.AddInputActionForKey(rightKeyAction);
-
 }
 
 void BreakOut::Update(uint32_t dt){
 
-    bBall.Update(dt);
-    bPaddle.Update(dt, bBall);
-
-    BoundaryEdge edge;
-
-    if (bPaddle.Bounce(bBall))
+    if (bGameState == IN_SERVE)
     {
-        return;
+        bPaddle.Update(dt, bBall);
+        SetToServeState();
     }
-    
-    if (bLevelBoundary.HasCollided(bBall, edge))
+    else if (bGameState == IN_PLAY)
     {
-        bBall.Bounce(edge);
-    }
+        bBall.Update(dt);
+        bPaddle.Update(dt, bBall);
 
-    GetCurrentLevel().Update(dt, bBall);
-    
+        BoundaryEdge edge;
+
+        if (bPaddle.Bounce(bBall))
+        {
+            return;
+        }
+        
+        if (bLevelBoundary.HasCollided(bBall, edge))
+        {
+            bBall.Bounce(edge);
+        }
+
+        GetCurrentLevel().Update(dt, bBall);
+    }
 }
 
 void BreakOut::Draw(Screen &screen){
@@ -122,7 +166,16 @@ void BreakOut::ResetGame(){
     bLevelBoundary = {levelBoundary};
     bPaddle.Init(paddleRect, levelBoundary);
     bBall.MoveTo(Vector2D(App::Singleton().Width()/2, App::Singleton().Height() * 0.7f));
-    bBall.SetVelocity(bBallVelocity);
+    
+    SetToServeState();
 
     //bLevel.Init(levelBoundary);
+}
+
+void BreakOut::SetToServeState(){
+
+    bGameState = IN_SERVE;
+    bBall.Stop();
+
+    bBall.MoveTo(Vector2D(bPaddle.GetRectangle().GetCenterPoint().GetX(), bPaddle.GetRectangle().GetTopLeftPoint().GetY() - bBall.GetRadius() -1));
 }
