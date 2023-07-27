@@ -43,7 +43,7 @@ static const uint32_t paddleHeight = 10;
 const float corner_bounce_amt = 0.2f;
 
 // Ball
-static const float ballRadius = 5.0f;
+static const float BALL_RADIUS = 5.0f;
 const Vector2D initBallVelocity = Vector2D(200, -200);
 static const float INIT_BALL_SPEED = 150;
 
@@ -54,5 +54,8 @@ static const int BLOCK_HEIGHT = 15;
 // Levels Path
 static const std::string LEVELS_PATH = "Assets/BreakoutLevels.txt";
 const int LEVEL_NO = 1;
+
+// Game Details
+const int NUM_LIVES = 3;
 
 #endif

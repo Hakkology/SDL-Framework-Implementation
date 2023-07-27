@@ -32,6 +32,8 @@ public:
     static std::vector<BGameLevel> LoadLevelsFromFile(const std::string& filePath);
     static LayoutBlock FindLayoutBlockForSymbol(const std::vector<LayoutBlock>& blocks, char symbol);
 
+    bool IsLevelComplete() const;
+
 private:
     
     void CreateDefaultLevel (const Rectangle& rect);

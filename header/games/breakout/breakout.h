@@ -7,6 +7,7 @@
 
 #include "constants.h"
 #include "game.h"
+#include "circle.h"
 #include "app.h"
 #include "gamecontroller.h"
 #include "paddle.h"
@@ -36,10 +37,13 @@ public:
 
 private:
 
-    void ResetGame();
-    BGameLevel& GetCurrentLevel() {return bLevels[bCurrentLevel];}
-
+    void ResetGame(size_t toLevel = 0);
     void SetToServeState();
+    void ReduceLifeByOne();
+
+    BGameLevel& GetCurrentLevel() {return bLevels[bCurrentLevel];}
+    bool IsBallPassedCutoffY() const;
+    bool IsGameOver() const {return bLives < 0;}
 
     const Vector2D bBallVelocity = initBallVelocity;
     Paddle bPaddle;
@@ -51,6 +55,8 @@ private:
     size_t bCurrentLevel;
     BreakOutGameStates bGameState;
 
+    int bLives;
+    float bCutoff;
 };
 
 #endif

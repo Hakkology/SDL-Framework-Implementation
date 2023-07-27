@@ -134,9 +134,29 @@ void BreakOut::Update(uint32_t dt){
         if (bLevelBoundary.HasCollided(bBall, edge))
         {
             bBall.Bounce(edge);
+            return;
         }
 
         GetCurrentLevel().Update(dt, bBall);
+
+        if (IsBallPassedCutoffY())
+        {
+            ReduceLifeByOne();
+            if (!IsGameOver())
+            {
+                SetToServeState();
+            }
+            else
+            {
+                bGameState = IN_GAME_OVER;
+            }
+        }
+        else if (GetCurrentLevel().IsLevelComplete())
+        {
+            bCurrentLevel = (bCurrentLevel +1) % bLevels.size();
+            ResetGame(bCurrentLevel);
+        }
+        
     }
 }
 
@@ -147,6 +167,17 @@ void BreakOut::Draw(Screen &screen){
     GetCurrentLevel().Draw(screen);
 
     screen.Draw(bLevelBoundary.GetBoundaryRectangle(), White());
+
+    Circle lifeCircle = {Vector2D(7, App::Singleton().Height() - 10), 5};
+    Line2D cutoff = {Vector2D(0,bCutoff), Vector2D(App::Singleton().Width(), bCutoff)};
+    screen.Draw(cutoff, White());
+
+    for (int i = 0; i < bLives; ++i)
+    {
+        screen.Draw(lifeCircle, Red(), true, Red());
+        lifeCircle.MoveBy(Vector2D(17, 0));
+    }
+    
 }
 
 const std::string& BreakOut::GetName() const{
@@ -155,10 +186,12 @@ const std::string& BreakOut::GetName() const{
     return name;
 }
 
-void BreakOut::ResetGame(){
+void BreakOut::ResetGame(size_t toLevel){
 
     bLevels =  BGameLevel::LoadLevelsFromFile(App::GetBasePath() + LEVELS_PATH);
-    bCurrentLevel = LEVEL_NO;
+    bCutoff = App::Singleton().Height() - 2* paddleHeight;
+    bLives = NUM_LIVES;
+    bCurrentLevel = toLevel;
 
     Rectangle paddleRect = {Vector2D(App::Singleton().Width()/2 - paddleWidth/2, App::Singleton().Height() - 3*paddleHeight), paddleWidth, paddleHeight};
     Rectangle levelBoundary = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
@@ -179,3 +212,18 @@ void BreakOut::SetToServeState(){
 
     bBall.MoveTo(Vector2D(bPaddle.GetRectangle().GetCenterPoint().GetX(), bPaddle.GetRectangle().GetTopLeftPoint().GetY() - bBall.GetRadius() -1));
 }
+
+void BreakOut::ReduceLifeByOne(){
+
+    if (bLives >= 0)
+    {
+        --bLives;
+    }
+}
+
+bool BreakOut::IsBallPassedCutoffY() const{
+
+    return bBall.GetPosition().GetY() > bCutoff;
+}
+
+

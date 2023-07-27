@@ -101,6 +101,18 @@ void BGameLevel::CreateDefaultLevel(const Rectangle &rect){
     }
 }
 
+bool BGameLevel::IsLevelComplete() const
+{
+    for (size_t i = 0; i < bBlocks.size(); ++i)
+    {
+        if (!bBlocks[i].IsDestroyed() && bBlocks[i].GetHP() != Block::UNBREAKABLE)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
 LayoutBlock BGameLevel::FindLayoutBlockForSymbol(const std::vector<LayoutBlock> &blocks, char symbol)
 {
     for (int i = 0; i < blocks.size(); ++i)

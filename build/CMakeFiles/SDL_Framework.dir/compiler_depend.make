@@ -1978,12 +1978,16 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/bre
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
   ../header/games/game.h \
-  ../header/app/app.h \
+  ../header/shapes/circle.h \
+  ../header/utils/utilities.h \
+  ../header/shapes/shape.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../header/shapes/vector2D.h \
+  ../header/app/app.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -2027,12 +2031,8 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/bre
   ../header/graphics/screenbuffer.h \
   ../header/graphics/color.h \
   ../header/shapes/line2D.h \
-  ../header/shapes/vector2D.h \
-  ../header/utils/utilities.h \
   ../header/shapes/triangle.h \
-  ../header/shapes/shape.h \
   ../header/shapes/rectangle.h \
-  ../header/shapes/circle.h \
   ../header/scenes/scene.h \
   ../header/input/gamecontroller.h \
   ../header/input/inputaction.h \

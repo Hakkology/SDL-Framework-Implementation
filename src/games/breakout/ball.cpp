@@ -1,6 +1,6 @@
 #include "ball.h"
 
-Ball::Ball():Ball(Vector2D::Zero, ballRadius){
+Ball::Ball():Ball(Vector2D::Zero, BALL_RADIUS){
 
 }
 
