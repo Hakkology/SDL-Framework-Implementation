@@ -319,4 +319,5 @@ CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h

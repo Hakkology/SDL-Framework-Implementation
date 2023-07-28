@@ -16,10 +16,12 @@
 #include "triangle.h"
 #include "rectangle.h"
 #include "circle.h"
+#include "bmpimage.h"
 
 class Vector2D;
 class Line2D;
 class Triangle;
+class BMPImage;
 struct SDL_window;
 struct SDL_Surface;
 
@@ -45,6 +47,7 @@ public:
     void Draw (const Triangle& triangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Rectangle& rectangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Circle& circle, const Color& color, bool fill=false, const Color& fillColor = White());
+    void Draw (const BMPImage& image, const Vector2D pos);
 
 private:
 

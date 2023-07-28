@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED)
 set(SOURCES
     src/main.cpp
     src/shapes/vector2D.cpp src/utils/utilities.cpp src/utils/filecommandloader.cpp
-    src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp
+    src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp src/graphics/bmpimage.cpp
     src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp src/shapes/circle.cpp
     src/app/app.cpp
     src/scenes/arcadeScene.cpp src/scenes/gameScene.cpp
@@ -16,12 +16,13 @@ set(SOURCES
     src/games/breakout/breakout.cpp src/games/breakout/excluder.cpp 
     src/games/breakout/paddle.cpp src/games/breakout/ball.cpp src/games/breakout/levelboundary.cpp
     src/games/breakout/block.cpp src/games/breakout/bgamelevel.cpp
+
 )
 
 # Add header files
 set(HEADERS
     header/shapes/vector2D.h header/utils/utilities.h header/utils/constants.h header/utils/filecommandloader.h
-    header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h
+    header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h header/graphics/bmpimage.h
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
     header/app/app.h header/games/game.h
     header/scenes/scene.h header/scenes/arcadeScene.h header/games/game.h header/scenes/gameScene.h 

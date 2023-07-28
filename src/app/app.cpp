@@ -13,6 +13,7 @@ bool App::Init (uint32_t width, uint32_t height, uint32_t mag){
     PushScene(std::move(arcadeScene));
 
     //Temporary
+    /*
     {
         std::unique_ptr<BreakOut> breakoutGame = std::make_unique<BreakOut>();
         
@@ -20,7 +21,7 @@ bool App::Init (uint32_t width, uint32_t height, uint32_t mag){
 
         PushScene (std::move(breakoutScene));
     }
-
+    */
     return anoptrWindow != nullptr;
 }
 

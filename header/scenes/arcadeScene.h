@@ -8,6 +8,8 @@
 #include "screen.h"
 #include "color.h"
 #include "gamecontroller.h"
+#include "bmpimage.h"
+#include "app.h"
 
 enum eGame{
     TETRIS = 0,
@@ -30,6 +32,9 @@ public:
 private:
 
     std::unique_ptr<Scene> GetScene (eGame game);
+
+    // temporary
+    BMPImage mTempImage;
 
 };
 

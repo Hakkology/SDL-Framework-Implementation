@@ -325,4 +325,5 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h

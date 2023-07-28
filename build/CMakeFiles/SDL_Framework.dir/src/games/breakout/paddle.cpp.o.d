@@ -329,4 +329,5 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h

@@ -7,6 +7,8 @@ ArcadeScene::ArcadeScene(){
 
 void ArcadeScene::Init (){
 
+    mTempImage.Load(App::Singleton().GetBasePath() + "Assets/ArcadeFont.bmp");
+
     ButtonAction action;
     MouseButtonAction mouseAction;
 
@@ -43,6 +45,7 @@ void ArcadeScene::Update(uint32_t dt){
 
 void ArcadeScene::Draw(Screen& theScreen){
 
+    /*
     // Shapes
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
     Rectangle rectangle = {Vector2D(theScreen.Width()/2-100, theScreen.Height()/2-100),150,200};
@@ -52,6 +55,10 @@ void ArcadeScene::Draw(Screen& theScreen){
     theScreen.Draw (triangle, Lilac(), true, Lilac());
     theScreen.Draw (rectangle, Green(), true, Green());
     theScreen.Draw (circle, Color (245, 190, 100, 100), true, Color (245, 190, 100, 100));
+    */
+
+    theScreen.Draw(mTempImage, Vector2D::Zero);
+
 }
 
 const std::string& ArcadeScene::GetSceneName() const{

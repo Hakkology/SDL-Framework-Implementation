@@ -338,6 +338,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
@@ -346,6 +347,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
