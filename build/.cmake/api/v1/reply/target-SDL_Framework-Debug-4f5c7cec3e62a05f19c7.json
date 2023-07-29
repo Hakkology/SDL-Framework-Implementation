@@ -166,7 +166,8 @@
 				21,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		}
 	],
@@ -228,7 +229,8 @@
 				21,
 				22,
 				23,
-				24
+				24,
+				25
 			]
 		}
 	],
@@ -280,6 +282,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/graphics/bmpimage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/graphics/spritesheet.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

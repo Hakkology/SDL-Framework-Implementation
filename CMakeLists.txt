@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED)
 set(SOURCES
     src/main.cpp
     src/shapes/vector2D.cpp src/utils/utilities.cpp src/utils/filecommandloader.cpp
-    src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp src/graphics/bmpimage.cpp
+    src/graphics/color.cpp src/graphics/screenbuffer.cpp src/graphics/screen.cpp src/graphics/bmpimage.cpp src/graphics/spritesheet.cpp
     src/shapes/line2D.cpp src/shapes/shape.cpp src/shapes/triangle.cpp src/shapes/rectangle.cpp src/shapes/circle.cpp
     src/app/app.cpp
     src/scenes/arcadeScene.cpp src/scenes/gameScene.cpp
@@ -22,7 +22,7 @@ set(SOURCES
 # Add header files
 set(HEADERS
     header/shapes/vector2D.h header/utils/utilities.h header/utils/constants.h header/utils/filecommandloader.h
-    header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h header/graphics/bmpimage.h
+    header/graphics/color.h header/graphics/screenbuffer.h header/graphics/screen.h header/graphics/bmpimage.h header/graphics/spritesheet.h
     header/shapes/line2D.h header/shapes/shape.h header/shapes/triangle.h header/shapes/rectangle.h header/shapes/circle.h
     header/app/app.h header/games/game.h
     header/scenes/scene.h header/scenes/arcadeScene.h header/games/game.h header/scenes/gameScene.h 

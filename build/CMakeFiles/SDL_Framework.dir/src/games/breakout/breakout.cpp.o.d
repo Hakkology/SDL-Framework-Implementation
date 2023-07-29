@@ -294,51 +294,60 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
- /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
@@ -347,16 +356,11 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h

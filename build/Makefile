@@ -417,6 +417,30 @@ src/graphics/screenbuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s
 .PHONY : src/graphics/screenbuffer.cpp.s
 
+src/graphics/spritesheet.o: src/graphics/spritesheet.cpp.o
+.PHONY : src/graphics/spritesheet.o
+
+# target to build an object file
+src/graphics/spritesheet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o
+.PHONY : src/graphics/spritesheet.cpp.o
+
+src/graphics/spritesheet.i: src/graphics/spritesheet.cpp.i
+.PHONY : src/graphics/spritesheet.i
+
+# target to preprocess a source file
+src/graphics/spritesheet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.i
+.PHONY : src/graphics/spritesheet.cpp.i
+
+src/graphics/spritesheet.s: src/graphics/spritesheet.cpp.s
+.PHONY : src/graphics/spritesheet.s
+
+# target to generate assembly for a file
+src/graphics/spritesheet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.s
+.PHONY : src/graphics/spritesheet.cpp.s
+
 src/input/gamecontroller.o: src/input/gamecontroller.cpp.o
 .PHONY : src/input/gamecontroller.o
 
@@ -774,6 +798,9 @@ help:
 	@echo "... src/graphics/screenbuffer.o"
 	@echo "... src/graphics/screenbuffer.i"
 	@echo "... src/graphics/screenbuffer.s"
+	@echo "... src/graphics/spritesheet.o"
+	@echo "... src/graphics/spritesheet.i"
+	@echo "... src/graphics/spritesheet.s"
 	@echo "... src/input/gamecontroller.o"
 	@echo "... src/input/gamecontroller.i"
 	@echo "... src/input/gamecontroller.s"

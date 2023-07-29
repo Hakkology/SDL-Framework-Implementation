@@ -334,6 +334,12 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
@@ -343,7 +349,7 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
@@ -351,9 +357,4 @@ CMakeFiles/SDL_Framework.dir/src/main.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h

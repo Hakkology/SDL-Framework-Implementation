@@ -7,7 +7,7 @@ ArcadeScene::ArcadeScene(){
 
 void ArcadeScene::Init (){
 
-    mTempImage.Load(App::Singleton().GetBasePath() + "Assets/ArcadeFont.bmp");
+    mTempSS.Load("ArcadeFont");
 
     ButtonAction action;
     MouseButtonAction mouseAction;
@@ -57,7 +57,7 @@ void ArcadeScene::Draw(Screen& theScreen){
     theScreen.Draw (circle, Color (245, 190, 100, 100), true, Color (245, 190, 100, 100));
     */
 
-    theScreen.Draw(mTempImage, Vector2D::Zero);
+    theScreen.Draw(mTempSS, "w", Vector2D::Zero);
 
 }
 

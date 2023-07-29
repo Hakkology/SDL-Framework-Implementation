@@ -17,13 +17,16 @@
 #include "rectangle.h"
 #include "circle.h"
 #include "bmpimage.h"
+#include "spritesheet.h"
 
 class Vector2D;
 class Line2D;
 class Triangle;
 class BMPImage;
+class SpriteSheet;
 struct SDL_window;
 struct SDL_Surface;
+struct Sprite;
 
 class Screen{
 
@@ -47,7 +50,8 @@ public:
     void Draw (const Triangle& triangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Rectangle& rectangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Circle& circle, const Color& color, bool fill=false, const Color& fillColor = White());
-    void Draw (const BMPImage& image, const Vector2D pos);
+    void Draw (const BMPImage& image, const Sprite& sprite, const Vector2D& pos);
+    void Draw (const SpriteSheet& ss, const std::string& spriteName, const Vector2D& pos);
 
 private:
 

@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o"
