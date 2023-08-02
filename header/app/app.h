@@ -9,6 +9,7 @@
 #include "scene.h"
 #include "inputcontroller.h"
 #include "gameScene.h"
+#include "bmpfont.h"
 
 #include "arcadeScene.h"
 #include "breakout.h"
@@ -31,6 +32,7 @@ public:
     Scene* TopScene(); // current scene
 
     static const std::string& GetBasePath();
+    inline const BmpFont& GetFont() const {return mFont;}
 
 private:
     Screen aScreen;

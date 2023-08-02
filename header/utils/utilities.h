@@ -9,6 +9,10 @@
 // variables
 static const float toleranceValue = 0.0001f;
 
+struct Size{
+    unsigned int width = 0, height = 0;
+};
+
 // functions
 bool IsEqual(float x, float y);
 bool IsGreaterThanOrEqual(float x, float y);

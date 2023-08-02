@@ -1,4 +1,5 @@
 #include "screen.h"
+#include "bmpfont.h"
 
 Screen::Screen(): gWidth(0), gHeight(0), 
                     moptrWindow(nullptr), monoptrWindowSurface(nullptr){
@@ -217,6 +218,29 @@ void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& p
 void Screen::Draw(const SpriteSheet &ss, const std::string &spriteName, const Vector2D &pos){
     
     Draw(ss.GetBMPImage(), ss.GetSprite(spriteName), pos);
+}
+
+void Screen::Draw(const BmpFont& font, const std::string& textLine, const Vector2D& pos){
+
+    uint32_t xPos = pos.GetX();
+
+    const SpriteSheet& ss = font.GetSpriteSheet();
+
+    for( char c : textLine){
+
+        if(c == ' '){
+
+            xPos += font.GetFontSpacingBetweenWords();
+            continue;
+        }
+
+        Sprite sprite = ss.GetSprite(std::String("") + c);
+
+        Draw(ss.GetBMPImage(), sprite, Vector2D(xPos, pos.GetY()));
+
+        xPos += sprite.width;
+        xPos += font.GetFontSpacingBetweenLetters();
+    }
 }
 
 void Screen::ClearScreen(){

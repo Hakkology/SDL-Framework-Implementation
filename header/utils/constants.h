@@ -58,4 +58,8 @@ const int LEVEL_NO = 1;
 // Game Details
 const int NUM_LIVES = 3;
 
+// Font spacings
+const uint32_t FontSpacingBetweenLetters =2;
+const uint32_t FontSpacingBetweenWords =5;
+
 #endif

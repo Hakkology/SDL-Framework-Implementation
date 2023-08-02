@@ -7,8 +7,6 @@ ArcadeScene::ArcadeScene(){
 
 void ArcadeScene::Init (){
 
-    mTempSS.Load("ArcadeFont");
-
     ButtonAction action;
     MouseButtonAction mouseAction;
 
@@ -45,6 +43,13 @@ void ArcadeScene::Update(uint32_t dt){
 
 void ArcadeScene::Draw(Screen& theScreen){
 
+    const BmpFont& font = App::Singleton().GetFont();
+
+    Rectangle rect = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
+    Vector2D textDrawPosition;
+    textDrawPosition = font.GetDrawPosition(GetSceneName(), rect, BFXA_CENTER, BFYA_CENTER);
+
+    theScreen.Draw(font, GetSceneName(), textDrawPosition);
     /*
     // Shapes
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
@@ -56,8 +61,6 @@ void ArcadeScene::Draw(Screen& theScreen){
     theScreen.Draw (rectangle, Green(), true, Green());
     theScreen.Draw (circle, Color (245, 190, 100, 100), true, Color (245, 190, 100, 100));
     */
-
-    theScreen.Draw(mTempSS, "w", Vector2D::Zero);
 
 }
 
