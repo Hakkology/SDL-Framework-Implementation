@@ -15,26 +15,26 @@ void ArcadeScene::Init (){
     mouseAction.mouseButton = GameController::LeftMouseButton();
     mouseAction.mouseInputAction = [] (InputState state, const MousePosition& position){
 
-        if (GameController::IsPressed(state))
-        {
-            std::cout << "Left Mouse button pressed!" << std::endl;
-        }
+        // if (GameController::IsPressed(state))
+        // {
+        //     std::cout << "Left Mouse button pressed!" << std::endl;
+        // }
     };
 
     action.key = GameController::ActionKey();
     action.action = [](uint32_t dt, InputState state){
 
-        if (GameController::IsPressed(state))
-        {
-            std::cout << "Action button is pressed" << std::endl;
-        }
+        // if (GameController::IsPressed(state))
+        // {
+        //     std::cout << "Action button is pressed" << std::endl;
+        // }
     };
 
     sGameController.AddInputActionForKey(action);
     sGameController.AddMouseButtonAction(mouseAction);
     sGameController.SetMouseMovedAction([] (const MousePosition& position){
 
-        std::cout << "Mouse position x: " << position.xPos << "y: " << position.yPos << std::endl;
+        //std::cout << "Mouse position x: " << position.xPos << "y: " << position.yPos << std::endl;
     });
 }
 
@@ -51,7 +51,7 @@ void ArcadeScene::Draw(Screen& theScreen){
     Vector2D textDrawPosition;
     textDrawPosition = font.GetDrawPosition(GetSceneName(), rect, BFXA_CENTER, BFYA_CENTER);
 
-    theScreen.Draw(font, GetSceneName(), textDrawPosition);
+    theScreen.Draw(font, GetSceneName(), textDrawPosition, Orange());
     
     /*
     // Shapes

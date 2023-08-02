@@ -51,9 +51,10 @@ public:
     void Draw (const Triangle& triangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Rectangle& rectangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Circle& circle, const Color& color, bool fill=false, const Color& fillColor = White());
-    void Draw (const BMPImage& image, const Sprite& sprite, const Vector2D& pos);
-    void Draw (const SpriteSheet& ss, const std::string& spriteName, const Vector2D& pos);
-    void Draw (const BmpFont& font, const std::string& textLine, const Vector2D& pos);
+
+    void Draw (const BMPImage& image, const Sprite& sprite, const Vector2D& pos, const Color& overlayColor = White());
+    void Draw (const SpriteSheet& ss, const std::string& spriteName, const Vector2D& pos, const Color& overlayColor = White());
+    void Draw (const BmpFont& font, const std::string& textLine, const Vector2D& pos, const Color& overlayColor = White());
 
 private:
 
