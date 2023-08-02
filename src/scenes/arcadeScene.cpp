@@ -1,4 +1,6 @@
 #include "arcadeScene.h"
+#include "app.h"
+#include "bmpfont.h"
 
 ArcadeScene::ArcadeScene(){
 
@@ -50,6 +52,7 @@ void ArcadeScene::Draw(Screen& theScreen){
     textDrawPosition = font.GetDrawPosition(GetSceneName(), rect, BFXA_CENTER, BFYA_CENTER);
 
     theScreen.Draw(font, GetSceneName(), textDrawPosition);
+    
     /*
     // Shapes
     Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};

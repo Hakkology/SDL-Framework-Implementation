@@ -234,7 +234,7 @@ void Screen::Draw(const BmpFont& font, const std::string& textLine, const Vector
             continue;
         }
 
-        Sprite sprite = ss.GetSprite(std::String("") + c);
+        Sprite sprite = ss.GetSprite(std::string("") + c);
 
         Draw(ss.GetBMPImage(), sprite, Vector2D(xPos, pos.GetY()));
 

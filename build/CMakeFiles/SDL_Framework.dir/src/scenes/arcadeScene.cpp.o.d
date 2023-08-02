@@ -342,4 +342,18 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h

@@ -32,7 +32,7 @@ public:
     Scene* TopScene(); // current scene
 
     static const std::string& GetBasePath();
-    inline const BmpFont& GetFont() const {return mFont;}
+    inline const BmpFont& GetFont() const {return bFont;}
 
 private:
     Screen aScreen;
@@ -40,6 +40,8 @@ private:
 
     std::vector<std::unique_ptr<Scene>> aSceneStack;
     InputController aInputController;
+
+    BmpFont bFont;
 };
 
 #endif

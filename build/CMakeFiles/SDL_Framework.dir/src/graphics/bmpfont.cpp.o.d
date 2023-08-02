@@ -1,10 +1,9 @@
-CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/spritesheet.cpp \
+CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
- /usr/include/c++/11/string \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -12,6 +11,16 @@ CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
+ /usr/include/c++/11/string \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/stringfwd.h \
@@ -33,13 +42,10 @@ CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -47,14 +53,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/11/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/c++/11/bits/allocator.h \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
  /usr/include/c++/11/bits/exception.h \
@@ -321,45 +320,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
- /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/unique_ptr.h \
- /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h

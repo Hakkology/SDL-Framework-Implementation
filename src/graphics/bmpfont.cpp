@@ -35,19 +35,19 @@ Size BmpFont::GetSizeOf (const std::string& str) const{
     return textSize;
 }
 
-Vector2D BmpFont::GetDrawPosition(const std::string& str, const Rectangle& box, BmpFontXAlignment xAlign, BmpFontYAlignment yAlign){
+Vector2D BmpFont::GetDrawPosition(const std::string& str, const Rectangle& box, BmpFontXAlignment xAlign, BmpFontYAlignment yAlign) const{
 
     Size textSize = GetSizeOf(str);
 
     uint32_t x = 0;
     uint32_t y = 0;
 
-    if(xAlign = BFXA_CENTER){
+    if(xAlign == BFXA_CENTER){
 
         x = box.GetWidth() / 2- textSize.width /2 ;
-    }else if(xAlign = BXFA_RIGHT){
+    }else if(xAlign == BFXA_RIGHT){
 
-        x = box.GetWidth() - textSize.width();
+        x = box.GetWidth() - textSize.width;
     }
     x += box.GetTopLeftPoint().GetX();
 
@@ -57,7 +57,7 @@ Vector2D BmpFont::GetDrawPosition(const std::string& str, const Rectangle& box, 
     }
     else if(yAlign == BFYA_BOTTOM){
 
-        y = box.GetHeight() - textSize.height();
+        y = box.GetHeight() - textSize.height;
     }
     y += box.GetTopLeftPoint().GetY();
 

@@ -167,7 +167,8 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26
 			]
 		}
 	],
@@ -230,7 +231,8 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26
 			]
 		}
 	],
@@ -288,6 +290,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/graphics/spritesheet.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/graphics/bmpfont.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

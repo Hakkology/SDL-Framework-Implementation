@@ -1,5 +1,5 @@
 #ifndef GRAPHICS_BMPFONT_H
-#define GRAPHICS_BMPIMAGE_H
+#define GRAPHICS_BMPFONT_H
 
 #include <stdint.h>
 
@@ -14,7 +14,7 @@ enum BmpFontXAlignment{
 
     BFXA_LEFT = 0,
     BFXA_CENTER,
-    BXFA_RIGHT
+    BFXA_RIGHT
 };
 
 enum BmpFontYAlignment{
@@ -32,7 +32,7 @@ public:
 
     bool Load(const std::string& name);
     Size GetSizeOf (const std::string& str) const;
-    Vector2D GetDrawPosition(const std::string& str, const Rectangle& box, BmpFontXAlignment xAlign=BFXA_LEFT, BmpFontYAlignment yAlign = BFYA_TOP)
+    Vector2D GetDrawPosition(const std::string& str, const Rectangle& box, BmpFontXAlignment xAlign=BFXA_LEFT, BmpFontYAlignment yAlign = BFYA_TOP) const;
 
     inline const SpriteSheet& GetSpriteSheet() const {return bFontSheet;}
     inline const uint32_t GetFontSpacingBetweenLetters() const {return FontSpacingBetweenLetters;}
