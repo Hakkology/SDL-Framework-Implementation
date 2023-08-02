@@ -21,6 +21,18 @@ float MillisecondstoSeconds(unsigned int milliseconds)
     return static_cast<float>(milliseconds) / 1000.0f;
 }
 
+float Clamp(float val, float min, float max){
+
+    if (val > max){
+
+        return max;
+    } else if (val < min){
+        
+        return min;
+    }
+    return val;
+}
+
 unsigned int GetIndex(unsigned int width, unsigned int r, unsigned int c){
 
     return r * width + c;

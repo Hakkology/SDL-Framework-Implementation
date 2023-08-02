@@ -6,6 +6,7 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <functional>
 
 #include <SDL2/SDL.h>
 
@@ -25,6 +26,9 @@ class Triangle;
 class BMPImage;
 class SpriteSheet;
 class BmpFont;
+struct SDL_Renderer;
+struct SDL_PixelFormat;
+struct SDL_Texture;
 struct SDL_window;
 struct SDL_Surface;
 struct Sprite;
@@ -36,7 +40,7 @@ public:
     Screen();
     ~Screen();
 
-    SDL_Window* Init(uint32_t w, uint32_t h, uint32_t mag);
+    SDL_Window* Init(uint32_t w, uint32_t h, uint32_t mag, bool fast = true);
     void SwapBuffers();
     
     inline void SetClearColor(const Color& clearColor) {gClearColor = clearColor;}
@@ -61,7 +65,12 @@ private:
     Screen& operator= (const Screen& screen);
     
     void ClearScreen();
-    void FillPoly(const std:: vector<Vector2D>& points, const Color& color);
+
+    using FillPolyFunc = std::function<Color (uint32_t x, uint32_t y)>;
+
+    void FillPoly(const std:: vector<Vector2D>& points, FillPolyFunc func);
+
+    bool bFast;
 
     uint32_t gWidth;
     uint32_t gHeight;
@@ -71,7 +80,9 @@ private:
 
     SDL_Window* moptrWindow;
     SDL_Surface* monoptrWindowSurface;
-
+    SDL_Renderer* bRenderer;
+    SDL_PixelFormat* bPixelFormat;
+    SDL_Texture* bTexture;
 };
 
 #endif

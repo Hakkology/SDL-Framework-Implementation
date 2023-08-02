@@ -2,12 +2,15 @@
 #include "bmpfont.h"
 
 Screen::Screen(): gWidth(0), gHeight(0), 
-                    moptrWindow(nullptr), monoptrWindowSurface(nullptr){
+                    moptrWindow(nullptr), monoptrWindowSurface(nullptr),
+                    bRenderer(nullptr), bPixelFormat(nullptr), bTexture(nullptr) {
 
 }
 
-SDL_Window *Screen::Init(uint32_t w, uint32_t h, uint32_t mag){
+SDL_Window *Screen::Init(uint32_t w, uint32_t h, uint32_t mag, bool fast){
     
+    bFast = fast;
+
     if (SDL_Init(SDL_INIT_VIDEO))
     {
         std::cout << "Error SDL_Init Failed" << std::endl;
@@ -29,13 +32,38 @@ SDL_Window *Screen::Init(uint32_t w, uint32_t h, uint32_t mag){
     // window surface initializer
     if (moptrWindow)
     {
-        monoptrWindowSurface = SDL_GetWindowSurface(moptrWindow);
+        uint8_t rClear = 0;
+        uint8_t gClear = 0;
+        uint8_t bClear = 0;
+        uint8_t aClear = 255;
+
+        if (bFast)
+        {
+            bRenderer = SDL_CreateRenderer(moptrWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+            if (bRenderer == nullptr)
+            {
+                std::cout << "SDL_CreateRenderer failed." << std::endl;
+                return nullptr;
+            }
+            SDL_SetRenderDrawColor(bRenderer, rClear, gClear, bClear, aClear);   
+        }
+        else
+        {
+            monoptrWindowSurface = SDL_GetWindowSurface(moptrWindow);
+        }
+        bPixelFormat = SDL_AllocFormat(SDL_GetWindowPixelFormat(moptrWindow));
+
+        if (bFast)
+        {
+            bTexture = SDL_CreateTexture(bRenderer, bPixelFormat->format, SDL_TEXTUREACCESS_STREAMING, w, h);
+        }
+        
 
         // color and pixel format initializer
-        SDL_PixelFormat* pixelFormat = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA8888);
-        Color::InitColorFormat(pixelFormat);
-        gClearColor = Black();
-        gBackBuffer.Init(pixelFormat -> format, gWidth, gHeight);
+        Color::InitColorFormat(bPixelFormat);
+        gClearColor = Color(rClear, gClear, bClear, aClear);
+
+        gBackBuffer.Init(bPixelFormat -> format, gWidth, gHeight);
         gBackBuffer.Clear(gClearColor);
     }
     
@@ -50,9 +78,25 @@ void Screen::SwapBuffers(){
     {
         ClearScreen();
 
-        SDL_BlitScaled(gBackBuffer.GetSurface(), nullptr, monoptrWindowSurface, nullptr);
-        SDL_UpdateWindowSurface(moptrWindow);
+        if (bFast)
+        {
+            uint8_t* textureData = nullptr;
+            int texturePitch = 0;
 
+            if (SDL_LockTexture(bTexture, nullptr, (void**)&textureData, &texturePitch) >= 0)
+            {
+                SDL_Surface* surface = gBackBuffer.GetSurface();
+                memcpy(textureData, surface->pixels, surface->w* surface->h * bPixelFormat->BytesPerPixel);
+
+                SDL_UnlockTexture(bTexture);
+                SDL_RenderCopy(bRenderer, bTexture, nullptr, nullptr);
+                SDL_RenderPresent(bRenderer);
+            }
+        }else
+        {
+            SDL_BlitScaled(gBackBuffer.GetSurface(), nullptr, monoptrWindowSurface, nullptr);
+            SDL_UpdateWindowSurface(moptrWindow);   
+        }
         gBackBuffer.Clear(gClearColor);
     }
 }
@@ -132,7 +176,7 @@ void Screen::Draw(const Triangle& triangle, const Color& color, bool fill, const
 
     if (fill)
     {
-        FillPoly(triangle.GetPoints(), fillColor);
+        FillPoly(triangle.GetPoints(), [fillColor](uint32_t x, uint32_t y){return fillColor;});
     }
     
     Line2D p0p1 = Line2D (triangle.GetP0(), triangle.GetP1());
@@ -148,7 +192,7 @@ void Screen::Draw(const Rectangle &rectangle, const Color &color, bool fill, con
 
     if (fill)
     {
-        FillPoly(rectangle.GetPoints(), fillColor);
+        FillPoly(rectangle.GetPoints(), [fillColor](uint32_t x, uint32_t y){return fillColor;});
     }
 
     std::vector <Vector2D> points = rectangle.GetPoints();
@@ -190,7 +234,7 @@ void Screen::Draw(const Circle &circle, const Color &color, bool fill, const Col
 
     if (fill)
     {
-        FillPoly(circlePoints, fillColor);
+        FillPoly(circlePoints, [fillColor](uint32_t x, uint32_t y){return fillColor;});
     }
 
     for (const Line2D& line: lines)
@@ -211,19 +255,44 @@ void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& p
     uint32_t width = sprite.width;
     uint32_t height = sprite.height;
 
-    for (uint32_t r = 0; r < height; ++r)
-    {
-        for (uint32_t c = 0; c < width; ++c)
-        {
-            Color imageColor = image.GetPixels()[GetIndex(image.GetWidth(), r + sprite.yPos, c + sprite.xPos)];
-            Color newColor = {static_cast<uint8_t>(imageColor.GetRed() * rVal), 
-                              static_cast<uint8_t>(imageColor.GetGreen() * gVal), 
-                              static_cast<uint8_t>(imageColor.GetBlue() * bVal), 
-                              static_cast<uint8_t>(imageColor.GetAlpha() * aVal)};
+    const std::vector<Color>& pixels = image.GetPixels();
 
-            Draw(c + pos.GetX(), r + pos.GetY(), newColor);
-        }
-    }
+    auto topLeft = pos;
+    auto topRight = pos + Vector2D(width, 0);
+    auto bottomLeft = pos + Vector2D(0, height);
+    auto bottomRight = pos + Vector2D(width, height);
+
+    std::vector<Vector2D> points = {topLeft, bottomLeft, bottomRight, topRight};
+
+    Vector2D xAxis = topRight - topLeft;
+    Vector2D yAxis = bottomLeft - topLeft;
+
+    const float invXAxisLengthSq = 1.0f / xAxis.MagnitudeSquare();
+    const float invYAxisLengthSq = 1.0f / yAxis.MagnitudeSquare();
+
+    FillPoly(points, [&](uint32_t px, uint32_t py){
+
+        Vector2D p = {static_cast<float>(px), static_cast<float>(py)};
+        Vector2D d = p - topLeft;
+
+        float u = invXAxisLengthSq * d.Dot(xAxis);
+        float v = invYAxisLengthSq * d.Dot(yAxis);
+
+        u = Clamp(u, 0.0f, 1.0f);
+        v = Clamp(v, 0.0f, 1.0f);
+
+        float tx = roundf(u * static_cast<float>(sprite.width));
+        float ty = roundf(v * static_cast<float>(sprite.height));
+
+        Color imageColor = pixels[GetIndex(image.GetWidth(), ty + sprite.yPos, tx + sprite.xPos)];
+
+        Color newColor = {static_cast<uint8_t>(imageColor.GetRed() * rVal), 
+                          static_cast<uint8_t>(imageColor.GetGreen() * gVal), 
+                          static_cast<uint8_t>(imageColor.GetBlue() * bVal), 
+                          static_cast<uint8_t>(imageColor.GetAlpha() * aVal)};
+
+        return newColor;
+    });
 }
 
 void Screen::Draw(const SpriteSheet &ss, const std::string &spriteName, const Vector2D &pos, const Color& overlayColor){
@@ -258,11 +327,17 @@ void Screen::ClearScreen(){
     assert(moptrWindow);
     if (moptrWindow)
     {
-        SDL_FillRect(monoptrWindowSurface, nullptr, gClearColor.GetPixelColor());
+        if (bFast)
+        {
+            SDL_RenderClear(bRenderer);
+        }else
+        {
+            SDL_FillRect(monoptrWindowSurface, nullptr, gClearColor.GetPixelColor());
+        }
     }
 }
 
-void Screen::FillPoly(const std::vector<Vector2D> &points, const Color &color){
+void Screen::FillPoly(const std::vector<Vector2D> &points, FillPolyFunc func){
 
     if (points.size() > 0)
     {
@@ -345,7 +420,7 @@ void Screen::FillPoly(const std::vector<Vector2D> &points, const Color &color){
 
                     for (int pixelX = nodeXVector[k]; pixelX < nodeXVector[k+1]; ++pixelX)
                     {
-                        Draw(pixelX, pixelY, color);
+                        Draw(pixelX, pixelY, func(pixelX, pixelY));
                     }
                     
                 }
@@ -359,6 +434,24 @@ void Screen::FillPoly(const std::vector<Vector2D> &points, const Color &color){
 
 Screen::~Screen(){
 
+    if (bPixelFormat)
+    {
+        SDL_FreeFormat(bPixelFormat);
+        bPixelFormat = nullptr;
+    }
+    
+    if (bTexture)
+    {
+        SDL_DestroyTexture(bTexture);
+        bTexture = nullptr;
+    }
+    
+    if (bRenderer)
+    {
+        SDL_DestroyRenderer(bRenderer);
+        bRenderer = nullptr;
+    }
+    
     if (moptrWindow)
     {
         SDL_DestroyWindow(moptrWindow);
