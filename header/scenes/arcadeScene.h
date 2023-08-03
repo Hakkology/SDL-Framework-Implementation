@@ -8,7 +8,7 @@
 #include "screen.h"
 #include "color.h"
 #include "gamecontroller.h"
-#include "animationplayer.h"
+#include "animatedsprite.h
 
 enum eGame{
     TETRIS = 0,
@@ -34,7 +34,7 @@ private:
 
     //temp
 
-    AnimationPlayer mAnimationPlayer;
+    AnimatedSprite mSprite;
     SpriteSheet mSpriteSheet;
 
 };
