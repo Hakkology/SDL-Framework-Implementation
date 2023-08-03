@@ -345,6 +345,30 @@ src/games/breakout/paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
 .PHONY : src/games/breakout/paddle.cpp.s
 
+src/graphics/animation.o: src/graphics/animation.cpp.o
+.PHONY : src/graphics/animation.o
+
+# target to build an object file
+src/graphics/animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o
+.PHONY : src/graphics/animation.cpp.o
+
+src/graphics/animation.i: src/graphics/animation.cpp.i
+.PHONY : src/graphics/animation.i
+
+# target to preprocess a source file
+src/graphics/animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.i
+.PHONY : src/graphics/animation.cpp.i
+
+src/graphics/animation.s: src/graphics/animation.cpp.s
+.PHONY : src/graphics/animation.s
+
+# target to generate assembly for a file
+src/graphics/animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s
+.PHONY : src/graphics/animation.cpp.s
+
 src/graphics/bmpfont.o: src/graphics/bmpfont.cpp.o
 .PHONY : src/graphics/bmpfont.o
 
@@ -885,6 +909,9 @@ help:
 	@echo "... src/games/breakout/paddle.o"
 	@echo "... src/games/breakout/paddle.i"
 	@echo "... src/games/breakout/paddle.s"
+	@echo "... src/graphics/animation.o"
+	@echo "... src/graphics/animation.i"
+	@echo "... src/graphics/animation.s"
 	@echo "... src/graphics/bmpfont.o"
 	@echo "... src/graphics/bmpfont.i"
 	@echo "... src/graphics/bmpfont.s"

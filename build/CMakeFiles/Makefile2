@@ -81,12 +81,12 @@ clean: CMakeFiles/SDL_Framework.dir/clean
 CMakeFiles/SDL_Framework.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target SDL_Framework"
 .PHONY : CMakeFiles/SDL_Framework.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SDL_Framework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SDL_Framework.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles 0
 .PHONY : CMakeFiles/SDL_Framework.dir/rule
