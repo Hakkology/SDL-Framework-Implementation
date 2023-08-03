@@ -24,8 +24,6 @@ class Animation
 
 public:
 
-    Animation();
-
     AnimationFrame GetAnimationFrame (uint32_t frameNum) const;
 
     inline void AddFrame(const std::string& frame) {mFrames.push_back(frame);}
@@ -51,6 +49,8 @@ public:
     size_t NumFrameColors() const {return mFrameColors.size();}
     size_t NumOverlayColors() const {return mOverlayColors.size();}
     size_t NumFrameOffsets() const {return mFrameOffsets.size();}
+
+    static std::vector<Animation> LoadAnimations(const std::string& animationFilePath);
 
 
 private:
