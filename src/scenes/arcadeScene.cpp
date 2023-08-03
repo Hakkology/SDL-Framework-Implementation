@@ -2,40 +2,42 @@
 #include "app.h"
 #include "bmpfont.h"
 
-ArcadeScene::ArcadeScene(){
+#include "gameScene.h"
+#include "breakout.h"
+#include "notimplementedScene.h"
+
+ArcadeScene::ArcadeScene():ButtonOptionsScene({"Tetris", "Break Out!", "Asteroids", "Pac-man"}, Magenta()){
 
 
 }
 
 void ArcadeScene::Init (){
 
-    ButtonAction action;
-    MouseButtonAction mouseAction;
+    std::vector<Button::ButtonAction> actions;
 
-    mouseAction.mouseButton = GameController::LeftMouseButton();
-    mouseAction.mouseInputAction = [] (InputState state, const MousePosition& position){
+    actions.push_back([this]{
 
-        // if (GameController::IsPressed(state))
-        // {
-        //     std::cout << "Left Mouse button pressed!" << std::endl;
-        // }
-    };
-
-    action.key = GameController::ActionKey();
-    action.action = [](uint32_t dt, InputState state){
-
-        // if (GameController::IsPressed(state))
-        // {
-        //     std::cout << "Action button is pressed" << std::endl;
-        // }
-    };
-
-    sGameController.AddInputActionForKey(action);
-    sGameController.AddMouseButtonAction(mouseAction);
-    sGameController.SetMouseMovedAction([] (const MousePosition& position){
-
-        //std::cout << "Mouse position x: " << position.xPos << "y: " << position.yPos << std::endl;
+        App::Singleton().PushScene(GetScene(TETRIS));
     });
+
+    actions.push_back([this]{
+
+        App::Singleton().PushScene(GetScene(BREAK_OUT));
+    });
+
+    actions.push_back([this]{
+
+        App::Singleton().PushScene(GetScene(ASTEROIDS));
+    });
+
+    actions.push_back([this]{
+
+        App::Singleton().PushScene(GetScene(PACMAN));
+    });
+
+    SetButtonActions(actions);
+    ButtonOptionsScene::Init();
+
 }
 
 void ArcadeScene::Update(uint32_t dt){
@@ -47,24 +49,30 @@ void ArcadeScene::Draw(Screen& theScreen){
 
     const BmpFont& font = App::Singleton().GetFont();
 
-    Rectangle rect = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
+    Rectangle rect = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()/3};
     Vector2D textDrawPosition;
-    textDrawPosition = font.GetDrawPosition(GetSceneName(), rect, BFXA_CENTER, BFYA_CENTER);
+    textDrawPosition = font.GetDrawPosition("GAME STATION", rect, BFXA_CENTER, BFYA_CENTER);
 
-    theScreen.Draw(font, GetSceneName(), textDrawPosition, Orange());
-    
-    /*
-    // Shapes
-    Triangle triangle = {Vector2D (60, 10), Vector2D (10, 110), Vector2D (110,110)};
-    Rectangle rectangle = {Vector2D(theScreen.Width()/2-100, theScreen.Height()/2-100),150,200};
-    Circle circle = {Vector2D(theScreen.Width()/2 +50, theScreen.Height()/2 -150), 80};
+    theScreen.Draw(font, "GAME STATION", textDrawPosition, Orange());
 
-    // Render
+    Triangle triangle = {Vector2D (60, 30), Vector2D (10, 130), Vector2D (130,130)};
     theScreen.Draw (triangle, Lilac(), true, Lilac());
-    theScreen.Draw (rectangle, Green(), true, Green());
-    theScreen.Draw (circle, Color (245, 190, 100, 100), true, Color (245, 190, 100, 100));
-    */
+    Circle circle = {Vector2D(theScreen.Width()/2 +150, theScreen.Height()/2 -50), 60};
+    theScreen.Draw (circle, Green(), true, Green());
+    Rectangle rectangle = {Vector2D(theScreen.Width()/2-90, theScreen.Height()/2+70),180,60};
+    theScreen.Draw (rectangle, Blue(), true, Blue());
 
+    ButtonOptionsScene::Draw(theScreen);
+
+    // // Shapes
+
+    // 
+    // 
+
+    // // Render
+    
+    // 
+    
 }
 
 const std::string& ArcadeScene::GetSceneName() const{
@@ -77,25 +85,28 @@ std::unique_ptr<Scene> ArcadeScene::GetScene(eGame game){
 
     switch (game)
     {
-    case TETRIS:
-        /* code */
+        case TETRIS:
+            /* code */
+            break;
+        
+        case BREAK_OUT:
+        {
+            std::unique_ptr<BreakOut> breakoutGame = std::make_unique<BreakOut>();
+            std::unique_ptr<GameScene> breakoutScene = std::make_unique<GameScene>(std::move(breakoutGame));
+            return breakoutScene;
+        }
         break;
-    
-    case BREAK_OUT:
-        /* code */
-        break;
-    
-    case ASTEROIDS:
-        /* code */
+        
+        case ASTEROIDS:
+            /* code */
         break;
 
-    case PACMAN:
-        /* code */
+        case PACMAN:
+            /* code */
         break;
 
-    default:
-        break;
     }
 
-    return nullptr;
+    std::unique_ptr<Scene> notImplementedScene = std::make_unique<NotImplementedScene>();
+    return notImplementedScene;
 }

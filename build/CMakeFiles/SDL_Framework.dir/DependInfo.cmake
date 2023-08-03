@@ -29,6 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/notimplementedScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/circle.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/rectangle.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o.d"

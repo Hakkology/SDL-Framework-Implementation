@@ -633,6 +633,30 @@ src/scenes/gameScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.s
 .PHONY : src/scenes/gameScene.cpp.s
 
+src/scenes/notimplementedScene.o: src/scenes/notimplementedScene.cpp.o
+.PHONY : src/scenes/notimplementedScene.o
+
+# target to build an object file
+src/scenes/notimplementedScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o
+.PHONY : src/scenes/notimplementedScene.cpp.o
+
+src/scenes/notimplementedScene.i: src/scenes/notimplementedScene.cpp.i
+.PHONY : src/scenes/notimplementedScene.i
+
+# target to preprocess a source file
+src/scenes/notimplementedScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.i
+.PHONY : src/scenes/notimplementedScene.cpp.i
+
+src/scenes/notimplementedScene.s: src/scenes/notimplementedScene.cpp.s
+.PHONY : src/scenes/notimplementedScene.s
+
+# target to generate assembly for a file
+src/scenes/notimplementedScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s
+.PHONY : src/scenes/notimplementedScene.cpp.s
+
 src/shapes/circle.o: src/shapes/circle.cpp.o
 .PHONY : src/shapes/circle.o
 
@@ -897,6 +921,9 @@ help:
 	@echo "... src/scenes/gameScene.o"
 	@echo "... src/scenes/gameScene.i"
 	@echo "... src/scenes/gameScene.s"
+	@echo "... src/scenes/notimplementedScene.o"
+	@echo "... src/scenes/notimplementedScene.i"
+	@echo "... src/scenes/notimplementedScene.s"
 	@echo "... src/shapes/circle.o"
 	@echo "... src/shapes/circle.i"
 	@echo "... src/shapes/circle.s"

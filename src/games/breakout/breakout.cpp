@@ -41,6 +41,20 @@ void BreakOut::Init(GameController &controller){
     controller.ClearAll();
     ResetGame();
 
+    ButtonAction backAction;
+    backAction.key = GameController::CancelKey();
+    backAction.action = [this](uint32_t dt, InputState state){
+
+        if (bGameState == IN_SERVE || bGameState == IN_GAME_OVER)
+        {
+            if (GameController::IsPressed(state))
+            {
+                App::Singleton().PopScene();
+            }
+        }
+    };
+    controller.AddInputActionForKey(backAction);
+
     ButtonAction serveAction;
     
     serveAction.key = GameController::ActionKey();

@@ -41,6 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"

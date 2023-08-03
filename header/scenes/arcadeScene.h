@@ -4,7 +4,7 @@
 #include <memory>
 #include <iostream>
 
-#include "scene.h"
+#include "buttonoptionsScene.h"
 #include "screen.h"
 #include "color.h"
 #include "gamecontroller.h"
@@ -17,7 +17,7 @@ enum eGame{
     NUM_GAMES
 };
 
-class ArcadeScene : public Scene {
+class ArcadeScene : public ButtonOptionsScene {
 
 public:
 

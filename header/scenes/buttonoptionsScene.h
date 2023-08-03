@@ -1,5 +1,5 @@
-#ifndef APP_BUTTONOPTIONSSCENE__H__
-#define APP_BUTTONOPTIONSSCENE__H__
+#ifndef SCENES_BUTTONOPTIONSSCENE__H__
+#define SCENES_BUTTONOPTIONSSCENE__H__
 
 #include <string>
 #include <vector>
