@@ -172,7 +172,8 @@
 				27,
 				28,
 				29,
-				30
+				30,
+				31
 			]
 		}
 	],
@@ -240,7 +241,8 @@
 				27,
 				28,
 				29,
-				30
+				30,
+				31
 			]
 		}
 	],
@@ -310,6 +312,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/graphics/animation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/graphics/animationplayer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

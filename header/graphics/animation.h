@@ -41,6 +41,7 @@ public:
     inline void SetSize(const Vector2D& size) {mSize = size;}
 
     inline void SetFPS (int fps) {mFPS = fps;}
+    inline int FPS () {return mFPS;}
 
     inline void SetOverlay (const std::string& overlayName) {mOverlay = overlayName;}
     inline const std::string& OverlayName() const {return mOverlay;}

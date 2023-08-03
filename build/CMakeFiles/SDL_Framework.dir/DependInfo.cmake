@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animation.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animationplayer.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpimage.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp" "CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o.d"

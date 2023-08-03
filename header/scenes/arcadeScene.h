@@ -8,6 +8,7 @@
 #include "screen.h"
 #include "color.h"
 #include "gamecontroller.h"
+#include "animationplayer.h"
 
 enum eGame{
     TETRIS = 0,
@@ -30,6 +31,11 @@ public:
 private:
 
     std::unique_ptr<Scene> GetScene (eGame game);
+
+    //temp
+
+    AnimationPlayer mAnimationPlayer;
+    SpriteSheet mSpriteSheet;
 
 };
 

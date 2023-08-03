@@ -369,6 +369,30 @@ src/graphics/animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s
 .PHONY : src/graphics/animation.cpp.s
 
+src/graphics/animationplayer.o: src/graphics/animationplayer.cpp.o
+.PHONY : src/graphics/animationplayer.o
+
+# target to build an object file
+src/graphics/animationplayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o
+.PHONY : src/graphics/animationplayer.cpp.o
+
+src/graphics/animationplayer.i: src/graphics/animationplayer.cpp.i
+.PHONY : src/graphics/animationplayer.i
+
+# target to preprocess a source file
+src/graphics/animationplayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.i
+.PHONY : src/graphics/animationplayer.cpp.i
+
+src/graphics/animationplayer.s: src/graphics/animationplayer.cpp.s
+.PHONY : src/graphics/animationplayer.s
+
+# target to generate assembly for a file
+src/graphics/animationplayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.s
+.PHONY : src/graphics/animationplayer.cpp.s
+
 src/graphics/bmpfont.o: src/graphics/bmpfont.cpp.o
 .PHONY : src/graphics/bmpfont.o
 
@@ -912,6 +936,9 @@ help:
 	@echo "... src/graphics/animation.o"
 	@echo "... src/graphics/animation.i"
 	@echo "... src/graphics/animation.s"
+	@echo "... src/graphics/animationplayer.o"
+	@echo "... src/graphics/animationplayer.i"
+	@echo "... src/graphics/animationplayer.s"
 	@echo "... src/graphics/bmpfont.o"
 	@echo "... src/graphics/bmpfont.i"
 	@echo "... src/graphics/bmpfont.s"

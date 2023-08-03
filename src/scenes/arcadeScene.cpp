@@ -1,6 +1,8 @@
 #include "arcadeScene.h"
 #include "app.h"
 #include "bmpfont.h"
+#include "animationplayer.h"
+#include "animation.h"
 
 #include "gameScene.h"
 #include "breakout.h"
@@ -38,11 +40,18 @@ void ArcadeScene::Init (){
     SetButtonActions(actions);
     ButtonOptionsScene::Init();
 
+    //temp
+    {
+        mAnimationPlayer.Init(App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt");
+        mSpriteSheet.Load("PacmanSprites");
+        mAnimationPlayer.Play("move_left", true);
+    }
+
 }
 
 void ArcadeScene::Update(uint32_t dt){
 
-
+    mAnimationPlayer.Update(dt);
 }
 
 void ArcadeScene::Draw(Screen& theScreen){
@@ -64,14 +73,10 @@ void ArcadeScene::Draw(Screen& theScreen){
 
     ButtonOptionsScene::Draw(theScreen);
 
-    // // Shapes
+    AnimationFrame frame = mAnimationPlayer.GetCurrentAnimationFrame();
+    Color frameColor = frame.frameColor;
 
-    // 
-    // 
-
-    // // Render
-    
-    // 
+    theScreen.Draw(mSpriteSheet, frame.frame, frame.offset, frameColor);
     
 }
 
