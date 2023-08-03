@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o"
@@ -35,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"

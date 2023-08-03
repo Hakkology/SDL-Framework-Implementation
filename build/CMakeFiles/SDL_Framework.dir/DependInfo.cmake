@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o.d"
@@ -26,6 +27,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp" "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/circle.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d"

@@ -153,6 +153,30 @@ src/app/app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
 .PHONY : src/app/app.cpp.s
 
+src/app/button.o: src/app/button.cpp.o
+.PHONY : src/app/button.o
+
+# target to build an object file
+src/app/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o
+.PHONY : src/app/button.cpp.o
+
+src/app/button.i: src/app/button.cpp.i
+.PHONY : src/app/button.i
+
+# target to preprocess a source file
+src/app/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/button.cpp.i
+.PHONY : src/app/button.cpp.i
+
+src/app/button.s: src/app/button.cpp.s
+.PHONY : src/app/button.s
+
+# target to generate assembly for a file
+src/app/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s
+.PHONY : src/app/button.cpp.s
+
 src/games/breakout/ball.o: src/games/breakout/ball.cpp.o
 .PHONY : src/games/breakout/ball.o
 
@@ -561,6 +585,30 @@ src/scenes/arcadeScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s
 .PHONY : src/scenes/arcadeScene.cpp.s
 
+src/scenes/buttonoptionsScene.o: src/scenes/buttonoptionsScene.cpp.o
+.PHONY : src/scenes/buttonoptionsScene.o
+
+# target to build an object file
+src/scenes/buttonoptionsScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o
+.PHONY : src/scenes/buttonoptionsScene.cpp.o
+
+src/scenes/buttonoptionsScene.i: src/scenes/buttonoptionsScene.cpp.i
+.PHONY : src/scenes/buttonoptionsScene.i
+
+# target to preprocess a source file
+src/scenes/buttonoptionsScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.i
+.PHONY : src/scenes/buttonoptionsScene.cpp.i
+
+src/scenes/buttonoptionsScene.s: src/scenes/buttonoptionsScene.cpp.s
+.PHONY : src/scenes/buttonoptionsScene.s
+
+# target to generate assembly for a file
+src/scenes/buttonoptionsScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.s
+.PHONY : src/scenes/buttonoptionsScene.cpp.s
+
 src/scenes/gameScene.o: src/scenes/gameScene.cpp.o
 .PHONY : src/scenes/gameScene.o
 
@@ -789,6 +837,9 @@ help:
 	@echo "... src/app/app.o"
 	@echo "... src/app/app.i"
 	@echo "... src/app/app.s"
+	@echo "... src/app/button.o"
+	@echo "... src/app/button.i"
+	@echo "... src/app/button.s"
 	@echo "... src/games/breakout/ball.o"
 	@echo "... src/games/breakout/ball.i"
 	@echo "... src/games/breakout/ball.s"
@@ -840,6 +891,9 @@ help:
 	@echo "... src/scenes/arcadeScene.o"
 	@echo "... src/scenes/arcadeScene.i"
 	@echo "... src/scenes/arcadeScene.s"
+	@echo "... src/scenes/buttonoptionsScene.o"
+	@echo "... src/scenes/buttonoptionsScene.i"
+	@echo "... src/scenes/buttonoptionsScene.s"
 	@echo "... src/scenes/gameScene.o"
 	@echo "... src/scenes/gameScene.i"
 	@echo "... src/scenes/gameScene.s"
