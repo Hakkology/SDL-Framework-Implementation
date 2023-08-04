@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o"

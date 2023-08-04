@@ -8,7 +8,7 @@
 #include "screen.h"
 #include "color.h"
 #include "gamecontroller.h"
-#include "animatedsprite.h
+#include "animatedsprite.h"
 
 enum eGame{
     TETRIS = 0,

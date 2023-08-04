@@ -358,5 +358,6 @@ CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/buttonoptionsScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h

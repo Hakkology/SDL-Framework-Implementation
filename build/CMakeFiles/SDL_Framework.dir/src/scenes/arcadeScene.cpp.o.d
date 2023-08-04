@@ -346,13 +346,13 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
