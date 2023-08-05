@@ -345,6 +345,30 @@ src/games/breakout/paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
 .PHONY : src/games/breakout/paddle.cpp.s
 
+src/games/pacman/pacman.o: src/games/pacman/pacman.cpp.o
+.PHONY : src/games/pacman/pacman.o
+
+# target to build an object file
+src/games/pacman/pacman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o
+.PHONY : src/games/pacman/pacman.cpp.o
+
+src/games/pacman/pacman.i: src/games/pacman/pacman.cpp.i
+.PHONY : src/games/pacman/pacman.i
+
+# target to preprocess a source file
+src/games/pacman/pacman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i
+.PHONY : src/games/pacman/pacman.cpp.i
+
+src/games/pacman/pacman.s: src/games/pacman/pacman.cpp.s
+.PHONY : src/games/pacman/pacman.s
+
+# target to generate assembly for a file
+src/games/pacman/pacman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
+.PHONY : src/games/pacman/pacman.cpp.s
+
 src/graphics/animatedsprite.o: src/graphics/animatedsprite.cpp.o
 .PHONY : src/graphics/animatedsprite.o
 
@@ -729,6 +753,30 @@ src/scenes/notimplementedScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s
 .PHONY : src/scenes/notimplementedScene.cpp.s
 
+src/scenes/pacmanstartScene.o: src/scenes/pacmanstartScene.cpp.o
+.PHONY : src/scenes/pacmanstartScene.o
+
+# target to build an object file
+src/scenes/pacmanstartScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o
+.PHONY : src/scenes/pacmanstartScene.cpp.o
+
+src/scenes/pacmanstartScene.i: src/scenes/pacmanstartScene.cpp.i
+.PHONY : src/scenes/pacmanstartScene.i
+
+# target to preprocess a source file
+src/scenes/pacmanstartScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.i
+.PHONY : src/scenes/pacmanstartScene.cpp.i
+
+src/scenes/pacmanstartScene.s: src/scenes/pacmanstartScene.cpp.s
+.PHONY : src/scenes/pacmanstartScene.s
+
+# target to generate assembly for a file
+src/scenes/pacmanstartScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s
+.PHONY : src/scenes/pacmanstartScene.cpp.s
+
 src/shapes/circle.o: src/shapes/circle.cpp.o
 .PHONY : src/shapes/circle.o
 
@@ -957,6 +1005,9 @@ help:
 	@echo "... src/games/breakout/paddle.o"
 	@echo "... src/games/breakout/paddle.i"
 	@echo "... src/games/breakout/paddle.s"
+	@echo "... src/games/pacman/pacman.o"
+	@echo "... src/games/pacman/pacman.i"
+	@echo "... src/games/pacman/pacman.s"
 	@echo "... src/graphics/animatedsprite.o"
 	@echo "... src/graphics/animatedsprite.i"
 	@echo "... src/graphics/animatedsprite.s"
@@ -1005,6 +1056,9 @@ help:
 	@echo "... src/scenes/notimplementedScene.o"
 	@echo "... src/scenes/notimplementedScene.i"
 	@echo "... src/scenes/notimplementedScene.s"
+	@echo "... src/scenes/pacmanstartScene.o"
+	@echo "... src/scenes/pacmanstartScene.i"
+	@echo "... src/scenes/pacmanstartScene.s"
 	@echo "... src/shapes/circle.o"
 	@echo "... src/shapes/circle.i"
 	@echo "... src/shapes/circle.s"

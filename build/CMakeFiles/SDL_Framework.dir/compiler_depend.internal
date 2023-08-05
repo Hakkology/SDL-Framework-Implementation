@@ -2478,6 +2478,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/button.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/paddle.h
@@ -8472,8 +8473,6 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h

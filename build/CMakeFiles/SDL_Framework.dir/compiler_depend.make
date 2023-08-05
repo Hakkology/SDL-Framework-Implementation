@@ -2472,6 +2472,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/bre
   ../header/scenes/scene.h \
   ../header/app/button.h \
   ../header/input/inputaction.h \
+  ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
   ../header/games/breakout/paddle.h \
@@ -8450,8 +8451,6 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: ../src/scenes/arcadeS
   ../header/scenes/scene.h \
   ../header/input/inputcontroller.h \
   ../header/input/gamecontroller.h \
-  ../header/graphics/animationplayer.h \
-  ../header/graphics/animation.h \
   ../header/scenes/gameScene.h \
   ../header/games/game.h \
   ../header/games/breakout/breakout.h \

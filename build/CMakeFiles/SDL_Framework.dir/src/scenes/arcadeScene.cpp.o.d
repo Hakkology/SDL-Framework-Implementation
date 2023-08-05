@@ -346,9 +346,6 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
@@ -363,4 +360,5 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/pacmanstartScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/notimplementedScene.h

@@ -351,7 +351,4 @@ CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/buttonoptionsScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/button.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h
