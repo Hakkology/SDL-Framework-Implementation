@@ -55,7 +55,8 @@ set(SOURCES
     src/games/breakout/bgamelevel.cpp
 
     # pacman files
-    src/games/pacman/pacman.cpp 
+    src/games/pacman/pacman.cpp
+    src/games/pacman/pacmanlevel.cpp 
 
 )
 
@@ -116,6 +117,7 @@ set(HEADERS
 
     # pacman headers
     header/games/pacman/pacman.h
+    header/games/pacman/pacmanlevel.h
     )
 
 # Create an executable target

@@ -369,6 +369,30 @@ src/games/pacman/pacman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
 .PHONY : src/games/pacman/pacman.cpp.s
 
+src/games/pacman/pacmanlevel.o: src/games/pacman/pacmanlevel.cpp.o
+.PHONY : src/games/pacman/pacmanlevel.o
+
+# target to build an object file
+src/games/pacman/pacmanlevel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o
+.PHONY : src/games/pacman/pacmanlevel.cpp.o
+
+src/games/pacman/pacmanlevel.i: src/games/pacman/pacmanlevel.cpp.i
+.PHONY : src/games/pacman/pacmanlevel.i
+
+# target to preprocess a source file
+src/games/pacman/pacmanlevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i
+.PHONY : src/games/pacman/pacmanlevel.cpp.i
+
+src/games/pacman/pacmanlevel.s: src/games/pacman/pacmanlevel.cpp.s
+.PHONY : src/games/pacman/pacmanlevel.s
+
+# target to generate assembly for a file
+src/games/pacman/pacmanlevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s
+.PHONY : src/games/pacman/pacmanlevel.cpp.s
+
 src/graphics/animatedsprite.o: src/graphics/animatedsprite.cpp.o
 .PHONY : src/graphics/animatedsprite.o
 
@@ -1008,6 +1032,9 @@ help:
 	@echo "... src/games/pacman/pacman.o"
 	@echo "... src/games/pacman/pacman.i"
 	@echo "... src/games/pacman/pacman.s"
+	@echo "... src/games/pacman/pacmanlevel.o"
+	@echo "... src/games/pacman/pacmanlevel.i"
+	@echo "... src/games/pacman/pacmanlevel.s"
 	@echo "... src/graphics/animatedsprite.o"
 	@echo "... src/graphics/animatedsprite.i"
 	@echo "... src/graphics/animatedsprite.s"

@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o"
