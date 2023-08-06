@@ -47,7 +47,7 @@ set(SOURCES
 
     # breakout files
     src/games/breakout/breakout.cpp 
-    src/games/breakout/excluder.cpp 
+    src/games//excluder.cpp 
     src/games/breakout/paddle.cpp 
     src/games/breakout/ball.cpp 
     src/games/breakout/levelboundary.cpp
@@ -108,7 +108,7 @@ set(HEADERS
 
     # breakout game headers
     header/games/breakout/breakout.h 
-    header/games/breakout/excluder.h 
+    header/games/excluder.h 
     header/games/breakout/boundaryedge.h 
     header/games/breakout/paddle.h 
     header/games/breakout/ball.h 
@@ -146,6 +146,6 @@ add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         ${CMAKE_SOURCE_DIR}/src/assets
-        ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}/assets
+        ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}/Assets
     COMMENT "Copying Assets folder to build directory"
 )

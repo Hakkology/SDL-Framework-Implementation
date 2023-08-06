@@ -273,30 +273,6 @@ src/games/breakout/breakout.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.s
 .PHONY : src/games/breakout/breakout.cpp.s
 
-src/games/breakout/excluder.o: src/games/breakout/excluder.cpp.o
-.PHONY : src/games/breakout/excluder.o
-
-# target to build an object file
-src/games/breakout/excluder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.o
-.PHONY : src/games/breakout/excluder.cpp.o
-
-src/games/breakout/excluder.i: src/games/breakout/excluder.cpp.i
-.PHONY : src/games/breakout/excluder.i
-
-# target to preprocess a source file
-src/games/breakout/excluder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.i
-.PHONY : src/games/breakout/excluder.cpp.i
-
-src/games/breakout/excluder.s: src/games/breakout/excluder.cpp.s
-.PHONY : src/games/breakout/excluder.s
-
-# target to generate assembly for a file
-src/games/breakout/excluder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/excluder.cpp.s
-.PHONY : src/games/breakout/excluder.cpp.s
-
 src/games/breakout/levelboundary.o: src/games/breakout/levelboundary.cpp.o
 .PHONY : src/games/breakout/levelboundary.o
 
@@ -345,6 +321,30 @@ src/games/breakout/paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
 .PHONY : src/games/breakout/paddle.cpp.s
 
+src/games/excluder.o: src/games/excluder.cpp.o
+.PHONY : src/games/excluder.o
+
+# target to build an object file
+src/games/excluder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o
+.PHONY : src/games/excluder.cpp.o
+
+src/games/excluder.i: src/games/excluder.cpp.i
+.PHONY : src/games/excluder.i
+
+# target to preprocess a source file
+src/games/excluder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.i
+.PHONY : src/games/excluder.cpp.i
+
+src/games/excluder.s: src/games/excluder.cpp.s
+.PHONY : src/games/excluder.s
+
+# target to generate assembly for a file
+src/games/excluder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s
+.PHONY : src/games/excluder.cpp.s
+
 src/games/pacman/pacman.o: src/games/pacman/pacman.cpp.o
 .PHONY : src/games/pacman/pacman.o
 
@@ -368,6 +368,30 @@ src/games/pacman/pacman.s: src/games/pacman/pacman.cpp.s
 src/games/pacman/pacman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
 .PHONY : src/games/pacman/pacman.cpp.s
+
+src/games/pacman/pacmangameutils.o: src/games/pacman/pacmangameutils.cpp.o
+.PHONY : src/games/pacman/pacmangameutils.o
+
+# target to build an object file
+src/games/pacman/pacmangameutils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o
+.PHONY : src/games/pacman/pacmangameutils.cpp.o
+
+src/games/pacman/pacmangameutils.i: src/games/pacman/pacmangameutils.cpp.i
+.PHONY : src/games/pacman/pacmangameutils.i
+
+# target to preprocess a source file
+src/games/pacman/pacmangameutils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i
+.PHONY : src/games/pacman/pacmangameutils.cpp.i
+
+src/games/pacman/pacmangameutils.s: src/games/pacman/pacmangameutils.cpp.s
+.PHONY : src/games/pacman/pacmangameutils.s
+
+# target to generate assembly for a file
+src/games/pacman/pacmangameutils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s
+.PHONY : src/games/pacman/pacmangameutils.cpp.s
 
 src/games/pacman/pacmanlevel.o: src/games/pacman/pacmanlevel.cpp.o
 .PHONY : src/games/pacman/pacmanlevel.o
@@ -1020,18 +1044,21 @@ help:
 	@echo "... src/games/breakout/breakout.o"
 	@echo "... src/games/breakout/breakout.i"
 	@echo "... src/games/breakout/breakout.s"
-	@echo "... src/games/breakout/excluder.o"
-	@echo "... src/games/breakout/excluder.i"
-	@echo "... src/games/breakout/excluder.s"
 	@echo "... src/games/breakout/levelboundary.o"
 	@echo "... src/games/breakout/levelboundary.i"
 	@echo "... src/games/breakout/levelboundary.s"
 	@echo "... src/games/breakout/paddle.o"
 	@echo "... src/games/breakout/paddle.i"
 	@echo "... src/games/breakout/paddle.s"
+	@echo "... src/games/excluder.o"
+	@echo "... src/games/excluder.i"
+	@echo "... src/games/excluder.s"
 	@echo "... src/games/pacman/pacman.o"
 	@echo "... src/games/pacman/pacman.i"
 	@echo "... src/games/pacman/pacman.s"
+	@echo "... src/games/pacman/pacmangameutils.o"
+	@echo "... src/games/pacman/pacmangameutils.i"
+	@echo "... src/games/pacman/pacmangameutils.s"
 	@echo "... src/games/pacman/pacmanlevel.o"
 	@echo "... src/games/pacman/pacmanlevel.i"
 	@echo "... src/games/pacman/pacmanlevel.s"

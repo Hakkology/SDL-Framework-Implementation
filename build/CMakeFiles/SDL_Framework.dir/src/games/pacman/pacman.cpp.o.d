@@ -182,7 +182,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \

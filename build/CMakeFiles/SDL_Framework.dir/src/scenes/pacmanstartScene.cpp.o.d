@@ -356,5 +356,5 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacman.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanlevel.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h

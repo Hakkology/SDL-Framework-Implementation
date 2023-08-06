@@ -152,7 +152,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cassert \
  /usr/include/assert.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -336,4 +336,5 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/ball.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h

@@ -2,7 +2,7 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp \
  /usr/include/stdc-predef.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/excluder.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -335,4 +335,5 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o: \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h
