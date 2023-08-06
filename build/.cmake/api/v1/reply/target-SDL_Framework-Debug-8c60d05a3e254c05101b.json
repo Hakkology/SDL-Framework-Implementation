@@ -152,7 +152,8 @@
 				34,
 				35,
 				36,
-				37
+				37,
+				38
 			]
 		}
 	],
@@ -227,7 +228,8 @@
 				34,
 				35,
 				36,
-				37
+				37,
+				38
 			]
 		}
 	],
@@ -440,12 +442,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/games/pacman/pacman.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "src/games/pacman/pacmanlevel.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -459,6 +455,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/games/pacman/pacmanactor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/pacman/pacmanplayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/pacman/pacman.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

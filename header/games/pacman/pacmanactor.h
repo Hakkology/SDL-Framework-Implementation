@@ -17,12 +17,15 @@ class PacmanActor
 {
 
 public:
-    virtual void Init (const SpriteSheet& spriteSheet, const std::string& animationsPath, const Vector2D initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color&spriteColor = White());
+    virtual ~PacmanActor() {}
+    virtual void Init (const SpriteSheet& spriteSheet, const std::string& animationsPath, const Vector2D& initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color&spriteColor = White());
     virtual void Update (uint32_t dt);
     virtual void Draw (Screen& screen);
 
     virtual void Stop();
     Rectangle GetEatingBoundingBox() const;
+
+    virtual inline void SetMovementDirection(PacmanMovement direction) {pMovementDirection = direction;} 
 
     inline bool isFinishedAnimation() const {return pSprite.IsFinishedPlayingAnimation();}
     inline const Rectangle GetBoundingBox() const {return pSprite.GetBoundingBox();}
@@ -30,7 +33,6 @@ public:
     inline void MoveTo(const Vector2D& position) {pSprite.SetPosition(position);}
     inline Vector2D Position() const {return pSprite.Position();}
     inline PacmanMovement GetMovementDirection() const {return pMovementDirection;}
-    inline PacmanMovement SetMovementDirection(PacmanMovement direction) {pMovementDirection = direction;} 
     inline const Color& GetSpriteColor() const {return pSprite.GetColor();}
     
 protected:

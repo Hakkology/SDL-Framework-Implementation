@@ -17,8 +17,8 @@ const float TAU = 2.0f * PI;
 const uint32_t DELTA_TIME = 15;
 const uint32_t MAX_FRAME_RATE = 300;
 
-static const Vector2D UP_DIR = {0, 1};
-static const Vector2D DOWN_DIR = {0, -1};
+static const Vector2D UP_DIR = {0, -1};
+static const Vector2D DOWN_DIR = {0, 1};
 static const Vector2D LEFT_DIR =  {-1, 0};
 static const Vector2D RIGHT_DIR = {1, 0};
 
@@ -61,5 +61,8 @@ const int NUM_LIVES = 3;
 // Font spacings
 const uint32_t FontSpacingBetweenLetters =2;
 const uint32_t FontSpacingBetweenWords =5;
+
+// Pacman Details
+static const int PACMAN_MOVEMENT_SPEED = 50;
 
 #endif

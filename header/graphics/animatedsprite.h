@@ -26,7 +26,7 @@ public:
 
     Vector2D Size () const;
     void Stop();
-    inline const Rectangle GetBoundingBox() const;
+    const Rectangle GetBoundingBox() const;
     
     inline Vector2D Position() const {return mPosition;}
     inline void SetPosition(const Vector2D& position) {mPosition += position;}

@@ -545,24 +545,10 @@ CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s
 
-CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
-CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/pacman.cpp
-CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp
-
-CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i
-
-CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
-
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pacman/pacmanlevel.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanlevel.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i: cmake_force
@@ -576,7 +562,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s: cmake_force
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: ../src/games/pacman/pacmangameutils.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i: cmake_force
@@ -586,6 +572,48 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i: cmake_force
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: ../src/games/pacman/pacmanactor.cpp
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: ../src/games/pacman/pacmanplayer.cpp
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/pacman.cpp
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i
+
+CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
 
 # Object files for target SDL_Framework
 SDL_Framework_OBJECTS = \
@@ -623,9 +651,11 @@ SDL_Framework_OBJECTS = \
 "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o" \
-"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o" \
 "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o" \
-"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o"
+"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o" \
+"CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
 
 # External object files for target SDL_Framework
 SDL_Framework_EXTERNAL_OBJECTS =
@@ -664,13 +694,15 @@ SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o
-SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o
+SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
 SDL_Framework: /usr/lib/x86_64-linux-gnu/libSDL2.so
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
 	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build//Assets

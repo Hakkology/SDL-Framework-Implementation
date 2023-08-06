@@ -3,6 +3,9 @@
 
 #include "game.h"
 #include "pacmanlevel.h"
+#include "pacmanplayer.h"
+#include "spritesheet.h"
+#include "inputaction.h"
 
 class Pacman : public Game{
 
@@ -14,7 +17,16 @@ public:
 
 private:
 
+    void ResetGame();
+    void UpdatePacmanMovement();
+    void HandleGameControllerState(uint32_t dt, InputState state, PacmanMovement direction);
+    
     PacmanLevel pLevel;
+    PacmanMovement pPressedDirection;
+    SpriteSheet pPacmanSpriteSheet;
+    PacmanPlayer pPacman;
+
+
 };
 
 #endif  //!GAMES_PACMAN_PACMAN__H__

@@ -55,11 +55,11 @@ set(SOURCES
     src/games/breakout/bgamelevel.cpp
 
     # pacman files
-    src/games/pacman/pacman.cpp
     src/games/pacman/pacmanlevel.cpp
     src/games/pacman/pacmangameutils.cpp
     src/games/pacman/pacmanactor.cpp 
-
+    src/games/pacman/pacmanplayer.cpp 
+    src/games/pacman/pacman.cpp
 )
 
 # Add header files
@@ -98,9 +98,8 @@ set(HEADERS
     header/games/game.h 
     header/scenes/scene.h 
     header/scenes/arcadeScene.h 
-    header/games/game.h 
     header/scenes/gameScene.h 
-    header/scenes/pacmanStartScene.h 
+    header/scenes/pacmanstartScene.h 
 
     # input headers
     header/input/inputaction.h 
@@ -118,11 +117,12 @@ set(HEADERS
     header/games/breakout/bgamelevel.h
 
     # pacman headers
-    header/games/pacman/pacman.h
     header/games/pacman/pacmanlevel.h
     header/games/pacman/pacmangameutils.h
     header/games/pacman/pacmanactor.h
-    )
+    header/games/pacman/pacmanplayer.h
+    header/games/pacman/pacman.h
+)
 
 # Create an executable target
 add_executable(${PROJECT_NAME} ${SOURCES})

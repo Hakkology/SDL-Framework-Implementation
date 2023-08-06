@@ -3,7 +3,7 @@
 #include "pacmanactor.h"
 #include "utilities.h"
 
-void PacmanActor::Init(const SpriteSheet &spriteSheet, const std::string &animationsPath, const Vector2D initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color &spriteColor){
+void PacmanActor::Init(const SpriteSheet &spriteSheet, const std::string &animationsPath, const Vector2D& initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color &spriteColor){
 
     pMovementDirection = PACMAN_MOVEMENT_NONE;
     pSprite.Init(animationsPath, spriteSheet, spriteColor);
@@ -12,6 +12,7 @@ void PacmanActor::Init(const SpriteSheet &spriteSheet, const std::string &animat
     pDelta = Vector2D::Zero;
 }
 
+// for updating the position and animation of the Pacman actor based on its current movement direction and movement speed
 void PacmanActor::Update(uint32_t dt){
 
     if (pMovementDirection != PACMAN_MOVEMENT_NONE)

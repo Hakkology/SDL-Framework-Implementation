@@ -52,7 +52,7 @@ void AnimatedSprite::Stop(){
     mAnimationPlayer.Stop();
 }
 
-inline const Rectangle AnimatedSprite::GetBoundingBox() const{
+const Rectangle AnimatedSprite::GetBoundingBox() const{
 
     Rectangle bBox = {mPosition, static_cast<unsigned int>(Size().GetX()), static_cast<unsigned int>(Size().GetY())};
     return bBox;
