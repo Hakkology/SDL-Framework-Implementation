@@ -80,7 +80,7 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
     layoutCommand.commandType = COMMAND_MULTI_LINE;
     layoutCommand.parseFunc = [&layoutOffset, this](ParseFuncParams params){
 
-        int startingX = layoutOffset.GetX();
+        int startingX = layoutOffset.GetX() + SCREEN_WIDTH/4;
 
         for (int c = 0; c < params.line.length(); ++c)
         {
