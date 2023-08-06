@@ -6,26 +6,32 @@
 
 #include "vector2D.h"
 #include "excluder.h"
+#include "pacmangameutils.h"
 
 class Screen;
+class PacmanPlayer;
 
 class PacmanLevel{
 
 public:
 
-    bool Init (const std::string& levelPath);
+    bool Init (const std::string& levelPath, PacmanPlayer* noptrPacman);
     void Update (uint32_t dt);
     void Draw (Screen& screen);
+
+    bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
 
 private:
 
     struct Tile
     {
         Vector2D position = Vector2D::Zero;
+        Vector2D offset = Vector2D::Zero;
         int width = 0;
         int collidable = 0;
+        int isTeleportTile = 0;
+        char teleportToSymbol = 0;
         char symbol = '-';
-
     };
 
     bool LoadLevel (const std::string& levelPath);
@@ -36,6 +42,8 @@ private:
 
     Vector2D pLayoutOffset;
     size_t pTileHeight;
+
+    PacmanPlayer* pnoptrPacman;
     
 };
 

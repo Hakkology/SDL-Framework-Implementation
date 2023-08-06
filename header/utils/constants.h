@@ -64,5 +64,7 @@ const uint32_t FontSpacingBetweenWords =5;
 
 // Pacman Details
 static const int PACMAN_MOVEMENT_SPEED = 50;
+static const int PACMAN_SPAWNX_LOCATION = SCREEN_WIDTH/2;
+static const int PACMAN_SPAWNY_LOCATION = 204;
 
 #endif

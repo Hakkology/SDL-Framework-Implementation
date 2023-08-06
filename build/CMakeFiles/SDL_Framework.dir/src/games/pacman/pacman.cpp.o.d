@@ -326,13 +326,13 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \

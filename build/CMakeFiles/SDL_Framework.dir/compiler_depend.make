@@ -4070,13 +4070,13 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/
   /usr/include/SDL2/SDL_misc.h \
   ../header/utils/constants.h \
   ../header/graphics/color.h \
+  ../header/games/pacman/pacmangameutils.h \
   ../header/games/pacman/pacmanplayer.h \
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
   ../header/graphics/color.h \
-  ../header/games/pacman/pacmangameutils.h \
   ../header/graphics/spritesheet.h \
   ../header/graphics/bmpimage.h \
   ../header/utils/filecommandloader.h \
@@ -5256,6 +5256,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/SDL2/SDL_misc.h \
   ../header/utils/constants.h \
   ../header/graphics/color.h \
+  ../header/games/pacman/pacmangameutils.h \
   ../header/utils/filecommandloader.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
@@ -5268,7 +5269,12 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   ../header/shapes/triangle.h \
   ../header/shapes/circle.h \
   ../header/graphics/bmpimage.h \
-  ../header/graphics/spritesheet.h
+  ../header/graphics/spritesheet.h \
+  ../header/games/pacman/pacmanplayer.h \
+  ../header/games/pacman/pacmanactor.h \
+  ../header/graphics/animatedsprite.h \
+  ../header/graphics/animationplayer.h \
+  ../header/graphics/animation.h
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: ../src/games/pacman/pacmanplayer.cpp \
   /usr/include/stdc-predef.h \
@@ -12096,12 +12102,12 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: ../src/scenes/pa
   ../header/games/pacman/pacmanlevel.h \
   ../header/games/excluder.h \
   ../header/games/breakout/boundaryedge.h \
+  ../header/games/pacman/pacmangameutils.h \
   ../header/games/pacman/pacmanplayer.h \
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
-  ../header/games/pacman/pacmangameutils.h \
   ../header/graphics/spritesheet.h
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp \

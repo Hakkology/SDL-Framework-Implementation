@@ -10,6 +10,7 @@ void PacmanActor::Init(const SpriteSheet &spriteSheet, const std::string &animat
     pUpdateSpriteOnUpdate = updateSpriteOnMovement;
     pMovementSpeed = movementSpeed;
     pDelta = Vector2D::Zero;
+    pSprite.SetPosition(initialPos);
 }
 
 // for updating the position and animation of the Pacman actor based on its current movement direction and movement speed
