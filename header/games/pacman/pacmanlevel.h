@@ -21,24 +21,38 @@ public:
 
     bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
 
+    inline Vector2D GetLayoutOffset() const {return pLayoutOffset;}
+
 private:
 
-    struct Tile
-    {
+    struct Tile{
         Vector2D position = Vector2D::Zero;
         Vector2D offset = Vector2D::Zero;
         int width = 0;
         int collidable = 0;
         int isTeleportTile = 0;
+        int excludePelletTile = 0;
         char teleportToSymbol = 0;
         char symbol = '-';
+    };
+
+    struct Pellet{
+        uint32_t score=0;
+        Rectangle pBBox;
+        int powerPellet =0;
+        int eaten = 0;
     };
 
     bool LoadLevel (const std::string& levelPath);
     Tile* GetTileForSymbol(char symbol);
 
+    void ResetPellets ();
+    void ResetLevel ();
+
     std::vector<Excluder> pWalls;
     std::vector<Tile> pTiles;
+    std::vector<Tile> pExclusionTiles;
+    std::vector<Pellet> pPellets;
 
     Vector2D pLayoutOffset;
     size_t pTileHeight;

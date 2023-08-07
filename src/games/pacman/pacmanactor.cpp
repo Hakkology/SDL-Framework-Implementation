@@ -1,4 +1,5 @@
 #include <cmath>
+#include <string>
 
 #include "pacmanactor.h"
 #include "utilities.h"

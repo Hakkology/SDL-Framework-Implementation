@@ -341,4 +341,29 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/buttonoptionsScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/button.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h

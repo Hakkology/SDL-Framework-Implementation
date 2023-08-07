@@ -4,7 +4,7 @@
 #include "color.h"
 #include "vector2D.h"
 
-const int SCREEN_WIDTH = 240;
+const int SCREEN_WIDTH = 224;
 const int SCREEN_HEIGHT = 320;
 const int MAGNIFICATION = 2;
 const int FRAME_DELAY = 1000 / 60;
@@ -48,8 +48,8 @@ const Vector2D initBallVelocity = Vector2D(200, -200);
 static const float INIT_BALL_SPEED = 150;
 
 // Blocks
-static const int BLOCK_WIDTH = 20;
-static const int BLOCK_HEIGHT = 10;
+static const int BLOCK_WIDTH = 16;
+static const int BLOCK_HEIGHT = 8;
 
 // Levels Path
 static const std::string LEVELS_PATH = "Assets/BreakoutLevels.txt";

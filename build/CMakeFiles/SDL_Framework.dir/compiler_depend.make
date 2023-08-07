@@ -4211,7 +4211,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: ../src/games/pa
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  ../header/games/pacman/pacmanactor.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -4294,6 +4293,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: ../src/games/pa
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   /usr/include/c++/11/vector \
@@ -5274,7 +5274,33 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
-  ../header/graphics/animation.h
+  ../header/graphics/animation.h \
+  ../header/app/app.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  ../header/scenes/scene.h \
+  ../header/input/gamecontroller.h \
+  ../header/input/inputaction.h \
+  ../header/input/inputcontroller.h \
+  ../header/input/gamecontroller.h \
+  ../header/graphics/bmpfont.h \
+  ../header/scenes/arcadeScene.h \
+  ../header/scenes/buttonoptionsScene.h \
+  ../header/scenes/scene.h \
+  ../header/app/button.h \
+  ../header/input/inputaction.h
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: ../src/games/pacman/pacmanplayer.cpp \
   /usr/include/stdc-predef.h \
