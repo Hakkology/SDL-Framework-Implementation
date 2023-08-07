@@ -32,11 +32,11 @@ void NotImplementedScene::Draw(Screen &screen){
 
     screen.Draw(font, "GAME STATION", textDrawPosition, Orange());
 
-    Triangle triangle = {Vector2D (60, 30), Vector2D (10, 130), Vector2D (130,130)};
+    Triangle triangle = {Vector2D (20, 30), Vector2D (10, 130), Vector2D (60,20)};
     screen.Draw (triangle, Lilac(), true, Lilac());
     Circle circle = {Vector2D(screen.Width()/2 +150, screen.Height()/2 -50), 60};
     screen.Draw (circle, Green(), true, Green());
-    Rectangle rectangle = {Vector2D(screen.Width()/2-90, screen.Height()/2+70),180,60};
+    Rectangle rectangle = {Vector2D(screen.Width()/2-60, screen.Height()/2+75),120,45};
     screen.Draw (rectangle, Blue(), true, Blue());
 
     Rectangle warnRect = {Vector2D::Zero, App::Singleton().Width(), App::Singleton().Height()};
