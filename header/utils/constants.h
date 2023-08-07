@@ -67,4 +67,6 @@ static const int PACMAN_MOVEMENT_SPEED = 50;
 static const int PACMAN_SPAWNX_LOCATION = SCREEN_WIDTH/2;
 static const int PACMAN_SPAWNY_LOCATION = 204;
 
+static const std::string SCORE_STR = "Score  ";
+
 #endif

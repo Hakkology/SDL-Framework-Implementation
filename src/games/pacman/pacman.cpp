@@ -1,5 +1,6 @@
 #include "pacman.h"
 #include "app.h"
+#include "constants.h"
 
 void Pacman::Init(GameController &controller){
 
@@ -54,12 +55,26 @@ void Pacman::Draw(Screen &screen){
 
     pLevel.Draw(screen);
     pPacman.Draw(screen);
+    DrawScoreTable(screen);
 }
 
 const std::string &Pacman::GetName() const{
 
     static std::string name = "Pacmania!";
     return name;
+}
+
+void Pacman::DrawScoreTable(Screen &screen){
+
+    Vector2D levelOffset = pLevel.GetLayoutOffset();
+    Rectangle highScoreRect = Rectangle (Vector2D(0,4), App::Singleton().Width(), levelOffset.GetY());
+    const auto& font = App::Singleton().GetFont();
+
+    Vector2D textDrawPosition;
+    std::string scoreString = std::to_string(pPacman.Score());
+    textDrawPosition = font.GetDrawPosition(SCORE_STR + scoreString, highScoreRect, BFXA_CENTER, BFYA_CENTER);
+
+    screen.Draw(font, SCORE_STR + scoreString, textDrawPosition);
 }
 
 void Pacman::ResetGame(){
@@ -91,3 +106,5 @@ void Pacman::HandleGameControllerState(uint32_t dt, InputState state, PacmanMove
     }
     
 }
+
+

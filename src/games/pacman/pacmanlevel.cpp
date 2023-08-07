@@ -71,6 +71,23 @@ void PacmanLevel::Draw(Screen &screen){
             }
         }
     }
+
+    for (auto& pellet : pPellets){
+
+        if (!pellet.eaten)
+        {
+            if (pnoptrPacman -> GetEatingBoundingBox().Intersects(pellet.pBBox))
+            {
+                pellet.eaten = true;
+                pnoptrPacman ->AteItem(pellet.score);
+
+                if (pellet.powerPellet)
+                {
+                    pnoptrPacman->ResetGhostEatenMultiplier();
+                }
+            }
+        }
+    }
 }
 
 bool PacmanLevel::WillCollide(const Rectangle &bbox, PacmanMovement direction) const
