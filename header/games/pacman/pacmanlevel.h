@@ -20,8 +20,9 @@ public:
     void Draw (Screen& screen);
 
     bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
-
+    void ResetLevel ();
     inline Vector2D GetLayoutOffset() const {return pLayoutOffset;}
+    inline Vector2D GetPacmanSpawnLocation () const {return pPacmanSpawnLocation;}
 
 private:
 
@@ -32,6 +33,7 @@ private:
         int collidable = 0;
         int isTeleportTile = 0;
         int excludePelletTile = 0;
+        int pacmanSpawnPoint = 0;
         char teleportToSymbol = 0;
         char symbol = '-';
     };
@@ -47,7 +49,6 @@ private:
     Tile* GetTileForSymbol(char symbol);
 
     void ResetPellets ();
-    void ResetLevel ();
 
     std::vector<Excluder> pWalls;
     std::vector<Tile> pTiles;
@@ -55,6 +56,7 @@ private:
     std::vector<Pellet> pPellets;
 
     Vector2D pLayoutOffset;
+    Vector2D pPacmanSpawnLocation;
     size_t pTileHeight;
 
     PacmanPlayer* pnoptrPacman;

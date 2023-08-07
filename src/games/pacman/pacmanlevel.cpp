@@ -111,6 +111,11 @@ bool PacmanLevel::WillCollide(const Rectangle &bbox, PacmanMovement direction) c
 void PacmanLevel::ResetLevel(){
     
     ResetPellets();
+    if (pnoptrPacman)
+    {
+        pnoptrPacman -> MoveTo(pPacmanSpawnLocation);
+        pnoptrPacman -> ResetToFirstAnimation();
+    }
 }
 
 void PacmanLevel::ResetPellets(){
@@ -264,6 +269,13 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
     };
     fileLoader.AddCommand(tileExcludePelletCommand);
 
+    Command tilePacmanSpawnPointCommand;
+    tilePacmanSpawnPointCommand.command = "tile_pacman_spawn_point";
+    tilePacmanSpawnPointCommand.parseFunc = [this](ParseFuncParams params){
+        pTiles.back().pacmanSpawnPoint = FileCommandLoader::ReadInt(params);
+    };
+    fileLoader.AddCommand(tilePacmanSpawnPointCommand);
+
     Command layoutCommand;
     layoutCommand.command = "layout";
     layoutCommand.commandType = COMMAND_MULTI_LINE;
@@ -287,6 +299,11 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
                     pWalls.push_back(wall);
                 }
 
+                if (tile-> pacmanSpawnPoint >0)
+                {
+                    pPacmanSpawnLocation = Vector2D(startingX + tile->offset.GetX(), layoutOffset.GetY() + tile->offset.GetY());
+                }
+                
                 if (tile->excludePelletTile >0)
                 {
                     pExclusionTiles.push_back(*tile);

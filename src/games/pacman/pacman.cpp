@@ -5,8 +5,7 @@
 void Pacman::Init(GameController &controller){
 
     pPacmanSpriteSheet.Load("PacmanSprites");
-    pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", 
-    Vector2D(PACMAN_SPAWNX_LOCATION, PACMAN_SPAWNY_LOCATION), PACMAN_MOVEMENT_SPEED, false);
+    pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", Vector2D::Zero, PACMAN_MOVEMENT_SPEED, false);
     pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacman);
 
     ResetGame();
@@ -77,10 +76,15 @@ void Pacman::DrawScoreTable(Screen &screen){
     screen.Draw(font, SCORE_STR + scoreString, textDrawPosition);
 }
 
+void Pacman::ResetLevel(){
+
+}
+
 void Pacman::ResetGame(){
 
     pPressedDirection = PACMAN_MOVEMENT_NONE;
     pPacman.ResetScore();
+    pLevel.ResetLevel();
 }
 
 void Pacman::UpdatePacmanMovement(){
