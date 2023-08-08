@@ -7,6 +7,7 @@
 
 bool PacmanLevel::Init(const std::string &levelPath, PacmanPlayer* noptrPacman){
 
+    pCurrentLevel =0 ;
     pnoptrPacman = noptrPacman;
 
     bool levelLoaded = LoadLevel(levelPath);
@@ -108,14 +109,55 @@ bool PacmanLevel::WillCollide(const Rectangle &bbox, PacmanMovement direction) c
     return false;
 }
 
-void PacmanLevel::ResetLevel(){
-    
+bool PacmanLevel::IsLevelOver() const{
+
+    return HasEatenAllPellets();
+}
+
+void PacmanLevel::IncreaseLevel(){
+
+    pCurrentLevel++;
+
+    if (pCurrentLevel > NUM_LEVELS)
+    {
+        pCurrentLevel = 1;
+    }
+    ResetLevel();
+}
+
+void PacmanLevel::ResetToFirstLevel(){
+
+    pCurrentLevel = 1;
+    ResetLevel();
+}
+
+void PacmanLevel::ResetLevel()
+{
+
     ResetPellets();
     if (pnoptrPacman)
     {
         pnoptrPacman -> MoveTo(pPacmanSpawnLocation);
         pnoptrPacman -> ResetToFirstAnimation();
     }
+}
+
+bool PacmanLevel::HasEatenAllPellets() const
+{
+    return NumPelletsEaten() >= pPellets.size() -4 ;
+}
+
+size_t PacmanLevel::NumPelletsEaten() const
+{
+    size_t numEaten = 0;
+    for ( const auto& pellet : pPellets){
+
+        if (!pellet.powerPellet && pellet.eaten)
+        {
+            ++numEaten;
+        }
+    }
+    return numEaten;
 }
 
 void PacmanLevel::ResetPellets(){

@@ -7,6 +7,7 @@
 #include "vector2D.h"
 #include "excluder.h"
 #include "pacmangameutils.h"
+#include "spritesheet.h"
 
 class Screen;
 class PacmanPlayer;
@@ -20,7 +21,12 @@ public:
     void Draw (Screen& screen);
 
     bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
+    bool IsLevelOver() const;
+    
+    void IncreaseLevel();
+    void ResetToFirstLevel();
     void ResetLevel ();
+
     inline Vector2D GetLayoutOffset() const {return pLayoutOffset;}
     inline Vector2D GetPacmanSpawnLocation () const {return pPacmanSpawnLocation;}
 
@@ -49,6 +55,8 @@ private:
     Tile* GetTileForSymbol(char symbol);
 
     void ResetPellets ();
+    bool HasEatenAllPellets() const;
+    size_t NumPelletsEaten() const;
 
     std::vector<Excluder> pWalls;
     std::vector<Tile> pTiles;
@@ -58,6 +66,8 @@ private:
     Vector2D pLayoutOffset;
     Vector2D pPacmanSpawnLocation;
     size_t pTileHeight;
+
+    int pCurrentLevel;
 
     PacmanPlayer* pnoptrPacman;
     
