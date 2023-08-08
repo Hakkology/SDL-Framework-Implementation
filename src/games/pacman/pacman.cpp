@@ -60,6 +60,7 @@ void Pacman::Draw(Screen &screen){
     pLevel.Draw(screen);
     pPacman.Draw(screen);
     DrawScoreTable(screen);
+    DrawLives(screen);
 }
 
 const std::string &Pacman::GetName() const{
@@ -81,12 +82,27 @@ void Pacman::DrawScoreTable(Screen &screen){
     screen.Draw(font, SCORE_STR + scoreString, textDrawPosition);
 }
 
+void Pacman::DrawLives(Screen &screen){
+
+    const uint32_t X_PADDING =1;
+
+    auto sprite = pPacmanSpriteSheet.GetSprite(PACMAN_LIFE_SPRITE_NAME);
+    uint32_t xPos = X_PADDING;
+
+    for (int i = 0; i < pNumLives; ++i)
+    {
+        screen.Draw(pPacmanSpriteSheet, PACMAN_LIFE_SPRITE_NAME, Vector2D(xPos, App::Singleton().Height() - sprite.height));
+        xPos += X_PADDING + sprite.width;
+    }
+}
+
 void Pacman::ResetLevel(){
 
 }
 
 void Pacman::ResetGame(){
 
+    pNumLives = MAX_NUM_LIVES;
     pPressedDirection = PACMAN_MOVEMENT_NONE;
     pPacman.ResetScore();
     pLevel.ResetToFirstLevel();

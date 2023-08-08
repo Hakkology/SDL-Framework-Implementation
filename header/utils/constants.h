@@ -71,6 +71,9 @@ const uint32_t NUM_LEVELS = 256;
 const uint32_t SPRITE_HEIGHT = 16;
 const uint32_t SPRITE_WIDTH = 16;
 
-static const std::string SCORE_STR = "Score  ";
+const std::string SCORE_STR = "Score  ";
+const std::string PACMAN_LIFE_SPRITE_NAME = "pac_man_left_idle";
+const size_t MAX_NUM_LIVES=3;
+ 
 
 #endif
