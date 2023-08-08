@@ -5,10 +5,15 @@
 #include "app.h"
 #include "circle.h"
 
-bool PacmanLevel::Init(const std::string &levelPath, PacmanPlayer* noptrPacman){
+bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpriteSheet, PacmanPlayer* noptrPacman){
 
     pCurrentLevel =0 ;
     pnoptrPacman = noptrPacman;
+    pnoptrSpriteSheet = noptrSpriteSheet;
+    pBonusItemSpriteName = "";
+
+    std::random_device r;
+    pGenerator.seed(r());
 
     bool levelLoaded = LoadLevel(levelPath);
     if (levelLoaded)
@@ -48,6 +53,37 @@ void PacmanLevel::Update(uint32_t dt){
             }
         }
     }
+
+    for (auto& pellet : pPellets){
+
+        if (!pellet.eaten)
+        {
+            if (pnoptrPacman -> GetEatingBoundingBox().Intersects(pellet.pBBox))
+            {
+                pellet.eaten = true;
+                pnoptrPacman ->AteItem(pellet.score);
+
+                if (pellet.powerPellet)
+                {
+                    pnoptrPacman->ResetGhostEatenMultiplier();
+                }
+            }
+        }
+    }
+
+    if (ShouldSpawnBonusItem())
+    {
+        SpawnBonusItem();
+    }
+    
+    if (pBonusItem.spawned && !pBonusItem.eaten)
+    {
+        if (pnoptrPacman->GetEatingBoundingBox().Intersects(pBonusItem.bbox))
+        {
+            pBonusItem.eaten = true;
+            pnoptrPacman->AteItem(pBonusItem.score);
+        }
+    }
 }
 
 void PacmanLevel::Draw(Screen &screen){
@@ -73,21 +109,9 @@ void PacmanLevel::Draw(Screen &screen){
         }
     }
 
-    for (auto& pellet : pPellets){
-
-        if (!pellet.eaten)
-        {
-            if (pnoptrPacman -> GetEatingBoundingBox().Intersects(pellet.pBBox))
-            {
-                pellet.eaten = true;
-                pnoptrPacman ->AteItem(pellet.score);
-
-                if (pellet.powerPellet)
-                {
-                    pnoptrPacman->ResetGhostEatenMultiplier();
-                }
-            }
-        }
+    if (pBonusItem.spawned && !pBonusItem.eaten)
+    {
+        screen.Draw(*pnoptrSpriteSheet, pBonusItemSpriteName, pBonusItem.bbox.GetTopLeftPoint());
     }
 }
 
@@ -131,10 +155,39 @@ void PacmanLevel::ResetToFirstLevel(){
     ResetLevel();
 }
 
+bool PacmanLevel::ShouldSpawnBonusItem() const{
+
+    auto numEaten = NumPelletsEaten();
+    return !pBonusItem.spawned && numEaten >= pBonusItem.spawnTime;
+}
+
+void PacmanLevel::SpawnBonusItem(){
+ 
+    pBonusItem.spawned = 1;
+    pBonusItem.eaten = 0;
+}
+
+void PacmanLevel::GetBonusItemSpriteName(std::string& spriteName, uint32_t& score) const{
+
+    for(const auto& properties : pBonusItemProperties){
+
+        if (pCurrentLevel >= properties.begin && pCurrentLevel <= properties.end)
+        {
+            spriteName = properties.spriteName;
+            score = properties.score;
+        }
+    }
+}
+
 void PacmanLevel::ResetLevel()
 {
-
     ResetPellets();
+
+    std::uniform_int_distribution <size_t> distribution (20, pPellets.size() -50);
+    pBonusItem.spawnTime = static_cast<int>(distribution(pGenerator));
+
+    GetBonusItemSpriteName(pBonusItemSpriteName, pBonusItem.score);
+
     if (pnoptrPacman)
     {
         pnoptrPacman -> MoveTo(pPacmanSpawnLocation);
@@ -318,6 +371,13 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
     };
     fileLoader.AddCommand(tilePacmanSpawnPointCommand);
 
+    Command tileItemSpawnPointCommand;
+    tileItemSpawnPointCommand.command = "tile_item_spawn_point";
+    tileItemSpawnPointCommand.parseFunc = [this](ParseFuncParams params){
+        pTiles.back().itemSpawnPoint = FileCommandLoader::ReadInt(params);
+    };
+    fileLoader.AddCommand(tileItemSpawnPointCommand);
+
     Command layoutCommand;
     layoutCommand.command = "layout";
     layoutCommand.commandType = COMMAND_MULTI_LINE;
@@ -344,6 +404,10 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
                 if (tile-> pacmanSpawnPoint >0)
                 {
                     pPacmanSpawnLocation = Vector2D(startingX + tile->offset.GetX(), layoutOffset.GetY() + tile->offset.GetY());
+                } 
+                else if (tile -> itemSpawnPoint > 0)
+                {
+                    pBonusItem.bbox = Rectangle(Vector2D(startingX + tile -> offset.GetX(), layoutOffset.GetY() + tile->offset.GetY()), SPRITE_WIDTH, SPRITE_HEIGHT);
                 }
                 
                 if (tile->excludePelletTile >0)
@@ -358,6 +422,48 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
     };
 
     fileLoader.AddCommand(layoutCommand);
+
+    Command bonusItemCommand;
+    bonusItemCommand.command = "bonus_item";
+    bonusItemCommand.parseFunc = [this] (ParseFuncParams params){
+
+        BonusItemLevelProperties newProperty;
+        pBonusItemProperties.push_back(newProperty);
+    };
+    fileLoader.AddCommand(bonusItemCommand);
+
+    Command bonusItemSpriteNameCommand;
+    bonusItemSpriteNameCommand.command = "bonus_item_sprite_name";
+    bonusItemSpriteNameCommand.parseFunc = [this] (ParseFuncParams params){
+
+        pBonusItemProperties.back().spriteName = FileCommandLoader::ReadString(params);
+    };
+    fileLoader.AddCommand(bonusItemSpriteNameCommand);
+
+    Command bonusItemScoreCommand;
+    bonusItemScoreCommand.command = "bonus_item_score";
+    bonusItemScoreCommand.parseFunc = [this] (ParseFuncParams params){
+
+        pBonusItemProperties.back().score = FileCommandLoader::ReadInt(params);
+    };
+    fileLoader.AddCommand(bonusItemScoreCommand);
+
+    Command bonusItemBeginLevelCommand;
+    bonusItemBeginLevelCommand.command = "bonus_item_begin_level";
+    bonusItemBeginLevelCommand.parseFunc = [this] (ParseFuncParams params){
+
+        pBonusItemProperties.back().begin = FileCommandLoader::ReadInt(params);
+    };
+    fileLoader.AddCommand(bonusItemBeginLevelCommand);
+
+    Command bonusItemEndLevelCommand;
+    bonusItemEndLevelCommand.command = "bonus_item_end_level";
+    bonusItemEndLevelCommand.parseFunc = [this] (ParseFuncParams params){
+
+        pBonusItemProperties.back().end = FileCommandLoader::ReadInt(params);
+    };
+    fileLoader.AddCommand(bonusItemEndLevelCommand);
+
 
     return fileLoader.LoadFile(levelPath);
 }

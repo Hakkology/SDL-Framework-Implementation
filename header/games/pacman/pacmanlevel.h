@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <random>
 
 #include "vector2D.h"
 #include "excluder.h"
@@ -16,7 +17,7 @@ class PacmanLevel{
 
 public:
 
-    bool Init (const std::string& levelPath, PacmanPlayer* noptrPacman);
+    bool Init (const std::string& levelPath, const SpriteSheet* noptrSpriteSheet, PacmanPlayer* noptrPacman);
     void Update (uint32_t dt);
     void Draw (Screen& screen);
 
@@ -40,6 +41,7 @@ private:
         int isTeleportTile = 0;
         int excludePelletTile = 0;
         int pacmanSpawnPoint = 0;
+        int itemSpawnPoint = 0;
         char teleportToSymbol = 0;
         char symbol = '-';
     };
@@ -51,13 +53,41 @@ private:
         int eaten = 0;
     };
 
-    bool LoadLevel (const std::string& levelPath);
+    struct BonusItem
+    {
+        uint32_t score = 0;
+        Rectangle bbox;
+        int eaten = 0;
+        int spawned = 0;
+        int spawnTime = -1;
+    };
+
+    struct BonusItemLevelProperties{
+
+        uint32_t score = 0;
+        std::string spriteName = "";
+        uint32_t begin = 0;
+        uint32_t end = 0;
+    };
+    
     Tile* GetTileForSymbol(char symbol);
 
     void ResetPellets ();
+    void GetBonusItemSpriteName(std::string& spriteName, uint32_t& score) const;
+    void SpawnBonusItem();
+
+    bool LoadLevel (const std::string& levelPath);
+    bool ShouldSpawnBonusItem() const;
     bool HasEatenAllPellets() const;
     size_t NumPelletsEaten() const;
 
+    std::default_random_engine pGenerator;
+
+    BonusItem pBonusItem;
+    std::string pBonusItemSpriteName;
+    const SpriteSheet* pnoptrSpriteSheet;
+
+    std::vector<BonusItemLevelProperties> pBonusItemProperties;
     std::vector<Excluder> pWalls;
     std::vector<Tile> pTiles;
     std::vector<Tile> pExclusionTiles;

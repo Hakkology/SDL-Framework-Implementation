@@ -6,7 +6,7 @@ void Pacman::Init(GameController &controller){
 
     pPacmanSpriteSheet.Load("PacmanSprites");
     pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", Vector2D::Zero, PACMAN_MOVEMENT_SPEED, false);
-    pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacman);
+    pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacmanSpriteSheet, &pPacman);
 
     ResetGame();
 

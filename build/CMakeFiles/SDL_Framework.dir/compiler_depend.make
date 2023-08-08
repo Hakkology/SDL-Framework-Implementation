@@ -5024,6 +5024,41 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/tr1/gamma.tcc \
+  /usr/include/c++/11/tr1/special_function_util.h \
+  /usr/include/c++/11/tr1/bessel_function.tcc \
+  /usr/include/c++/11/tr1/beta_function.tcc \
+  /usr/include/c++/11/tr1/ell_integral.tcc \
+  /usr/include/c++/11/tr1/exp_integral.tcc \
+  /usr/include/c++/11/tr1/hypergeometric.tcc \
+  /usr/include/c++/11/tr1/legendre_function.tcc \
+  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/11/tr1/poly_hermite.tcc \
+  /usr/include/c++/11/tr1/poly_laguerre.tcc \
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
   ../header/shapes/vector2D.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
@@ -5056,31 +5091,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
-  /usr/include/c++/11/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/c++/11/bits/specfun.h \
-  /usr/include/c++/11/limits \
-  /usr/include/c++/11/tr1/gamma.tcc \
-  /usr/include/c++/11/tr1/special_function_util.h \
-  /usr/include/c++/11/tr1/bessel_function.tcc \
-  /usr/include/c++/11/tr1/beta_function.tcc \
-  /usr/include/c++/11/tr1/ell_integral.tcc \
-  /usr/include/c++/11/tr1/exp_integral.tcc \
-  /usr/include/c++/11/tr1/hypergeometric.tcc \
-  /usr/include/c++/11/tr1/legendre_function.tcc \
-  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/11/tr1/poly_hermite.tcc \
-  /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
   ../header/games/excluder.h \
   ../header/shapes/rectangle.h \
   ../header/utils/utilities.h \
@@ -5091,7 +5101,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/tuple \
@@ -5108,7 +5117,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
   ../header/shapes/shape.h \
   ../header/shapes/vector2D.h \
   ../header/games/breakout/boundaryedge.h \
@@ -5257,6 +5265,9 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   ../header/utils/constants.h \
   ../header/graphics/color.h \
   ../header/games/pacman/pacmangameutils.h \
+  ../header/graphics/spritesheet.h \
+  ../header/graphics/bmpimage.h \
+  ../header/graphics/color.h \
   ../header/utils/filecommandloader.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
@@ -5265,10 +5276,8 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/bits/fstream.tcc \
   ../header/graphics/screen.h \
   ../header/graphics/screenbuffer.h \
-  ../header/graphics/color.h \
   ../header/shapes/triangle.h \
   ../header/shapes/circle.h \
-  ../header/graphics/bmpimage.h \
   ../header/graphics/spritesheet.h \
   ../header/games/pacman/pacmanplayer.h \
   ../header/games/pacman/pacmanactor.h \
@@ -5279,7 +5288,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
@@ -12126,15 +12134,22 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: ../src/scenes/pa
   ../header/games/game.h \
   ../header/games/pacman/pacman.h \
   ../header/games/pacman/pacmanlevel.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   ../header/games/excluder.h \
   ../header/games/breakout/boundaryedge.h \
   ../header/games/pacman/pacmangameutils.h \
+  ../header/graphics/spritesheet.h \
   ../header/games/pacman/pacmanplayer.h \
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
-  ../header/graphics/animation.h \
-  ../header/graphics/spritesheet.h
+  ../header/graphics/animation.h
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp \
   /usr/include/stdc-predef.h \
@@ -14323,6 +14338,10 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 ../src/graphics/animationplayer.cpp:
 
+/usr/include/c++/11/numeric:
+
+/usr/include/c++/11/bits/random.h:
+
 ../header/graphics/animation.h:
 
 ../header/graphics/animatedsprite.h:
@@ -14413,6 +14432,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 /usr/include/c++/11/bits/ios_base.h:
 
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/locale.h:
@@ -14466,6 +14487,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/SDL2/SDL_pixels.h:
 
 /usr/include/SDL2/SDL_video.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
 
@@ -15081,6 +15104,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/c++/11/bits/random.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
@@ -15132,6 +15157,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/SDL2/SDL_atomic.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
 
 /usr/include/c++/11/bits/codecvt.h:
 
@@ -15208,6 +15235,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h:
 
 ../src/scenes/buttonoptionsScene.cpp:
+
+/usr/include/c++/11/random:
 
 /usr/include/SDL2/SDL_platform.h:
 

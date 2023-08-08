@@ -135,7 +135,37 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/random \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
+ /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/c++/11/bits/random.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
@@ -159,29 +189,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cassert \
- /usr/include/assert.h /usr/include/c++/11/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
- /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/assert.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
@@ -191,7 +199,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
@@ -205,7 +212,6 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /usr/include/c++/11/pstl/execution_defs.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
@@ -327,25 +333,24 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
