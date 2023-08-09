@@ -5,6 +5,11 @@
 
 #include "vector2D.h"
 
+static const int PACMAN_MOVEMENT_SPEED = 50;
+static const int PACMAN_GHOST_MOVEMENT_SPEED = 45;
+static const int PACMAN_GHOST_VULN_MOVEMENT_SPEED = 25;
+static const int PACMAN_GHOST_BACK_TO_PEN_SPEED = 100;
+
 enum PacmanMovement
 {
     PACMAN_MOVEMENT_NONE = 0,

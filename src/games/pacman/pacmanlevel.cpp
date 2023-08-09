@@ -25,10 +25,11 @@ bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpr
 
 void PacmanLevel::Update(uint32_t dt){
 
-    BoundaryEdge edge;
+
 
     for(auto& wall: pWalls){
 
+        BoundaryEdge edge;
         if (wall.HasCollided(pnoptrPacman->GetBoundingBox(), edge))
         {
             Vector2D offset = wall.GetCollisionOffset(pnoptrPacman->GetBoundingBox());
@@ -336,47 +337,59 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
     };
     fileLoader.AddCommand(layoutOffsetCommand);
 
-    Command tileIsTeleportTileCommand;
-    tileIsTeleportTileCommand.command = "tile_is_teleport_tile";
-    tileIsTeleportTileCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().isTeleportTile = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(tileIsTeleportTileCommand);
+	Command tileIsTeleportTileCommand;
+	tileIsTeleportTileCommand.command = "tile_is_teleport_tile";
+	tileIsTeleportTileCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().isTeleportTile = FileCommandLoader::ReadInt(params);
+		};
 
-    Command tileToTeleportToCommand;
-    tileToTeleportToCommand.command = "tile_teleport_to_symbol";
-    tileToTeleportToCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().teleportToSymbol = FileCommandLoader::ReadChar(params);
-    };
-    fileLoader.AddCommand(tileToTeleportToCommand);
+	fileLoader.AddCommand(tileIsTeleportTileCommand);
 
-    Command tileOffsetCommand;
-    tileOffsetCommand.command = "tile_offset";
-    tileOffsetCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().offset = FileCommandLoader::ReadSize(params);
-    };
-    fileLoader.AddCommand(tileOffsetCommand);
+	Command tileToTeleportToCommand;
+	tileToTeleportToCommand.command = "tile_teleport_to_symbol";
+	tileToTeleportToCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().teleportToSymbol = FileCommandLoader::ReadChar(params);
+		};
 
-    Command tileExcludePelletCommand;
-    tileExcludePelletCommand.command = "tile_exclude_pellet";
-    tileExcludePelletCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().excludePelletTile = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(tileExcludePelletCommand);
+	fileLoader.AddCommand(tileToTeleportToCommand);
 
-    Command tilePacmanSpawnPointCommand;
-    tilePacmanSpawnPointCommand.command = "tile_pacman_spawn_point";
-    tilePacmanSpawnPointCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().pacmanSpawnPoint = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(tilePacmanSpawnPointCommand);
+	Command tileOffsetCommand;
+	tileOffsetCommand.command = "tile_offset";
+	tileOffsetCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().offset = FileCommandLoader::ReadSize(params);
+		};
 
-    Command tileItemSpawnPointCommand;
-    tileItemSpawnPointCommand.command = "tile_item_spawn_point";
-    tileItemSpawnPointCommand.parseFunc = [this](ParseFuncParams params){
-        pTiles.back().itemSpawnPoint = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(tileItemSpawnPointCommand);
+	fileLoader.AddCommand(tileOffsetCommand);
+
+	Command tileExcludePelletCommand;
+	tileExcludePelletCommand.command = "tile_exclude_pellet";
+	tileExcludePelletCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().excludePelletTile = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tileExcludePelletCommand);
+
+	Command tilePacmanSpawnPointCommand;
+	tilePacmanSpawnPointCommand.command = "tile_pacman_spawn_point";
+	tilePacmanSpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().pacmanSpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tilePacmanSpawnPointCommand);
+
+	Command tileItemSpawnPointCommand;
+	tileItemSpawnPointCommand.command = "tile_item_spawn_point";
+	tileItemSpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().itemSpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tileItemSpawnPointCommand);
 
     Command layoutCommand;
     layoutCommand.command = "layout";
@@ -423,49 +436,55 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
 
     fileLoader.AddCommand(layoutCommand);
 
-    Command bonusItemCommand;
-    bonusItemCommand.command = "bonus_item";
-    bonusItemCommand.parseFunc = [this] (ParseFuncParams params){
+	Command bonusItemCommand;
+	bonusItemCommand.command = "bonus_item";
+	bonusItemCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			BonusItemLevelProperties newProperty;
+			pBonusItemProperties.push_back(newProperty);
+		};
 
-        BonusItemLevelProperties newProperty;
-        pBonusItemProperties.push_back(newProperty);
-    };
-    fileLoader.AddCommand(bonusItemCommand);
+	fileLoader.AddCommand(bonusItemCommand);
 
-    Command bonusItemSpriteNameCommand;
-    bonusItemSpriteNameCommand.command = "bonus_item_sprite_name";
-    bonusItemSpriteNameCommand.parseFunc = [this] (ParseFuncParams params){
+	Command bonusItemSpriteNameCommand;
+	bonusItemSpriteNameCommand.command = "bonus_item_sprite_name";
+	bonusItemSpriteNameCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pBonusItemProperties.back().spriteName = FileCommandLoader::ReadString(params);
+		};
 
-        pBonusItemProperties.back().spriteName = FileCommandLoader::ReadString(params);
-    };
-    fileLoader.AddCommand(bonusItemSpriteNameCommand);
-
-    Command bonusItemScoreCommand;
-    bonusItemScoreCommand.command = "bonus_item_score";
-    bonusItemScoreCommand.parseFunc = [this] (ParseFuncParams params){
-
-        pBonusItemProperties.back().score = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(bonusItemScoreCommand);
-
-    Command bonusItemBeginLevelCommand;
-    bonusItemBeginLevelCommand.command = "bonus_item_begin_level";
-    bonusItemBeginLevelCommand.parseFunc = [this] (ParseFuncParams params){
-
-        pBonusItemProperties.back().begin = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(bonusItemBeginLevelCommand);
-
-    Command bonusItemEndLevelCommand;
-    bonusItemEndLevelCommand.command = "bonus_item_end_level";
-    bonusItemEndLevelCommand.parseFunc = [this] (ParseFuncParams params){
-
-        pBonusItemProperties.back().end = FileCommandLoader::ReadInt(params);
-    };
-    fileLoader.AddCommand(bonusItemEndLevelCommand);
+	fileLoader.AddCommand(bonusItemSpriteNameCommand);
 
 
-    return fileLoader.LoadFile(levelPath);
+	Command bonusItemScoreCommand;
+	bonusItemScoreCommand.command = "bonus_item_score";
+	bonusItemScoreCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pBonusItemProperties.back().score = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(bonusItemScoreCommand);
+
+	Command bonusItemBeginLevelCommand;
+	bonusItemBeginLevelCommand.command = "bonus_item_begin_level";
+	bonusItemBeginLevelCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pBonusItemProperties.back().begin = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(bonusItemBeginLevelCommand);
+
+
+	Command bonusItemEndLevelCommand;
+	bonusItemEndLevelCommand.command = "bonus_item_end_level";
+	bonusItemEndLevelCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pBonusItemProperties.back().end = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(bonusItemEndLevelCommand);
+
+	return fileLoader.LoadFile(levelPath);
 }
 
 PacmanLevel::Tile *PacmanLevel::GetTileForSymbol(char symbol)

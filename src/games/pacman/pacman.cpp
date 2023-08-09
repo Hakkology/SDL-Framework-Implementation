@@ -7,6 +7,7 @@ void Pacman::Init(GameController &controller){
     pPacmanSpriteSheet.Load("PacmanSprites");
     pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", Vector2D::Zero, PACMAN_MOVEMENT_SPEED, false);
     pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacmanSpriteSheet, &pPacman);
+    
 
     ResetGame();
 
@@ -58,8 +59,8 @@ void Pacman::Update(uint32_t dt){
 void Pacman::Draw(Screen &screen){
 
     pLevel.Draw(screen);
-    pPacman.Draw(screen);
     DrawScoreTable(screen);
+    pPacman.Draw(screen);
     DrawLives(screen);
 }
 
