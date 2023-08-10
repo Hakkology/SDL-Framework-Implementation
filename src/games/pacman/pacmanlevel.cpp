@@ -29,15 +29,13 @@ bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpr
 
 void PacmanLevel::Update(uint32_t dt){
 
-
-
-    for(auto& wall: pWalls){
+    for(const auto& wall: pWalls){
 
         BoundaryEdge edge;
         if (wall.HasCollided(pnoptrPacman->GetBoundingBox(), edge))
         {
             Vector2D offset = wall.GetCollisionOffset(pnoptrPacman->GetBoundingBox());
-            pnoptrPacman->MoveBy(offset * 1.1f);
+            pnoptrPacman->MoveBy(offset);
             pnoptrPacman->Stop();
         }
     }
@@ -126,10 +124,9 @@ bool PacmanLevel::WillCollide(const Rectangle &bbox, PacmanMovement direction) c
 
     bBox.MoveBy(GetMovementVector(direction));
     
-    BoundaryEdge edge;
-
     for(const auto& wall: pWalls){
 
+        BoundaryEdge edge;
         if (wall.HasCollided(bBox, edge))
         {
             return true;

@@ -29,7 +29,7 @@ public:
     const Rectangle GetBoundingBox() const;
     
     inline Vector2D Position() const {return mPosition;}
-    inline void SetPosition(const Vector2D& position) {mPosition += position;}
+    inline void SetPosition(const Vector2D& position) {mPosition = position;}
     inline void MoveBy(const Vector2D& delta) {mPosition += delta;}
     inline bool IsFinishedPlayingAnimation() const {return mAnimationPlayer.IsFinishedPlaying();}
     inline const Color& GetColor() const {return mColor;}

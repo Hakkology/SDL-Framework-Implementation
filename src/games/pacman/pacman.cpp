@@ -123,7 +123,16 @@ void Pacman::ResetGame(){
 
 void Pacman::UpdatePacmanMovement(){
 
-    if (pPressedDirection != PACMAN_MOVEMENT_NONE)
+
+    PacmanMovement currentDirection = pPacman.GetMovementDirection();
+
+    if (pLevel.WillCollide(pPacman.GetBoundingBox(), currentDirection))
+    {
+        pPacman.Stop();
+        return;
+    }
+
+    if (pPressedDirection != PACMAN_MOVEMENT_NONE && currentDirection != pPressedDirection)
     {
         if (!pLevel.WillCollide(pPacman.GetBoundingBox(), pPressedDirection))
         {
