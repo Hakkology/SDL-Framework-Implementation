@@ -46,29 +46,11 @@
 	"compileGroups" : 
 	[
 		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "-g"
-				}
-			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/include_directories"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/("
-				},
-				{
-					"backtrace" : 3,
 					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/header"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/)"
 				},
 				{
 					"backtrace" : 3,
@@ -163,10 +145,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"

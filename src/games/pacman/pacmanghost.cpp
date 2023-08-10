@@ -106,7 +106,7 @@ void PacmanGhost::ResetToFirstPosition(){
 
 void PacmanGhost::SetStateToVulnerable(){
 
-    if (pState != GHOST_STATE_DEAD)
+    if (pState != GHOST_STATE_DEAD && IsVulnerable())
     {
         SetGhostState(GHOST_STATE_VULNERABLE);
     }

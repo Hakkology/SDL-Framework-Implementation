@@ -6,6 +6,7 @@
 #include "pacmanplayer.h"
 #include "spritesheet.h"
 #include "inputaction.h"
+#include "pacmanghost.h"
 
 class Pacman : public Game{
 
@@ -23,6 +24,7 @@ private:
     void ResetLevel();
     void DrawLives (Screen& screen);
     void DrawScoreTable(Screen &screen);
+    void SetupGhosts();
     
     PacmanLevel pLevel;
     PacmanMovement pPressedDirection;
@@ -30,7 +32,7 @@ private:
     PacmanPlayer pPacman;
 
     size_t pNumLives;
-
+    std::vector<PacmanGhost> pGhosts;
 
 };
 

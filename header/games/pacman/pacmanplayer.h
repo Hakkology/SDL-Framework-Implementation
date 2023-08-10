@@ -2,6 +2,7 @@
 #define GAMES_PACMAN_PACMANPLAYER__H__
 
 #include <stdint.h>
+
 #include "pacmanactor.h"
 
 class Screen;

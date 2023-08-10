@@ -361,6 +361,7 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
@@ -369,4 +370,5 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h

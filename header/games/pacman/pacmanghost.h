@@ -30,8 +30,8 @@ public:
 
     PacmanGhost();
 
-    virtual void Init (const SpriteSheet& spriteSheet, const std::string& animationsPath, const Vector2D& initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color&spriteColor = White());
-    virtual void Update (uint32_t dt);
+    virtual void Init (const SpriteSheet& spriteSheet, const std::string& animationsPath, const Vector2D& initialPos, uint32_t movementSpeed, bool updateSpriteOnMovement, const Color&spriteColor = White()) override;
+    virtual void Update (uint32_t dt) override;
 
     virtual void SetMovementDirection(PacmanMovement dir) override;
     virtual void Stop() override;

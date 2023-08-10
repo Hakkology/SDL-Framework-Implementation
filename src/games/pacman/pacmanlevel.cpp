@@ -2,6 +2,7 @@
 #include "filecommandloader.h"
 #include "screen.h"
 #include "pacmanplayer.h"
+#include "pacmanghost.h"
 #include "app.h"
 #include "circle.h"
 
@@ -15,9 +16,12 @@ bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpr
     std::random_device r;
     pGenerator.seed(r());
 
+    pGhostSpawnPoints.resize(NUM_GHOSTS);
+
     bool levelLoaded = LoadLevel(levelPath);
     if (levelLoaded)
     {
+        cout << "Level loaded successfully." << endl;
         ResetLevel();
     }
     return levelLoaded;
@@ -391,6 +395,42 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
 
 	fileLoader.AddCommand(tileItemSpawnPointCommand);
 
+	Command tileBlinkySpawnPointCommand;
+	tileBlinkySpawnPointCommand.command = "tile_blinky_spawn_point";
+	tileBlinkySpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().blinkySpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tileBlinkySpawnPointCommand);
+
+	Command tilePinkySpawnPointCommand;
+	tilePinkySpawnPointCommand.command = "tile_pinky_spawn_point";
+	tilePinkySpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().pinkySpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tilePinkySpawnPointCommand);
+
+	Command tileInkySpawnPointCommand;
+	tileInkySpawnPointCommand.command = "tile_inky_spawn_point";
+	tileInkySpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().inkySpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tileInkySpawnPointCommand);
+
+	Command tileClydeSpawnPointCommand;
+	tileClydeSpawnPointCommand.command = "tile_clyde_spawn_point";
+	tileClydeSpawnPointCommand.parseFunc = [this](ParseFuncParams params)
+		{
+			pTiles.back().clydeSpawnPoint = FileCommandLoader::ReadInt(params);
+		};
+
+	fileLoader.AddCommand(tileClydeSpawnPointCommand);
+
     Command layoutCommand;
     layoutCommand.command = "layout";
     layoutCommand.commandType = COMMAND_MULTI_LINE;
@@ -417,6 +457,22 @@ bool PacmanLevel::LoadLevel(const std::string &levelPath)
                 if (tile-> pacmanSpawnPoint >0)
                 {
                     pPacmanSpawnLocation = Vector2D(startingX + tile->offset.GetX(), layoutOffset.GetY() + tile->offset.GetY());
+                }
+                else if (tile -> blinkySpawnPoint > 0)
+                {
+                    pGhostSpawnPoints[BLINKY] = Vector2D(startingX + tile-> offset.GetX(), layoutOffset.GetY() + tile -> offset.GetY());
+                } 
+                else if (tile -> pinkySpawnPoint > 0)
+                {
+                    pGhostSpawnPoints[PINKY] = Vector2D(startingX + tile-> offset.GetX(), layoutOffset.GetY() + tile -> offset.GetY());
+                } 
+                else if (tile -> inkySpawnPoint > 0)
+                {
+                    pGhostSpawnPoints[INKY] = Vector2D(startingX + tile-> offset.GetX(), layoutOffset.GetY() + tile -> offset.GetY());
+                } 
+                else if (tile -> clydeSpawnPoint > 0)
+                {
+                    pGhostSpawnPoints[CLYDE] = Vector2D(startingX + tile-> offset.GetX(), layoutOffset.GetY() + tile -> offset.GetY());
                 } 
                 else if (tile -> itemSpawnPoint > 0)
                 {

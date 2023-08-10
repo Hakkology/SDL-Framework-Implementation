@@ -47,7 +47,7 @@ set(SOURCES
 
     # breakout files
     src/games/breakout/breakout.cpp 
-    src/games//excluder.cpp 
+    src/games/excluder.cpp 
     src/games/breakout/paddle.cpp 
     src/games/breakout/ball.cpp 
     src/games/breakout/levelboundary.cpp
@@ -130,16 +130,16 @@ set(HEADERS
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE 
-    include_directories(header)
-    include_directories(header/utils)
-    include_directories(header/games)
-    include_directories(header/games/breakout)
-    include_directories(header/games/pacman)
-    include_directories(header/graphics)
-    include_directories(header/shapes)
-    include_directories(header/scenes)
-    include_directories(header/input)
-    include_directories(header/app)
+    header
+    header/utils
+    header/games
+    header/games/breakout
+    header/games/pacman
+    header/graphics
+    header/shapes
+    header/scenes
+    header/input
+    header/app
 )
 
 # Link SDL2 libraries

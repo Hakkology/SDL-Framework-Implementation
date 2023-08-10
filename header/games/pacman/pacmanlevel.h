@@ -6,12 +6,14 @@
 #include <random>
 
 #include "vector2D.h"
+#include "bmpimage.h"
 #include "excluder.h"
 #include "pacmangameutils.h"
 #include "spritesheet.h"
 
 class Screen;
 class PacmanPlayer;
+class PacmanGhost;
 
 class PacmanLevel{
 
@@ -30,6 +32,7 @@ public:
 
     inline Vector2D GetLayoutOffset() const {return pLayoutOffset;}
     inline Vector2D GetPacmanSpawnLocation () const {return pPacmanSpawnLocation;}
+    inline const std::vector<Vector2D>& GetGhostSpawnPoints() { return pGhostSpawnPoints;}
 
 private:
 
@@ -42,6 +45,10 @@ private:
         int excludePelletTile = 0;
         int pacmanSpawnPoint = 0;
         int itemSpawnPoint = 0;
+        int blinkySpawnPoint = 0;
+        int inkySpawnPoint = 0;
+        int pinkySpawnPoint = 0;
+        int clydeSpawnPoint = 0;
         char teleportToSymbol = 0;
         char symbol = '-';
     };
@@ -87,6 +94,7 @@ private:
     std::string pBonusItemSpriteName;
     const SpriteSheet* pnoptrSpriteSheet;
 
+    std::vector<Vector2D> pGhostSpawnPoints;
     std::vector<BonusItemLevelProperties> pBonusItemProperties;
     std::vector<Excluder> pWalls;
     std::vector<Tile> pTiles;
