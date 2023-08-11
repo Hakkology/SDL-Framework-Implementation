@@ -119,6 +119,7 @@ void Pacman::ResetGame(){
     pPressedDirection = PACMAN_MOVEMENT_NONE;
     pPacman.ResetScore();
     pLevel.ResetToFirstLevel();
+    ResetLevel();
 }
 
 void Pacman::UpdatePacmanMovement(){
