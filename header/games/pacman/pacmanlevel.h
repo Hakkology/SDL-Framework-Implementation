@@ -19,8 +19,8 @@ class PacmanLevel{
 
 public:
 
-    bool Init (const std::string& levelPath, const SpriteSheet* noptrSpriteSheet, PacmanPlayer* noptrPacman);
-    void Update (uint32_t dt);
+    bool Init (const std::string& levelPath, const SpriteSheet* noptrSpriteSheet);
+    void Update (uint32_t dt, PacmanPlayer& pacman, std::vector<PacmanGhost>& ghosts);
     void Draw (Screen& screen);
 
     bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
@@ -106,8 +106,6 @@ private:
     size_t pTileHeight;
 
     int pCurrentLevel;
-
-    PacmanPlayer* pnoptrPacman;
     
 };
 

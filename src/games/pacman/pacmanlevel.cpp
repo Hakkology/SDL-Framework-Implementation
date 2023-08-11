@@ -6,10 +6,9 @@
 #include "app.h"
 #include "circle.h"
 
-bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpriteSheet, PacmanPlayer* noptrPacman){
+bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpriteSheet){
 
     pCurrentLevel =0 ;
-    pnoptrPacman = noptrPacman;
     pnoptrSpriteSheet = noptrSpriteSheet;
     pBonusItemSpriteName = "";
 
@@ -27,16 +26,26 @@ bool PacmanLevel::Init(const std::string &levelPath, const SpriteSheet* noptrSpr
     return levelLoaded;
 }
 
-void PacmanLevel::Update(uint32_t dt){
+void PacmanLevel::Update(uint32_t dt, PacmanPlayer& pacman, std::vector<PacmanGhost>& ghosts){
 
     for(const auto& wall: pWalls){
 
         BoundaryEdge edge;
-        if (wall.HasCollided(pnoptrPacman->GetBoundingBox(), edge))
+        if (wall.HasCollided(pacman.GetBoundingBox(), edge))
         {
-            Vector2D offset = wall.GetCollisionOffset(pnoptrPacman->GetBoundingBox());
-            pnoptrPacman->MoveBy(offset);
-            pnoptrPacman->Stop();
+            Vector2D offset = wall.GetCollisionOffset(pacman.GetBoundingBox());
+            pacman.MoveBy(offset);
+            pacman.Stop();
+        }
+
+        for (auto& ghost: ghosts)
+        {
+            if (wall.HasCollided(ghost.GetBoundingBox(), edge))
+            {
+                Vector2D offset = wall.GetCollisionOffset(ghost.GetBoundingBox());
+                ghost.MoveBy(offset);
+                ghost.Stop();
+            }
         }
     }
 
@@ -44,14 +53,21 @@ void PacmanLevel::Update(uint32_t dt){
         if (t.isTeleportTile) {
             Rectangle teleportTileAABB(t.position , t.width, static_cast<float>(pTileHeight));
 
-            if (teleportTileAABB.Intersects(pnoptrPacman->GetBoundingBox())) {
-                Tile* teleportToTile = GetTileForSymbol(t.teleportToSymbol);
-                assert(teleportToTile);
+            Tile* teleportToTile = GetTileForSymbol(t.teleportToSymbol);
+            assert(teleportToTile);
 
-                if (teleportToTile->isTeleportTile) {
+            if (teleportToTile->isTeleportTile) {
 
-                    Vector2D newPosition = teleportToTile->position + teleportToTile->offset;
-                    pnoptrPacman->MoveTo(newPosition);
+                if (teleportTileAABB.Intersects(pacman.GetBoundingBox())) {
+
+                    pacman.MoveTo(teleportToTile->position + teleportToTile->offset);
+                }
+
+                for(auto& ghost: ghosts){
+                    if (teleportTileAABB.Intersects(ghost.GetBoundingBox())) {
+
+                        ghost.MoveTo(teleportToTile->position + teleportToTile->offset);
+                    }
                 }
             }
         }
@@ -61,14 +77,14 @@ void PacmanLevel::Update(uint32_t dt){
 
         if (!pellet.eaten)
         {
-            if (pnoptrPacman -> GetEatingBoundingBox().Intersects(pellet.pBBox))
+            if (pacman.GetEatingBoundingBox().Intersects(pellet.pBBox))
             {
                 pellet.eaten = true;
-                pnoptrPacman ->AteItem(pellet.score);
+                pacman.AteItem(pellet.score);
 
                 if (pellet.powerPellet)
                 {
-                    pnoptrPacman->ResetGhostEatenMultiplier();
+                    pacman.ResetGhostEatenMultiplier();
                 }
             }
         }
@@ -81,10 +97,10 @@ void PacmanLevel::Update(uint32_t dt){
     
     if (pBonusItem.spawned && !pBonusItem.eaten)
     {
-        if (pnoptrPacman->GetEatingBoundingBox().Intersects(pBonusItem.bbox))
+        if (pacman.GetEatingBoundingBox().Intersects(pBonusItem.bbox))
         {
             pBonusItem.eaten = true;
-            pnoptrPacman->AteItem(pBonusItem.score);
+            pacman.AteItem(pBonusItem.score);
         }
     }
 }
@@ -190,11 +206,6 @@ void PacmanLevel::ResetLevel()
 
     GetBonusItemSpriteName(pBonusItemSpriteName, pBonusItem.score);
 
-    if (pnoptrPacman)
-    {
-        pnoptrPacman -> MoveTo(pPacmanSpawnLocation);
-        pnoptrPacman -> ResetToFirstAnimation();
-    }
 }
 
 bool PacmanLevel::HasEatenAllPellets() const

@@ -6,7 +6,7 @@ void Pacman::Init(GameController &controller){
 
     pPacmanSpriteSheet.Load("PacmanSprites");
     pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", Vector2D::Zero, PACMAN_MOVEMENT_SPEED, false);
-    pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacmanSpriteSheet, &pPacman);
+    pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacmanSpriteSheet);
     
     SetupGhosts();
     ResetGame();
@@ -54,11 +54,12 @@ void Pacman::Update(uint32_t dt){
         pGhosts[i].Update(dt);
     }
 
-    pLevel.Update(dt);
+    pLevel.Update(dt, pPacman, pGhosts);
 
     if (pLevel.IsLevelOver())
     {
         pLevel.IncreaseLevel();
+        ResetLevel();
     }
 }
 
@@ -111,6 +112,8 @@ void Pacman::DrawLives(Screen &screen){
 
 void Pacman::ResetLevel(){
 
+    pPacman.MoveTo(pLevel.GetPacmanSpawnLocation());
+    pPacman.ResetToFirstAnimation();
 }
 
 void Pacman::ResetGame(){
