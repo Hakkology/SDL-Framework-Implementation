@@ -7,6 +7,7 @@
 #include "spritesheet.h"
 #include "inputaction.h"
 #include "pacmanghost.h"
+#include "pacmanghostai.h"
 
 class Pacman : public Game{
 
@@ -33,6 +34,7 @@ private:
 
     size_t pNumLives;
     std::vector<PacmanGhost> pGhosts;
+    std::vector<PacmanGhostAI> pGhostAIs;
 
 };
 

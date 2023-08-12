@@ -60,6 +60,7 @@ set(SOURCES
     src/games/pacman/pacmanactor.cpp 
     src/games/pacman/pacmanplayer.cpp 
     src/games/pacman/pacmanghost.cpp 
+    src/games/pacman/pacmanghostai.cpp 
     src/games/pacman/pacman.cpp
 )
 
@@ -123,6 +124,7 @@ set(HEADERS
     header/games/pacman/pacmanactor.h
     header/games/pacman/pacmanplayer.h
     header/games/pacman/pacmanghost.h
+    header/games/pacman/pacmanghostai.h
     header/games/pacman/pacman.h
 )
 

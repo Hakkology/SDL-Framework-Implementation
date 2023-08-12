@@ -371,4 +371,5 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h

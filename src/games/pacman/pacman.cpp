@@ -51,6 +51,18 @@ void Pacman::Update(uint32_t dt){
 
     for (size_t i = 0; i < NUM_GHOSTS; ++i)
     {
+        if (static_cast<GhostName>(i) == BLINKY)
+        {
+            PacmanGhostAI& ghostAI = pGhostAIs[i];
+
+            auto direction = ghostAI.Update(dt, pLevel);
+
+            if (direction != pGhosts[i].GetMovementDirection())
+            {
+                pGhosts[i].SetMovementDirection(direction);
+            }
+        }
+
         pGhosts[i].Update(dt);
     }
 
@@ -72,6 +84,11 @@ void Pacman::Draw(Screen &screen){
     for(auto& ghost: pGhosts){
 
         ghost.Draw(screen);
+    }
+
+    for(auto& ghostAI: pGhostAIs){
+
+        ghostAI.Draw(screen);
     }
 
     DrawLives(screen);
@@ -161,12 +178,17 @@ void Pacman::SetupGhosts()
 {
 
     pGhosts.resize(NUM_GHOSTS);
+    pGhostAIs.resize(1);
 
     PacmanGhost blinky;
     blinky.Init (pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Ghost_animations.txt", 
     pLevel.GetGhostSpawnPoints()[BLINKY], PACMAN_GHOST_MOVEMENT_SPEED, true, Red());
     blinky.SetMovementDirection(PACMAN_MOVEMENT_LEFT);
     pGhosts[BLINKY] = blinky;
+
+    auto blinkyAI = PacmanGhostAI();
+    blinkyAI.Init(pGhosts[BLINKY], BLINKY);
+    pGhostAIs[BLINKY] = blinkyAI;
 
     PacmanGhost pinky;
     pinky.Init (pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Ghost_animations.txt", 

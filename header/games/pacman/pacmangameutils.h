@@ -22,5 +22,6 @@ enum PacmanMovement
 Vector2D GetMovementVector (PacmanMovement direction);
 PacmanMovement GetOppositeDirection(PacmanMovement direction);
 std::vector <PacmanMovement> GetPerpendicularMovements(PacmanMovement direction);
+std::vector <PacmanMovement> GetOtherDirections (PacmanMovement direction);
 
 #endif  //!GAMES_PACMAN_PACMANGAMEUTILS__H__

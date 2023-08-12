@@ -4096,6 +4096,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/
   ../header/graphics/animation.h \
   ../header/input/inputaction.h \
   ../header/games/pacman/pacmanghost.h \
+  ../header/games/pacman/pacmanghostai.h \
   ../header/app/app.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -12555,7 +12556,8 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: ../src/scenes/pa
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
-  ../header/games/pacman/pacmanghost.h
+  ../header/games/pacman/pacmanghost.h \
+  ../header/games/pacman/pacmanghostai.h
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp \
   /usr/include/stdc-predef.h \
@@ -15515,6 +15517,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/c++/11/bits/random.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+../header/games/pacman/pacmanghostai.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h:
 

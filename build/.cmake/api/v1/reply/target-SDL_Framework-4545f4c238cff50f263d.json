@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 130,
+				"line" : 132,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 146,
+				"line" : 148,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 132,
+				"line" : 134,
 				"parent" : 0
 			}
 		]
@@ -46,12 +46,6 @@
 	"compileGroups" : 
 	[
 		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "-g"
-				}
-			],
 			"includes" : 
 			[
 				{
@@ -142,7 +136,8 @@
 				36,
 				37,
 				38,
-				39
+				39,
+				40
 			]
 		}
 	],
@@ -151,10 +146,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -219,7 +210,8 @@
 				36,
 				37,
 				38,
-				39
+				39,
+				40
 			]
 		}
 	],
@@ -457,6 +449,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/games/pacman/pacmanghost.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/pacman/pacmanghostai.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

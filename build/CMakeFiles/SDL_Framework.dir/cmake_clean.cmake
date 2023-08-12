@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o"

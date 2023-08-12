@@ -51,14 +51,15 @@ SDL_Window *Screen::Init(uint32_t w, uint32_t h, uint32_t mag, bool fast){
         {
             monoptrWindowSurface = SDL_GetWindowSurface(moptrWindow);
         }
-        bPixelFormat = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA8888);
+
+        bPixelFormat = SDL_AllocFormat(SDL_PIXELFORMAT_ARGB8888);
+        //bPixelFormat = SDL_AllocFormat(SDL_GetWindowPixelFormat(moptrWindow));
 
         if (bFast)
         {
             bTexture = SDL_CreateTexture(bRenderer, bPixelFormat->format, SDL_TEXTUREACCESS_STREAMING, w, h);
         }
         
-
         // color and pixel format initializer
         Color::InitColorFormat(bPixelFormat);
         gClearColor = Color(rClear, gClear, bClear, aClear);
@@ -94,12 +95,14 @@ void Screen::SwapBuffers(){
             }
         }else
         {
+            SDL_SetSurfaceBlendMode(gBackBuffer.GetSurface(), SDL_BLENDMODE_BLEND);  
             SDL_BlitScaled(gBackBuffer.GetSurface(), nullptr, monoptrWindowSurface, nullptr);
-            SDL_UpdateWindowSurface(moptrWindow);   
+            SDL_UpdateWindowSurface(moptrWindow);
         }
         gBackBuffer.Clear(gClearColor);
     }
 }
+
 
 void Screen::Draw(int x, int y, const Color &color){
 
