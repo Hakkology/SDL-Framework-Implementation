@@ -345,4 +345,5 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/excluder.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h

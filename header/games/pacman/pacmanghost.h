@@ -46,6 +46,7 @@ public:
 
     inline uint32_t GetPoints() const {return pPoints;}
     inline void LockCanChangeDirection() {pCanChangeDirection = false;}
+    inline bool CanChangeDirection() const {return pCanChangeDirection;}
 
 private:
 

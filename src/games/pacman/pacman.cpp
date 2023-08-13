@@ -55,9 +55,9 @@ void Pacman::Update(uint32_t dt){
         {
             PacmanGhostAI& ghostAI = pGhostAIs[i];
 
-            auto direction = ghostAI.Update(dt, pLevel);
+            auto direction = ghostAI.Update(dt, pPacman, pLevel, pGhosts);
 
-            if (direction != pGhosts[i].GetMovementDirection())
+            if (pGhosts[i].CanChangeDirection() && direction != pGhosts[i].GetMovementDirection())
             {
                 pGhosts[i].SetMovementDirection(direction);
             }
@@ -176,6 +176,10 @@ void Pacman::HandleGameControllerState(uint32_t dt, InputState state, PacmanMove
 
 void Pacman::SetupGhosts()
 {
+    const Vector2D BLINKY_SCATTER_POS = Vector2D(App::Singleton().Width() - 24, 0);
+    const Vector2D INKY_SCATTER_POS = Vector2D(App::Singleton().Width(), App::Singleton().Height());
+    const Vector2D PINKY_SCATTER_POS = Vector2D(24,0);
+    const Vector2D CLYDE_SCATTER_POS = Vector2D(0, App::Singleton().Height());
 
     pGhosts.resize(NUM_GHOSTS);
     pGhostAIs.resize(1);
@@ -187,7 +191,7 @@ void Pacman::SetupGhosts()
     pGhosts[BLINKY] = blinky;
 
     auto blinkyAI = PacmanGhostAI();
-    blinkyAI.Init(pGhosts[BLINKY], BLINKY);
+    blinkyAI.Init(pGhosts[BLINKY], blinky.GetBoundingBox().GetWidth(), BLINKY_SCATTER_POS, BLINKY);
     pGhostAIs[BLINKY] = blinkyAI;
 
     PacmanGhost pinky;
