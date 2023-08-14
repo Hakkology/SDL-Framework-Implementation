@@ -17,7 +17,10 @@ PacmanGhostAI::PacmanGhostAI():pnoptrGhost(nullptr){
 
 }
 
-void PacmanGhostAI::Init(PacmanGhost& ghost, uint32_t lookAheadDistance, const Vector2D& scatterTarget, GhostName name){
+void PacmanGhostAI::Init(PacmanGhost& ghost, uint32_t lookAheadDistance, const Vector2D& scatterTarget, const Vector2D& ghostPenTarget, const Vector2D& ghostExitPenPosition, GhostName name){
+
+    pGhostPenTarget = ghostPenTarget;
+    pGhostExitPenPosition = ghostExitPenPosition;
 
     pScatterTarget = scatterTarget;
     pLookAheadDistance = lookAheadDistance;
@@ -36,6 +39,35 @@ PacmanMovement PacmanGhostAI::Update(uint32_t dt, const PacmanPlayer& pacman, co
 
     if (pnoptrGhost)
     {
+
+        if (pState == GHOST_AI_STATE_START)
+        {
+            return PACMAN_MOVEMENT_NONE;
+        }
+        
+        if (pState == GHOST_AI_STATE_IN_PEN)
+        {
+            pTimer += dt;
+
+            if (pTimer >= PEN_WAIT_DURATION)
+            {
+                SetState(GHOST_AI_STATE_EXIT_PEN);
+            }
+
+            return PACMAN_MOVEMENT_NONE;
+        }
+        
+        if (pState == GHOST_AI_STATE_GO_TO_PEN && pnoptrGhost->Position() == pGhostPenTarget)
+        {
+            SetState(GHOST_AI_STATE_IN_PEN);
+            pnoptrGhost -> SetGhostState(GHOST_STATE_ALIVE);
+            return PACMAN_MOVEMENT_NONE;
+        }
+
+        if (pState == GHOST_AI_STATE_EXIT_PEN && pnoptrGhost->Position() == pGhostExitPenPosition)
+        {
+            SetState(GHOST_AI_STATE_SCATTER);
+        }
 
         if (pState == GHOST_AI_STATE_SCATTER)
         {
@@ -68,7 +100,7 @@ PacmanMovement PacmanGhostAI::Update(uint32_t dt, const PacmanPlayer& pacman, co
 
         for(const auto& direction : tempDirections){
 
-            if (!level.WillCollide(pnoptrGhost->GetBoundingBox(), direction))
+            if (!level.WillCollide(*pnoptrGhost, *this, direction))
             {
                 possibleDirections.push_back(direction);
             }
@@ -148,13 +180,16 @@ void PacmanGhostAI::SetState(GhostAIState state){
     switch (state)
     {
     case GHOST_AI_STATE_IN_PEN:
-        /* code */
+        pTimer = 0;
         break;
     case GHOST_AI_STATE_GO_TO_PEN:
 
         break;
     case GHOST_AI_STATE_EXIT_PEN:
-
+        {
+            Vector2D target = {pGhostPenTarget.GetX() + pnoptrGhost->GetBoundingBox().GetWidth()/2, pGhostPenTarget.GetY() - pnoptrGhost->GetBoundingBox().GetHeight()/2};
+            ChangeTarget(target);
+        }
         break;
     case GHOST_AI_STATE_SCATTER:
         pTimer = 0;

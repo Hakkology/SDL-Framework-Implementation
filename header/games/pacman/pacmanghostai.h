@@ -27,10 +27,14 @@ public:
 
     PacmanGhostAI();
 
-    void Init(PacmanGhost& ghost, uint32_t lookAheadDistance, const Vector2D& scatterTarget, GhostName name);
+    void Init(PacmanGhost& ghost, uint32_t lookAheadDistance, const Vector2D& scatterTarget, const Vector2D& ghostPenTarget, const Vector2D& ghostExitPenPosition, GhostName name);
 
     PacmanMovement Update(uint32_t dt, const PacmanPlayer& pacman, const PacmanLevel& level, const std::vector<PacmanGhost>& ghosts);
     void Draw (Screen& screen);
+
+    inline bool WantsToLeavePen() const {return pState == GHOST_AI_STATE_EXIT_PEN;}
+    inline bool IsInPen() const {return pState == GHOST_AI_STATE_IN_PEN || pState == GHOST_AI_STATE_START;}
+    inline bool IsEnteringPen () const {return pState == GHOST_AI_STATE_GO_TO_PEN;}
 
 private:
 
@@ -39,6 +43,8 @@ private:
 
     Vector2D GetChaseTarget(uint32_t dt, const PacmanPlayer& pacman, const PacmanLevel& level, const std::vector<PacmanGhost>& ghosts);
 
+    Vector2D pGhostExitPenPosition;
+    Vector2D pGhostPenTarget;
     Vector2D pScatterTarget;
     Vector2D pTarget;
 
@@ -50,8 +56,7 @@ private:
     GhostAIState pState;
     GhostAIState pLastState;
 
-
-std::default_random_engine pAIRandomGenerator;
+    std::default_random_engine pAIRandomGenerator;
 
 };
 

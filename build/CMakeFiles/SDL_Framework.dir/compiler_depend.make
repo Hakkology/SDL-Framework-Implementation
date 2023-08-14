@@ -5688,7 +5688,8 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: ../src/games/
   ../header/graphics/bmpimage.h \
   ../header/games/excluder.h \
   ../header/games/breakout/boundaryedge.h \
-  ../header/graphics/spritesheet.h
+  ../header/graphics/spritesheet.h \
+  ../header/games/pacman/pacmanplayer.h
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pacman/pacmanlevel.cpp \
   /usr/include/stdc-predef.h \

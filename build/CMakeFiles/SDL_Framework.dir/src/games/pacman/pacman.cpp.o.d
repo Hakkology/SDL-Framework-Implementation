@@ -342,14 +342,14 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \

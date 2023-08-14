@@ -4,7 +4,7 @@ namespace{
     const uint32_t NUM_POINTS_FOR_GHOST = 200;
 }
 
-PacmanGhost::PacmanGhost():pPoints(0), pInitialPos(Vector2D::Zero){
+PacmanGhost::PacmanGhost():pPoints(0), pInitialPos(Vector2D::Zero), pIsReleased(false), pDelegate(nullptr){
 
 }
 
@@ -102,6 +102,13 @@ void PacmanGhost::ResetToFirstPosition(){
     pVulnerabiltyTimer = 0;
     SetGhostState(GHOST_STATE_ALIVE);
     pCanChangeDirection = true;
+    pIsReleased = false;
+
+    if (pDelegate)
+    {
+        pDelegate ->GhostWasResetToFirstPosition();
+    }
+    
 }
 
 void PacmanGhost::SetStateToVulnerable(){
@@ -114,6 +121,11 @@ void PacmanGhost::SetStateToVulnerable(){
 }
 
 void PacmanGhost::SetGhostState(GhostState state){
+
+    if (pDelegate)
+    {
+        pDelegate->GhostDelegateGhostStateChangedTo(pState, state);
+    }
 
     pState = state;
 
@@ -139,4 +151,15 @@ void PacmanGhost::SetGhostState(GhostState state){
     default:
         break;
     }
+}
+
+void PacmanGhost:: ReleaseFromPen(){
+
+    pIsReleased = true;
+
+    if (pDelegate)
+    {
+        pDelegate -> GhostWasReleasedFromPen();
+    }
+    
 }

@@ -366,10 +366,10 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h

@@ -10,6 +10,7 @@
 #include "excluder.h"
 #include "pacmangameutils.h"
 #include "spritesheet.h"
+#include "pacmanghostai.h"
 
 class Screen;
 class PacmanPlayer;
@@ -20,10 +21,11 @@ class PacmanLevel{
 public:
 
     bool Init (const std::string& levelPath, const SpriteSheet* noptrSpriteSheet);
-    void Update (uint32_t dt, PacmanPlayer& pacman, std::vector<PacmanGhost>& ghosts);
+    void Update (uint32_t dt, PacmanPlayer& pacman, std::vector<PacmanGhost>& ghosts, std::vector<PacmanGhostAI>& ghostAIs);
     void Draw (Screen& screen);
 
     bool WillCollide(const Rectangle& bbox, PacmanMovement direction) const;
+    bool WillCollide(const PacmanGhost& ghost, const PacmanGhostAI& ghostAI, PacmanMovement direction) const;
     bool IsLevelOver() const;
     
     void IncreaseLevel();
@@ -49,6 +51,7 @@ private:
         int inkySpawnPoint = 0;
         int pinkySpawnPoint = 0;
         int clydeSpawnPoint = 0;
+        int isGate = 0;
         char teleportToSymbol = 0;
         char symbol = '-';
     };
@@ -97,6 +100,7 @@ private:
     std::vector<Vector2D> pGhostSpawnPoints;
     std::vector<BonusItemLevelProperties> pBonusItemProperties;
     std::vector<Excluder> pWalls;
+    std::vector<Excluder> pGate;
     std::vector<Tile> pTiles;
     std::vector<Tile> pExclusionTiles;
     std::vector<Pellet> pPellets;

@@ -340,16 +340,18 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghostai.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanactor.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanghost.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /usr/include/c++/11/memory \

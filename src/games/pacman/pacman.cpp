@@ -66,7 +66,7 @@ void Pacman::Update(uint32_t dt){
         pGhosts[i].Update(dt);
     }
 
-    pLevel.Update(dt, pPacman, pGhosts);
+    pLevel.Update(dt, pPacman, pGhosts, pGhostAIs);
 
     if (pLevel.IsLevelOver())
     {
@@ -191,7 +191,7 @@ void Pacman::SetupGhosts()
     pGhosts[BLINKY] = blinky;
 
     auto blinkyAI = PacmanGhostAI();
-    blinkyAI.Init(pGhosts[BLINKY], blinky.GetBoundingBox().GetWidth(), BLINKY_SCATTER_POS, BLINKY);
+    blinkyAI.Init(pGhosts[BLINKY], blinky.GetBoundingBox().GetWidth(), BLINKY_SCATTER_POS, pLevel.GetGhostSpawnPoints()[BLINKY], pLevel.GetGhostSpawnPoints()[BLINKY], BLINKY);
     pGhostAIs[BLINKY] = blinkyAI;
 
     PacmanGhost pinky;
