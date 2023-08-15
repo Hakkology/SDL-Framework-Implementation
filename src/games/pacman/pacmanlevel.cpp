@@ -61,7 +61,6 @@ void PacmanLevel::Update(uint32_t dt, PacmanPlayer& pacman, std::vector<PacmanGh
 
         for (size_t i = 0; i<NUM_GHOSTS; ++i)
         {
-
             PacmanGhostAI ghostAI = ghostAIs[i];
             PacmanGhost ghost = ghosts[i];
 
@@ -182,7 +181,6 @@ bool PacmanLevel::WillCollide(const Rectangle &bbox, PacmanMovement direction) c
             return true;
         }
     }
-    
     return false;
 }
 
@@ -203,7 +201,7 @@ bool PacmanLevel::WillCollide(const PacmanGhost &ghost, const PacmanGhostAI &gho
 
     for (const auto& gate : pGate){
 
-        if (!(ghostAI.IsEnteringPen() || ghostAI.WantsToLeavePen() && gate.HasCollided(bbox, edge)))
+        if (!(ghostAI.IsEnteringPen() || ghostAI.WantsToLeavePen()) && gate.HasCollided(bbox, edge))
         {
             return true;
         }

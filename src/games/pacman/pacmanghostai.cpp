@@ -106,7 +106,14 @@ PacmanMovement PacmanGhostAI::Update(uint32_t dt, const PacmanPlayer& pacman, co
             }
         }
 
-        assert(possibleDirections.size() >= 1 && "Im lost, help me!");
+        //assert(possibleDirections.size() >= 1 && "Im lost, help me!");
+        if(possibleDirections.size() == 0)
+		{
+
+			std::cout << pName << " can't go anywhere!" << std::endl;
+			std::cout << pState << " is the state" << std::endl;
+			assert(false && "Why can't we go anywhere?");
+		}
 
         std::sort(possibleDirections.begin(), possibleDirections.end(), 
         [] (const PacmanMovement& direction1, const PacmanMovement& direction2){
@@ -171,8 +178,8 @@ void PacmanGhostAI::Draw(Screen &screen){
 void PacmanGhostAI::GhostDelegateGhostStateChangedTo(GhostState lastState, GhostState state){
 
     if (pnoptrGhost && pnoptrGhost->IsReleased() 
-                    && (lastState == GHOST_STATE_VULNERABLE || lastState == GHOST_STATE_VULNERABLE_ENDING 
-                    && !(IsInPen() || WantsToLeavePen())))
+                    && (lastState == GHOST_STATE_VULNERABLE || lastState == GHOST_STATE_VULNERABLE_ENDING) 
+                    && !(IsInPen() || WantsToLeavePen()))
     {
         pnoptrGhost->SetMovementDirection(GetOppositeDirection(pnoptrGhost->GetMovementDirection()));
     }
@@ -193,6 +200,7 @@ void PacmanGhostAI::GhostWasReleasedFromPen(){
 
 void PacmanGhostAI::GhostWasResetToFirstPosition(){
 
+    SetState(GHOST_AI_STATE_START);
 }
 
 void PacmanGhostAI::SetState(GhostAIState state){
@@ -210,13 +218,14 @@ void PacmanGhostAI::SetState(GhostAIState state){
         pTimer = 0;
         break;
     case GHOST_AI_STATE_GO_TO_PEN:
-
-        break;
-    case GHOST_AI_STATE_EXIT_PEN:
         {
-            Vector2D target = {pGhostPenTarget.GetX() + pnoptrGhost->GetBoundingBox().GetWidth()/2, pGhostPenTarget.GetY() - pnoptrGhost->GetBoundingBox().GetHeight()/2};
+            Vector2D target = {pGhostPenTarget.GetX() + pnoptrGhost->GetBoundingBox().GetWidth()/2, 
+                                pGhostPenTarget.GetY() - pnoptrGhost->GetBoundingBox().GetHeight()/2};
             ChangeTarget(target);
         }
+        break;
+    case GHOST_AI_STATE_EXIT_PEN:
+        ChangeTarget(pGhostExitPenPosition);
         break;
     case GHOST_AI_STATE_SCATTER:
         pTimer = 0;
@@ -239,7 +248,7 @@ Vector2D PacmanGhostAI::GetChaseTarget(uint32_t dt, const PacmanPlayer &pacman, 
         break;
 
     case PINKY:
-        target = pacman.GetBoundingBox().GetCenterPoint() + GetMovementVector(pacman.GetMovementDirection()) * pacman.GetBoundingBox().GetWidth() * 2.0f;
+        target = pacman.GetBoundingBox().GetCenterPoint() + GetMovementVector(pacman.GetMovementDirection()) * pacman.GetBoundingBox().GetWidth() * 2;
         break;
     
     case INKY:
@@ -263,6 +272,8 @@ Vector2D PacmanGhostAI::GetChaseTarget(uint32_t dt, const PacmanPlayer &pacman, 
             }
         }
         break;
+    case NUM_GHOSTS:
+		assert(false && "SHOULD NOT BE PASSING NUM_GHOSTS AS THE GHOST NAME!");
     }
 
     return target;
