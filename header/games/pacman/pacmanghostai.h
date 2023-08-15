@@ -21,7 +21,7 @@ enum GhostAIState{
     GHOST_AI_STATE_GO_TO_PEN
 };
 
-class PacmanGhostAI{
+class PacmanGhostAI : public GhostDelegate{
 
 public:
 
@@ -35,6 +35,10 @@ public:
     inline bool WantsToLeavePen() const {return pState == GHOST_AI_STATE_EXIT_PEN;}
     inline bool IsInPen() const {return pState == GHOST_AI_STATE_IN_PEN || pState == GHOST_AI_STATE_START;}
     inline bool IsEnteringPen () const {return pState == GHOST_AI_STATE_GO_TO_PEN;}
+
+    virtual void GhostDelegateGhostStateChangedTo (GhostState lastState, GhostState state) override;
+    virtual void GhostWasReleasedFromPen() override;
+    virtual void GhostWasResetToFirstPosition() override;
 
 private:
 

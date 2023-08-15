@@ -4089,14 +4089,14 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  ../header/games/pacman/pacmanplayer.h \
+  ../header/games/pacman/pacmanghostai.h \
+  ../header/games/pacman/pacmanghost.h \
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
+  ../header/games/pacman/pacmanplayer.h \
   ../header/input/inputaction.h \
-  ../header/games/pacman/pacmanghost.h \
-  ../header/games/pacman/pacmanghostai.h \
   ../header/app/app.h \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -5689,6 +5689,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: ../src/games/
   ../header/games/excluder.h \
   ../header/games/breakout/boundaryedge.h \
   ../header/graphics/spritesheet.h \
+  ../header/games/pacman/pacmanghostai.h \
   ../header/games/pacman/pacmanplayer.h
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pacman/pacmanlevel.cpp \
@@ -6099,16 +6100,18 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pa
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
+  ../header/games/pacman/pacmanghostai.h \
+  ../header/games/pacman/pacmanghost.h \
+  ../header/games/pacman/pacmanactor.h \
+  ../header/graphics/animatedsprite.h \
+  ../header/graphics/animationplayer.h \
+  ../header/graphics/animation.h \
   ../header/graphics/screen.h \
   ../header/graphics/screenbuffer.h \
   ../header/shapes/triangle.h \
   ../header/shapes/circle.h \
   ../header/graphics/spritesheet.h \
   ../header/games/pacman/pacmanplayer.h \
-  ../header/games/pacman/pacmanactor.h \
-  ../header/graphics/animatedsprite.h \
-  ../header/graphics/animationplayer.h \
-  ../header/graphics/animation.h \
   ../header/games/pacman/pacmanghost.h \
   ../header/app/app.h \
   /usr/include/c++/11/memory \
@@ -12972,13 +12975,13 @@ CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: ../src/scenes/pa
   ../header/games/breakout/boundaryedge.h \
   ../header/games/pacman/pacmangameutils.h \
   ../header/graphics/spritesheet.h \
-  ../header/games/pacman/pacmanplayer.h \
+  ../header/games/pacman/pacmanghostai.h \
+  ../header/games/pacman/pacmanghost.h \
   ../header/games/pacman/pacmanactor.h \
   ../header/graphics/animatedsprite.h \
   ../header/graphics/animationplayer.h \
   ../header/graphics/animation.h \
-  ../header/games/pacman/pacmanghost.h \
-  ../header/games/pacman/pacmanghostai.h
+  ../header/games/pacman/pacmanplayer.h
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp \
   /usr/include/stdc-predef.h \
@@ -15169,13 +15172,13 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 ../src/games/pacman/pacmanghost.cpp:
 
+../header/games/pacman/pacmanplayer.h:
+
 ../header/graphics/animation.h:
 
 ../header/graphics/animatedsprite.h:
 
 ../header/games/pacman/pacmanactor.h:
-
-../header/games/pacman/pacmanplayer.h:
 
 /usr/include/c++/11/numeric:
 

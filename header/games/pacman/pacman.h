@@ -33,6 +33,7 @@ private:
     PacmanPlayer pPacman;
 
     size_t pNumLives;
+    uint32_t pReleaseGhostTimer;
     std::vector<PacmanGhost> pGhosts;
     std::vector<PacmanGhostAI> pGhostAIs;
 

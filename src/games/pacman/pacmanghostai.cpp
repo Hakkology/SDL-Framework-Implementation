@@ -168,6 +168,33 @@ void PacmanGhostAI::Draw(Screen &screen){
     }
 }
 
+void PacmanGhostAI::GhostDelegateGhostStateChangedTo(GhostState lastState, GhostState state){
+
+    if (pnoptrGhost && pnoptrGhost->IsReleased() 
+                    && (lastState == GHOST_STATE_VULNERABLE || lastState == GHOST_STATE_VULNERABLE_ENDING 
+                    && !(IsInPen() || WantsToLeavePen())))
+    {
+        pnoptrGhost->SetMovementDirection(GetOppositeDirection(pnoptrGhost->GetMovementDirection()));
+    }
+    
+    if (state == GHOST_STATE_DEAD)
+    {
+        SetState(GHOST_AI_STATE_GO_TO_PEN);
+    }
+}
+
+void PacmanGhostAI::GhostWasReleasedFromPen(){
+
+    if (pState == GHOST_AI_STATE_START)
+    {
+        SetState(GHOST_AI_STATE_EXIT_PEN);
+    }
+}
+
+void PacmanGhostAI::GhostWasResetToFirstPosition(){
+
+}
+
 void PacmanGhostAI::SetState(GhostAIState state){
 
     if (pState == GHOST_AI_STATE_SCATTER || pState == GHOST_AI_STATE_CHASE)
@@ -219,7 +246,7 @@ Vector2D PacmanGhostAI::GetChaseTarget(uint32_t dt, const PacmanPlayer &pacman, 
         {
             Vector2D pacmanOffsetPoint = pacman.GetBoundingBox().GetCenterPoint() + 
             (GetMovementVector(pacman.GetMovementDirection()) * pacman.GetBoundingBox().GetWidth());
-            target = (pacmanOffsetPoint - ghosts[BLINKY].GetBoundingBox().GetCenterPoint() * 2.0f) + 
+            target = (pacmanOffsetPoint - ghosts[BLINKY].GetBoundingBox().GetCenterPoint()) * 2 + 
             ghosts[BLINKY].GetBoundingBox().GetCenterPoint();
         }
         break;

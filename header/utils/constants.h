@@ -74,5 +74,6 @@ const std::string SCORE_STR = "Score  ";
 const std::string PACMAN_LIFE_SPRITE_NAME = "pac_man_left_idle";
 const size_t MAX_NUM_LIVES=3;
  
+static const uint32_t RELEASE_GHOST_TIME = 5000;
 
 #endif
