@@ -8,6 +8,8 @@ void Pacman::Init(GameController &controller){
     pPacmanSpriteSheet.Load("PacmanSprites");
     pPacman.Init(pPacmanSpriteSheet, App::Singleton().GetBasePath() + "Assets/Pacman_animations.txt", Vector2D::Zero, PACMAN_MOVEMENT_SPEED, false);
     pLevel.Init(App::Singleton().GetBasePath()+ "Assets/Pacman_level.txt", &pPacmanSpriteSheet);
+
+    pStringRect = Rectangle(Vector2D(0, pLevel.GetInGameTextYPos()), App::Singleton().Width(), pPacman.GetBoundingBox().GetHeight());
     
     SetupGhosts();
     ResetGame();
@@ -43,54 +45,110 @@ void Pacman::Init(GameController &controller){
         HandleGameControllerState(dt, state, PACMAN_MOVEMENT_DOWN);
     };
     controller.AddInputActionForKey(downAction);
+
+    ButtonAction backAction;
+    backAction.key = GameController::CancelKey();
+    backAction.action = [this](uint32_t dt, InputState state){
+
+        if (pGameState == GAME_OVER && GameController::IsPressed(state))
+        {
+            App::Singleton().PopScene();
+        }
+    };
+    controller.AddInputActionForKey(backAction);
 }
 
 void Pacman::Update(uint32_t dt){
     
-    UpdatePacmanMovement();
-    pPacman.Update(dt);
-
-    pReleaseGhostTimer += dt;
-
-    for (size_t i = 0; i < NUM_GHOSTS; ++i)
+    if (pGameState == LEVEL_STARTING)
     {
-        PacmanGhost& ghost = pGhosts[i];
-        PacmanGhostAI& ghostAI = pGhostAIs[i];
+        pPacman.ResetGhostEatenMultiplier();
+        pLevelStartingTimer += dt;
 
-        if (pReleaseGhostTimer >= RELEASE_GHOST_TIME && ghostAI.IsInPen() && !ghost.IsReleased())
+        if (pLevelStartingTimer >= LEVEL_STARTING_TIME)
         {
-            pReleaseGhostTimer = 0;
-            ghost.ReleaseFromPen();
+            pLevelStartingTimer = 0;
+            pGameState = PLAY_GAME;
         }
-        
-        auto direction = ghostAI.Update(dt, pPacman, pLevel, pGhosts);
+    }
+    else if (pGameState == PLAY_GAME)
+    {
+        UpdatePacmanMovement();
+        pPacman.Update(dt);
 
-        if (ghost.IsReleased() && ghost.CanChangeDirection() || 
-            (ghost.IsReleased() && ghostAI.WantsToLeavePen() && direction != PACMAN_MOVEMENT_NONE))
+        pReleaseGhostTimer += dt;
+
+        for (size_t i = 0; i < NUM_GHOSTS; ++i)
         {
-            if (direction != ghost.GetMovementDirection())
+            PacmanGhost& ghost = pGhosts[i];
+            PacmanGhostAI& ghostAI = pGhostAIs[i];
+
+            if (pReleaseGhostTimer >= RELEASE_GHOST_TIME && ghostAI.IsInPen() && !ghost.IsReleased())
             {
-                ghost.SetMovementDirection(direction);
-                ghost.LockCanChangeDirection();
+                pReleaseGhostTimer = 0;
+                ghost.ReleaseFromPen();
+            }
+            
+            auto direction = ghostAI.Update(dt, pPacman, pLevel, pGhosts);
+
+            if (ghost.IsReleased() && ghost.CanChangeDirection() || 
+                (ghost.IsReleased() && ghostAI.WantsToLeavePen() && direction != PACMAN_MOVEMENT_NONE))
+            {
+                if (direction != ghost.GetMovementDirection())
+                {
+                    ghost.SetMovementDirection(direction);
+                    ghost.LockCanChangeDirection();
+                }
+            }
+
+            ghost.Update(dt);
+
+            if (ghost.IsVulnerable() && pPacman.GetBoundingBox().Intersects(ghost.GetBoundingBox()))
+            {
+                ghost.EatenByPacman();
+                pPacman.AteGhost(ghost.GetPoints());
+            }
+            else if (ghost.IsAlive() && ghost.GetEatingBoundingBox().Intersects(pPacman.GetEatingBoundingBox()))
+            {
+                pNumLives--;
+                pGameState = LOST_LIFE;
+                pPacman.EatenByGhost();
+                pPressedDirection = PACMAN_MOVEMENT_NONE;
+                pPacman.SetMovementDirection(PACMAN_MOVEMENT_NONE);
+                return;
+            } 
+        }
+
+        pLevel.Update(dt, pPacman, pGhosts, pGhostAIs);
+
+        if (pLevel.IsLevelOver())
+        {
+            pLevel.IncreaseLevel();
+            ResetLevel();
+        }
+    }
+    else if (pGameState == LOST_LIFE)
+    {
+        pPacman.Update(dt);
+
+        if (pPacman.isFinishedAnimation())
+        {
+            if (pNumLives >= 0)
+            {
+                ResetLevel();
+            }
+            else
+            {
+                pGameState = GAME_OVER;
             }
         }
-
-        ghost.Update(dt);
-    }
-
-    pLevel.Update(dt, pPacman, pGhosts, pGhostAIs);
-
-    if (pLevel.IsLevelOver())
-    {
-        pLevel.IncreaseLevel();
-        ResetLevel();
     }
 }
 
 void Pacman::Draw(Screen &screen){
 
     pLevel.Draw(screen);
-    DrawScoreTable(screen);
+
     pPacman.Draw(screen);
 
     for(auto& ghost: pGhosts){
@@ -98,9 +156,38 @@ void Pacman::Draw(Screen &screen){
         ghost.Draw(screen);
     }
 
+    /*    
+    
     for(auto& ghostAI: pGhostAIs){
 
         ghostAI.Draw(screen);
+    }
+
+    */
+
+
+    const auto& font = App::Singleton().GetFont();
+    Vector2D textDrawPosition;
+
+    {
+        Vector2D levelOffset = pLevel.GetLayoutOffset();
+        Rectangle highScoreRect = Rectangle (Vector2D(0,4), App::Singleton().Width(), levelOffset.GetY());
+
+        std::string scoreString = std::to_string(pPacman.Score());
+        textDrawPosition = font.GetDrawPosition(SCORE_STR + scoreString, highScoreRect, BFXA_CENTER, BFYA_CENTER);
+
+        screen.Draw(font, SCORE_STR + scoreString, textDrawPosition);
+    }
+
+    if (pGameState == LEVEL_STARTING)
+    {
+        textDrawPosition = font.GetDrawPosition(READY_STR, pStringRect, BFXA_CENTER, BFYA_CENTER);
+        screen.Draw(font, READY_STR, textDrawPosition, Yellow());
+    }
+    else if (pGameState == GAME_OVER)
+    {
+        textDrawPosition = font.GetDrawPosition(GAME_OVER_STR, pStringRect, BFXA_CENTER, BFYA_CENTER);
+        screen.Draw(font, GAME_OVER_STR, textDrawPosition, Yellow());
     }
 
     DrawLives(screen);
@@ -110,19 +197,6 @@ const std::string &Pacman::GetName() const{
 
     static std::string name = "Pacmania!";
     return name;
-}
-
-void Pacman::DrawScoreTable(Screen &screen){
-
-    Vector2D levelOffset = pLevel.GetLayoutOffset();
-    Rectangle highScoreRect = Rectangle (Vector2D(0,4), App::Singleton().Width(), levelOffset.GetY());
-    const auto& font = App::Singleton().GetFont();
-
-    Vector2D textDrawPosition;
-    std::string scoreString = std::to_string(pPacman.Score());
-    textDrawPosition = font.GetDrawPosition(SCORE_STR + scoreString, highScoreRect, BFXA_CENTER, BFYA_CENTER);
-
-    screen.Draw(font, SCORE_STR + scoreString, textDrawPosition);
 }
 
 void Pacman::DrawLives(Screen &screen){
@@ -141,6 +215,8 @@ void Pacman::DrawLives(Screen &screen){
 
 void Pacman::ResetLevel(){
 
+    pReleaseGhostTimer = 0;
+    pGameState = LEVEL_STARTING;
     pPacman.MoveTo(pLevel.GetPacmanSpawnLocation());
     pPacman.ResetToFirstAnimation();
 

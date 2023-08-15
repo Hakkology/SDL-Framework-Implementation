@@ -187,6 +187,13 @@ void PacmanGhostAI::GhostDelegateGhostStateChangedTo(GhostState lastState, Ghost
     if (state == GHOST_STATE_DEAD)
     {
         SetState(GHOST_AI_STATE_GO_TO_PEN);
+    } 
+    else if ((lastState == GHOST_STATE_VULNERABLE || lastState == GHOST_STATE_VULNERABLE_ENDING) && state == GHOST_STATE_ALIVE)
+    {
+        if (pState == GHOST_AI_STATE_CHASE || pState == GHOST_AI_STATE_SCATTER)
+        {
+            SetState(pLastState);
+        }
     }
 }
 

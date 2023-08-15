@@ -9,6 +9,14 @@
 #include "pacmanghost.h"
 #include "pacmanghostai.h"
 
+enum PacmanGameState
+{
+    LEVEL_STARTING = 0,
+    PLAY_GAME,
+    LOST_LIFE,
+    GAME_OVER
+};
+
 class Pacman : public Game{
 
 public:
@@ -24,16 +32,19 @@ private:
     void HandleGameControllerState(uint32_t dt, InputState state, PacmanMovement direction);
     void ResetLevel();
     void DrawLives (Screen& screen);
-    void DrawScoreTable(Screen &screen);
     void SetupGhosts();
     
     PacmanLevel pLevel;
     PacmanMovement pPressedDirection;
     SpriteSheet pPacmanSpriteSheet;
     PacmanPlayer pPacman;
+    PacmanGameState pGameState;
+    Rectangle pStringRect;
 
-    size_t pNumLives;
+    int pNumLives;
     uint32_t pReleaseGhostTimer;
+    uint32_t pLevelStartingTimer;
+
     std::vector<PacmanGhost> pGhosts;
     std::vector<PacmanGhostAI> pGhostAIs;
 

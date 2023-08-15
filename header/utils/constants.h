@@ -76,4 +76,8 @@ const size_t MAX_NUM_LIVES=3;
  
 static const uint32_t RELEASE_GHOST_TIME = 5000;
 
+const std::string READY_STR = "Ready!";
+const std::string GAME_OVER_STR = "Game Over!";
+const uint32_t LEVEL_STARTING_TIME = 3000;
+
 #endif

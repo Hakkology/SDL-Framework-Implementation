@@ -11,6 +11,7 @@
 #include "pacmangameutils.h"
 #include "spritesheet.h"
 #include "pacmanghostai.h"
+#include "bmpimage.h"
 
 class Screen;
 class PacmanPlayer;
@@ -35,6 +36,7 @@ public:
     inline Vector2D GetLayoutOffset() const {return pLayoutOffset;}
     inline Vector2D GetPacmanSpawnLocation () const {return pPacmanSpawnLocation;}
     inline const std::vector<Vector2D>& GetGhostSpawnPoints() { return pGhostSpawnPoints;}
+    inline u_int32_t GetInGameTextYPos() const {return pBonusItem.bbox.GetTopLeftPoint().GetY();}
 
 private:
 
@@ -96,6 +98,7 @@ private:
     BonusItem pBonusItem;
     std::string pBonusItemSpriteName;
     const SpriteSheet* pnoptrSpriteSheet;
+    BMPImage pBGImage;
 
     std::vector<Vector2D> pGhostSpawnPoints;
     std::vector<BonusItemLevelProperties> pBonusItemProperties;
