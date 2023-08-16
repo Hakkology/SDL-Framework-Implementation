@@ -921,6 +921,30 @@ src/scenes/pacmanstartScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s
 .PHONY : src/scenes/pacmanstartScene.cpp.s
 
+src/scenes/tetrisstartScene.o: src/scenes/tetrisstartScene.cpp.o
+.PHONY : src/scenes/tetrisstartScene.o
+
+# target to build an object file
+src/scenes/tetrisstartScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o
+.PHONY : src/scenes/tetrisstartScene.cpp.o
+
+src/scenes/tetrisstartScene.i: src/scenes/tetrisstartScene.cpp.i
+.PHONY : src/scenes/tetrisstartScene.i
+
+# target to preprocess a source file
+src/scenes/tetrisstartScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.i
+.PHONY : src/scenes/tetrisstartScene.cpp.i
+
+src/scenes/tetrisstartScene.s: src/scenes/tetrisstartScene.cpp.s
+.PHONY : src/scenes/tetrisstartScene.s
+
+# target to generate assembly for a file
+src/scenes/tetrisstartScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.s
+.PHONY : src/scenes/tetrisstartScene.cpp.s
+
 src/shapes/circle.o: src/shapes/circle.cpp.o
 .PHONY : src/shapes/circle.o
 
@@ -1221,6 +1245,9 @@ help:
 	@echo "... src/scenes/pacmanstartScene.o"
 	@echo "... src/scenes/pacmanstartScene.i"
 	@echo "... src/scenes/pacmanstartScene.s"
+	@echo "... src/scenes/tetrisstartScene.o"
+	@echo "... src/scenes/tetrisstartScene.i"
+	@echo "... src/scenes/tetrisstartScene.s"
 	@echo "... src/shapes/circle.o"
 	@echo "... src/shapes/circle.i"
 	@echo "... src/shapes/circle.s"

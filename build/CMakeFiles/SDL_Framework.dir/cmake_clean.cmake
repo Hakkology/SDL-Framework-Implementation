@@ -65,6 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"

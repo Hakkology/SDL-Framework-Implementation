@@ -40,6 +40,7 @@ set(SOURCES
     src/scenes/arcadeScene.cpp 
     src/scenes/gameScene.cpp
     src/scenes/pacmanstartScene.cpp
+    src/scenes/tetrisstartScene.cpp
 
     # input files
     src/input/gamecontroller.cpp 
@@ -101,7 +102,8 @@ set(HEADERS
     header/scenes/scene.h 
     header/scenes/arcadeScene.h 
     header/scenes/gameScene.h 
-    header/scenes/pacmanstartScene.h 
+    header/scenes/pacmanstartScene.h
+    header/scenes/tetrisstartScene.h 
 
     # input headers
     header/input/inputaction.h 
@@ -126,6 +128,7 @@ set(HEADERS
     header/games/pacman/pacmanghost.h
     header/games/pacman/pacmanghostai.h
     header/games/pacman/pacman.h
+
 )
 
 # Create an executable target

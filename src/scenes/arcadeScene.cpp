@@ -4,6 +4,7 @@
 #include "gameScene.h"
 #include "breakout.h"
 #include "pacmanstartScene.h"
+#include "tetrisstartScene.h"
 #include "notimplementedScene.h"
 
 ArcadeScene::ArcadeScene():ButtonOptionsScene({"Tetris", "Break Out!", "Asteroids", "Pac-mania!"}, Magenta()){
@@ -81,14 +82,14 @@ std::unique_ptr<Scene> ArcadeScene::GetScene(eGame game){
     switch (game)
     {
         case TETRIS:
-            /* code */
-            break;
+            return std::make_unique<TetrisStartScene>();
+        break;
         
         case BREAK_OUT:
         {
             std::unique_ptr<BreakOut> breakoutGame = std::make_unique<BreakOut>();
             std::unique_ptr<GameScene> breakoutScene = std::make_unique<GameScene>(std::move(breakoutGame));
-            return breakoutScene;
+        return breakoutScene;
         }
         break;
         
