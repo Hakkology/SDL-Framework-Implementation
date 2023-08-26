@@ -80,4 +80,9 @@ const std::string READY_STR = "Ready!";
 const std::string GAME_OVER_STR = "Game Over!";
 const uint32_t LEVEL_STARTING_TIME = 3000;
 
+// Tetris Details
+
+static const int WIDTH = 10;
+static const int HEIGHT = 20;
+
 #endif
