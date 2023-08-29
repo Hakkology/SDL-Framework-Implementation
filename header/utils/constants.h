@@ -85,4 +85,6 @@ const uint32_t LEVEL_STARTING_TIME = 3000;
 static const int WIDTH = 10;
 static const int HEIGHT = 20;
 
+static const int tBLockSize = 4;
+
 #endif
