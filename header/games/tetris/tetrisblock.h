@@ -18,13 +18,9 @@ public:
     virtual void Update(uint32_t dt) = 0;
     virtual void Draw(Screen& screen) = 0;
 
-    enum class RotationState { UP, RIGHT, DOWN, LEFT, NUM_STATES };
-
-    inline virtual RotationState GetRotationState() const {return tCurrentRotation;}
-    inline void SetRotationState(RotationState state) {tCurrentRotation = state;}
-
-    void SetShapeForRotation(RotationState state, const int inputShape[tBLockSize][tBLockSize]);
-    const int (&GetShapeForRotation(RotationState state) const)[tBLockSize][tBLockSize] {return tShapesByRotation.at(state);}
+    virtual int GetRotationState() const = 0;
+    void SetRotationState(int state) {tCurrentState = state;}
+    virtual int getNumStates() const = 0;
 
     void ResetShape();
     
@@ -35,12 +31,10 @@ public:
     void dropBlock();
 
 protected:
-
-    int shape[tBLockSize][tBLockSize];
-    std::map<RotationState, int[tBLockSize][tBLockSize]> tShapesByRotation;
     
     Vector2D tBlockPosition;
-    RotationState tCurrentRotation = RotationState::UP;
+    int tCurrentState = 0;
+    int tNumStates = 0;
     
 };
 
