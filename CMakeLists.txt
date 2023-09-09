@@ -63,6 +63,9 @@ set(SOURCES
     src/games/pacman/pacmanghost.cpp 
     src/games/pacman/pacmanghostai.cpp 
     src/games/pacman/pacman.cpp
+
+    src/games/tetris/tetrisblock.cpp 
+    src/games/tetris/tetrisgamegrid.cpp
 )
 
 # Add header files
@@ -129,6 +132,9 @@ set(HEADERS
     header/games/pacman/pacmanghostai.h
     header/games/pacman/pacman.h
 
+    header/games/pacman/tetrisblock.h
+    header/games/pacman/tetrisgamegrid.h
+
 )
 
 # Create an executable target
@@ -140,6 +146,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     header/games
     header/games/breakout
     header/games/pacman
+    header/games/tetris
+    header/games/tetris/tetrisblocks
     header/graphics
     header/shapes
     header/scenes
