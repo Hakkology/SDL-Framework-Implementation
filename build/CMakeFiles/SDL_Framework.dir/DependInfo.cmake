@@ -40,6 +40,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp" "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/asteroidstartScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/notimplementedScene.cpp" "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d"

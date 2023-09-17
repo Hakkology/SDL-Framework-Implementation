@@ -41,6 +41,7 @@ set(SOURCES
     src/scenes/gameScene.cpp
     src/scenes/pacmanstartScene.cpp
     src/scenes/tetrisstartScene.cpp
+    src/scenes/asteroidstartScene.cpp
 
     # input files
     src/input/gamecontroller.cpp 
@@ -110,6 +111,7 @@ set(HEADERS
     header/scenes/gameScene.h 
     header/scenes/pacmanstartScene.h
     header/scenes/tetrisstartScene.h 
+    header/scenes/asteroidstartScene.h 
 
     # input headers
     header/input/inputaction.h 
