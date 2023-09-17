@@ -348,6 +348,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/actor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmanplayer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \

@@ -329,6 +329,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/actor.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \

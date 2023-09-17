@@ -830,6 +830,26 @@ CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o: ../src/app/button.cpp \
   ../header/shapes/triangle.h \
   ../header/shapes/circle.h
 
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o: ../src/games/asteroids/asteroids.cpp \
+  /usr/include/stdc-predef.h \
+  ../header/games/asteroids/asteroids.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: ../src/games/asteroids/asteroidsactor.cpp \
+  /usr/include/stdc-predef.h \
+  ../header/games/asteroids/asteroidsactor.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o: ../src/games/asteroids/asteroidsgame.cpp \
+  /usr/include/stdc-predef.h \
+  ../header/games/asteroids/asteroidsgame.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o: ../src/games/asteroids/asteroidsmissile.cpp \
+  /usr/include/stdc-predef.h \
+  ../header/games/asteroids/asteroidsmissile.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o: ../src/games/asteroids/asteroidsplayer.cpp \
+  /usr/include/stdc-predef.h \
+  ../header/games/asteroids/asteroidsplayer.h
+
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o: ../src/games/breakout/ball.cpp \
   /usr/include/stdc-predef.h \
   ../header/games/breakout/ball.h \
@@ -17785,6 +17805,16 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 ../src/games/breakout/ball.cpp:
 
+../header/games/asteroids/asteroidsmissile.h:
+
+../header/games/asteroids/asteroidsgame.h:
+
+../src/games/asteroids/asteroidsgame.cpp:
+
+../header/games/asteroids/asteroids.h:
+
+../src/games/asteroids/asteroids.cpp:
+
 ../header/app/button.h:
 
 ../header/graphics/bmpfont.h:
@@ -17901,6 +17931,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 /usr/include/SDL2/SDL_keyboard.h:
 
+../header/games/asteroids/asteroidsplayer.h:
+
 /usr/include/SDL2/SDL_blendmode.h:
 
 /usr/include/SDL2/SDL_rect.h:
@@ -17912,6 +17944,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h:
+
+../header/games/asteroids/asteroidsactor.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
 
@@ -18089,6 +18123,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 
 ../header/scenes/tetrisstartScene.h:
 
+../src/games/asteroids/asteroidsmissile.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -18152,6 +18188,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 ../header/games/breakout/paddle.h:
+
+../src/games/asteroids/asteroidsactor.cpp:
 
 /usr/include/SDL2/SDL_joystick.h:
 
@@ -18372,6 +18410,8 @@ CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.c
 /usr/include/c++/11/bits/allocator.h:
 
 /usr/include/c++/11/cmath:
+
+../src/games/asteroids/asteroidsplayer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 

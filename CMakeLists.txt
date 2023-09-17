@@ -33,6 +33,11 @@ set(SOURCES
     # app files
     src/app/app.cpp 
     src/app/button.cpp 
+
+    # game files
+    src/games/excluder.cpp 
+    src/games/actor.cpp 
+    src/games/game.cpp 
     
     # scene files
     src/scenes/buttonoptionsScene.cpp 
@@ -50,7 +55,7 @@ set(SOURCES
 
     # breakout files
     src/games/breakout/breakout.cpp 
-    src/games/excluder.cpp 
+
     src/games/breakout/paddle.cpp 
     src/games/breakout/ball.cpp 
     src/games/breakout/levelboundary.cpp
@@ -106,6 +111,11 @@ set(HEADERS
     header/shapes/rectangle.h 
     header/shapes/circle.h
 
+    # game headers
+    header/games/game.h 
+    header/games/excluder.h 
+    header/games/actor.h 
+
     # app headers
     header/app/app.h 
     header/app/button.h 
@@ -113,7 +123,6 @@ set(HEADERS
     # scene headers
     header/scenes/buttonoptionsScene.h 
     header/scenes/notimplementedScene.h 
-    header/games/game.h 
     header/scenes/scene.h 
     header/scenes/arcadeScene.h 
     header/scenes/gameScene.h 
@@ -129,7 +138,6 @@ set(HEADERS
 
     # breakout game headers
     header/games/breakout/breakout.h 
-    header/games/excluder.h 
     header/games/breakout/boundaryedge.h 
     header/games/breakout/paddle.h 
     header/games/breakout/ball.h 

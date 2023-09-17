@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/actor.cpp" "CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o.d"
@@ -22,6 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/excluder.cpp" "CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/game.cpp" "CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o.d"

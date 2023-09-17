@@ -177,6 +177,30 @@ src/app/button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s
 .PHONY : src/app/button.cpp.s
 
+src/games/actor.o: src/games/actor.cpp.o
+.PHONY : src/games/actor.o
+
+# target to build an object file
+src/games/actor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o
+.PHONY : src/games/actor.cpp.o
+
+src/games/actor.i: src/games/actor.cpp.i
+.PHONY : src/games/actor.i
+
+# target to preprocess a source file
+src/games/actor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.i
+.PHONY : src/games/actor.cpp.i
+
+src/games/actor.s: src/games/actor.cpp.s
+.PHONY : src/games/actor.s
+
+# target to generate assembly for a file
+src/games/actor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.s
+.PHONY : src/games/actor.cpp.s
+
 src/games/asteroids/asteroids.o: src/games/asteroids/asteroids.cpp.o
 .PHONY : src/games/asteroids/asteroids.o
 
@@ -464,6 +488,30 @@ src/games/excluder.s: src/games/excluder.cpp.s
 src/games/excluder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s
 .PHONY : src/games/excluder.cpp.s
+
+src/games/game.o: src/games/game.cpp.o
+.PHONY : src/games/game.o
+
+# target to build an object file
+src/games/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o
+.PHONY : src/games/game.cpp.o
+
+src/games/game.i: src/games/game.cpp.i
+.PHONY : src/games/game.i
+
+# target to preprocess a source file
+src/games/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/game.cpp.i
+.PHONY : src/games/game.cpp.i
+
+src/games/game.s: src/games/game.cpp.s
+.PHONY : src/games/game.s
+
+# target to generate assembly for a file
+src/games/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/game.cpp.s
+.PHONY : src/games/game.cpp.s
 
 src/games/pacman/pacman.o: src/games/pacman/pacman.cpp.o
 .PHONY : src/games/pacman/pacman.o
@@ -1392,6 +1440,9 @@ help:
 	@echo "... src/app/button.o"
 	@echo "... src/app/button.i"
 	@echo "... src/app/button.s"
+	@echo "... src/games/actor.o"
+	@echo "... src/games/actor.i"
+	@echo "... src/games/actor.s"
 	@echo "... src/games/asteroids/asteroids.o"
 	@echo "... src/games/asteroids/asteroids.i"
 	@echo "... src/games/asteroids/asteroids.s"
@@ -1428,6 +1479,9 @@ help:
 	@echo "... src/games/excluder.o"
 	@echo "... src/games/excluder.i"
 	@echo "... src/games/excluder.s"
+	@echo "... src/games/game.o"
+	@echo "... src/games/game.i"
+	@echo "... src/games/game.s"
 	@echo "... src/games/pacman/pacman.o"
 	@echo "... src/games/pacman/pacman.i"
 	@echo "... src/games/pacman/pacman.s"

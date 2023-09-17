@@ -832,6 +832,31 @@ CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h
 
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp
+ /usr/include/stdc-predef.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroids.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp
+ /usr/include/stdc-predef.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsactor.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp
+ /usr/include/stdc-predef.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsgame.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsmissile.cpp
+ /usr/include/stdc-predef.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsmissile.h
+
+CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsplayer.cpp
+ /usr/include/stdc-predef.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsplayer.h
+
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp
  /usr/include/stdc-predef.h

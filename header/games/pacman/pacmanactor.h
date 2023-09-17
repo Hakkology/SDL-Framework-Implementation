@@ -9,11 +9,12 @@
 #include "pacmangameutils.h"
 #include "rectangle.h"
 #include "color.h"
+#include "actor.h"
 
 class Screen;
 class SpriteSheet;
 
-class PacmanActor
+class PacmanActor : public Actor
 {
 
 public:
