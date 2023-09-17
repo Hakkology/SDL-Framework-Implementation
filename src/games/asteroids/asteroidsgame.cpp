@@ -110,13 +110,13 @@ void AsteroidsGame::Update(uint32_t dt)
 		a_Player.Update(dt, a_MapBoundary);
 		UpdateMisiles(dt);
 
-		bool finishedMisileAnimation = true;
+		bool finishedMissileAnimation = true;
 		for (const auto& missile : a_Missiles)
 		{
-			finishedMisileAnimation *= missile.IsFinishedAnimation();
+			finishedMissileAnimation *= missile.IsFinishedAnimation();
 		}
 
-		if (a_Player.IsFinishedAnimation() && finishedMisileAnimation)
+		if (a_Player.IsFinishedAnimation() && finishedMissileAnimation)
 		{
 			if (a_Player.GetLives() > 0)
 			{
