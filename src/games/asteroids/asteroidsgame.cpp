@@ -12,7 +12,7 @@ void AsteroidsGame::Init(GameController& controller)
 {
 	// Init the player
 	a_AsteroidsSpriteSheet.Load("AsteroidsSprites");
-	a_AnimationsPath = App::Singleton().GetBasePath() + "Assets\\AsteroidsAnimations.txt";
+	a_AnimationsPath = App::Singleton().GetBasePath() + "Assets/AsteroidsAnimations.txt";
 	a_Player.Init(a_AsteroidsSpriteSheet, a_AnimationsPath);
 
 	// Set up the game controller

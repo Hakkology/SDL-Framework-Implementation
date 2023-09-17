@@ -5,6 +5,7 @@
 #include "app.h"
 #include "notimplementedScene.h"
 #include "gameScene.h"
+#include "asteroidsgame.h"
 
 AsteroidStartScene::AsteroidStartScene(): ButtonOptionsScene({"Play Game", "High Scores"}, Blue()){
 
@@ -26,10 +27,8 @@ void AsteroidStartScene::Init(){
     std::vector<Button::ButtonAction> actions;
     actions.push_back([this](){
 
-        // auto asteroidsgame = std::make_unique<Asteroids>();
-        // App::Singleton().PushScene(std::make_unique<GameScene>(std::move(asteroidsgame)));
-
-        App::Singleton().PushScene(std::make_unique<NotImplementedScene>());
+        auto asteroidsgame = std::make_unique<AsteroidsGame>();
+        App::Singleton().PushScene(std::make_unique<GameScene>(std::move(asteroidsgame)));
 
     });
 

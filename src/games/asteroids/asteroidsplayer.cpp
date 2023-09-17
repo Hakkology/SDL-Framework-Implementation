@@ -5,9 +5,6 @@
 
 #include <iostream>
 
-const float AsteroidsPlayer::PLAYER_ACCELERATION = 0.005f;
-const float AsteroidsPlayer::MAX_SPEED = 0.05f;
-
 AsteroidsPlayer::AsteroidsPlayer(): a_Lives(3), a_IsDying(false){
 
 }
@@ -37,7 +34,7 @@ void AsteroidsPlayer::Update(uint32_t dt, const Rectangle& boundary)
 
 void AsteroidsPlayer::Accelerate(uint32_t dt)
 {
-	//SetAnimation("thrusters", false);
+	SetAnimation("thrusters", false);
 	Vector2D currentVelocity = a_MovementDirection * a_Speed;
 
 	Vector2D acceleration = a_LookingDirection * PLAYER_ACCELERATION * dt;

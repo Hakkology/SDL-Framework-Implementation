@@ -353,4 +353,14 @@ CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/notimplementedScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsgame.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsactor.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/actor.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsmissile.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroids.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h

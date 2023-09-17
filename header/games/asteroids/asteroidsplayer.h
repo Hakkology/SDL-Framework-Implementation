@@ -9,6 +9,7 @@
 class Screen;
 class Rectangle;
 
+
 enum class RotationDirection
 {
 	ROTATE_LEFT = -1,
@@ -47,8 +48,8 @@ private:
 	bool a_IsDying;
 	Circle a_CollisionBoundary;
 
-	static const float PLAYER_ACCELERATION;
-	static const float MAX_SPEED;
+	float PLAYER_ACCELERATION = ASTEROIDS_PLAYER_ACCELERATION;
+	float MAX_SPEED = ASTEROIDS_PLAYER_MAX_SPEED;
 };
 
 #endif  //!_GAMES_ASTEROIDS_ASTEROIDSPLAYER__H__

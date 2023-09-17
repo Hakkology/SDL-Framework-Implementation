@@ -89,13 +89,14 @@ static const int tBLockSize = 4;
 
 // Asteroids details
 
-uint32_t MISSILE_WIDTH = 10;
-uint32_t MISSILE_HEIGHT = 10;
-float MISSILE_SPEED = 0.15f;
+static float ASTEROIDS_PLAYER_ACCELERATION = 0.005f;
+static float ASTEROIDS_PLAYER_MAX_SPEED = 0.05f;
+
+static uint32_t MISSILE_WIDTH = 10;
+static uint32_t MISSILE_HEIGHT = 10;
+static float MISSILE_SPEED = 0.15f;
 
 static const float ASTEROID_ROTATING_SPEED = 0.002f;
 static const float ASTEROID_SPEED = 0.008f;
-
-const uint32_t LEVEL_STARTING_TIME = 3000;
 
 #endif
