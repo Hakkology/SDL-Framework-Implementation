@@ -53,7 +53,7 @@ static const int BLOCK_HEIGHT = 8;
 
 // Levels Path
 static const std::string LEVELS_PATH = "Assets/BreakoutLevels.txt";
-const int LEVEL_NO = 1;
+const int LEVEL_NO = 2;
 
 // Game Details
 const int NUM_LIVES = 3;

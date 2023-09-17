@@ -37,7 +37,7 @@ public:
 
 private:
 
-    void ResetGame(size_t toLevel = 0);
+    void ResetGame(size_t toLevel = 2);
     void SetToServeState();
     void ReduceLifeByOne();
 

@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDL_Framework::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDL_Framework-90b79b9f78cedfcc3589.json",
+					"jsonFile" : "target-SDL_Framework-Debug-b6cc03a5dfe2b0c41117.json",
 					"name" : "SDL_Framework",
 					"projectIndex" : 0
 				}
