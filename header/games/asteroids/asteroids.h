@@ -53,8 +53,8 @@ private:
 	Sprite a_Sprite;
 	Rectangle a_SpriteBox;
 
-	static const float a_RotatingSpeed;
-	static const float a_Speed;
+	float a_RotatingSpeed = ASTEROID_ROTATING_SPEED;
+	float a_Speed = ASTEROID_SPEED;
 };
 
 #endif  //!_GAMES_ASTEROIDS_ASTEROIDS__H__

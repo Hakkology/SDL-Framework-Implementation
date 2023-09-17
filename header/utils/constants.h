@@ -93,4 +93,7 @@ uint32_t MISSILE_WIDTH = 10;
 uint32_t MISSILE_HEIGHT = 10;
 float MISSILE_SPEED = 0.15f;
 
+static const float ASTEROID_ROTATING_SPEED = 0.002f;
+static const float ASTEROID_SPEED = 0.008f;
+
 #endif
