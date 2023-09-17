@@ -19,11 +19,11 @@ void Tetris::Init(GameController& controller)
 	moveLeft.key = GameController::LeftKey();
 	moveLeft.action = [this](uint32_t dt, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_PLAY)
+		if (t_GameState == TetrisGameState::IN_PLAY)
 		{
 			if (GameController::IsPressed(state))
 			{
-				m_Block.SetXMovementDirection(XBlockDirection::LEFT);
+				t_Block.SetXMovementDirection(XBlockDirection::LEFT);
 			}
 		}
 	};
@@ -34,11 +34,11 @@ void Tetris::Init(GameController& controller)
 	moveRight.key = GameController::RightKey();
 	moveRight.action = [this](uint32_t dt, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_PLAY)
+		if (t_GameState == TetrisGameState::IN_PLAY)
 		{
 			if (GameController::IsPressed(state))
 			{
-				m_Block.SetXMovementDirection(XBlockDirection::RIGHT);
+				t_Block.SetXMovementDirection(XBlockDirection::RIGHT);
 			}
 		}
 	};
@@ -49,11 +49,11 @@ void Tetris::Init(GameController& controller)
 	moveDown.key = GameController::DownKey();
 	moveDown.action = [this](uint32_t dt, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_PLAY)
+		if (t_GameState == TetrisGameState::IN_PLAY)
 		{
 			if (GameController::IsPressed(state))
 			{
-				m_Block.SetYMovementDirection(YBlockDirection::DOWN);
+				t_Block.SetYMovementDirection(YBlockDirection::DOWN);
 			}
 		}
 	};
@@ -65,11 +65,11 @@ void Tetris::Init(GameController& controller)
 	rotateClockwise.key = GameController::ModifyKey();
 	rotateClockwise.action = [this](uint32_t, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_PLAY)
+		if (t_GameState == TetrisGameState::IN_PLAY)
 		{
 			if (GameController::IsPressed(state))
 			{
-				m_Block.SetPieceRotation(3);
+				t_Block.SetPieceRotation(3);
 			}
 		}
 	};
@@ -80,11 +80,11 @@ void Tetris::Init(GameController& controller)
 	rotateAntiClockwise.key = GameController::PushKey();
 	rotateAntiClockwise.action = [this](uint32_t, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_PLAY)
+		if (t_GameState == TetrisGameState::IN_PLAY)
 		{
 			if (GameController::IsPressed(state))
 			{
-				m_Block.SetPieceRotation(1);
+				t_Block.SetPieceRotation(1);
 			}
 		}
 	};
@@ -97,9 +97,9 @@ void Tetris::Init(GameController& controller)
 	{
 		if (GameController::IsPressed(state))
 		{
-			if (m_GameState == TetrisGameState::IN_SERVE)
+			if (t_GameState == TetrisGameState::IN_SERVE)
 			{
-				m_GameState = TetrisGameState::IN_PLAY;
+				t_GameState = TetrisGameState::IN_PLAY;
 			}
 		}
 	};
@@ -110,7 +110,7 @@ void Tetris::Init(GameController& controller)
 	backAction.key = GameController::CancelKey();
 	backAction.action = [this](uint32_t dt, InputState state)
 	{
-		if (m_GameState == TetrisGameState::IN_SERVE || m_GameState == TetrisGameState::IN_GAME_OVER)
+		if (t_GameState == TetrisGameState::IN_SERVE || t_GameState == TetrisGameState::IN_GAME_OVER)
 		{
 			if (GameController::IsPressed(state))
 			{
@@ -126,52 +126,52 @@ void Tetris::Init(GameController& controller)
 void Tetris::Update(uint32_t dt)
 {
 
-	if(m_GameState == TetrisGameState::IN_PLAY)
+	if(t_GameState == TetrisGameState::IN_PLAY)
 	{
-		m_TimeAccumulated += dt;
+		t_TimeAccumulated += dt;
 
-		if (m_TetrisLevel.DoesPieceFit(m_Block, m_Block.GetPositionChange(), m_Block.GetRotationChange()))
+		if (t_TetrisLevel.DoesPieceFit(t_Block, t_Block.GetPositionChange(), t_Block.GetRotationChange()))
 		{
-			m_Block.Update(dt);
+			t_Block.Update(dt);
 		}
 
 		// Check if we have to increase the level
-		if ((m_TetrisLevel.GetCompletedLines() % 2 <= m_CompletedLines % 2) && (m_CompletedLines < m_TetrisLevel.GetCompletedLines()))
+		if ((t_TetrisLevel.GetCompletedLines() % 2 <= t_CompletedLines % 2) && (t_CompletedLines < t_TetrisLevel.GetCompletedLines()))
 		{
-			m_Level -= 50;
+			t_Level -= 50;
 		}
 
-		m_CompletedLines = m_TetrisLevel.GetCompletedLines();
+		t_CompletedLines = t_TetrisLevel.GetCompletedLines();
 
-		if (m_TimeAccumulated > m_Level)
+		if (t_TimeAccumulated > t_Level)
 		{
 			// Move the block down if we can do so
 			Vector2D dy = { 0.0f, 1.0f * (float)TetrisBlock::BLOCK_HEIGHT };
-			if (m_TetrisLevel.DoesPieceFit(m_Block, dy, 0))
+			if (t_TetrisLevel.DoesPieceFit(t_Block, dy, 0))
 			{
-				m_Block.SetXMovementDirection(XBlockDirection::STOP);
-				m_Block.MoveBy(dy);
-				m_Block.Update(dt);
+				t_Block.SetXMovementDirection(XBlockDirection::STOP);
+				t_Block.MoveBy(dy);
+				t_Block.Update(dt);
 			}
 			else
 			{
 				// Add piece to the field
-				m_TetrisLevel.AddPiece(m_Block);
+				t_TetrisLevel.AddPiece(t_Block);
 
 				// If there are completed lines update the field - clear the line
-				m_TetrisLevel.Update(dt, m_Score);
+				t_TetrisLevel.Update(dt, t_Score);
 
 				// m_Block becomes m_nextBlock and starts to move down if it can and add it 
-				m_Block.Init(m_NextBlock.GetPieceType(), m_LevelBoundary, m_PieceStartPosition);
+				t_Block.Init(t_NextBlock.GetPieceType(), t_LevelBoundary, t_PieceStartPosition);
 
 				// m_NextBlock gets generated
-				Vector2D nextPiecePosition = { m_LevelBoundary.GetBottomRightPoint().GetX() + 35, m_LevelBoundary.GetTopLeftPoint().GetY() };
-				m_NextBlock.Init(static_cast<TetrominoType>(rand() % 7), m_LevelBoundary, nextPiecePosition);
+				Vector2D nextPiecePosition = { t_LevelBoundary.GetBottomRightPoint().GetX() + 35, t_LevelBoundary.GetTopLeftPoint().GetY() };
+				t_NextBlock.Init(static_cast<TetrominoType>(rand() % 7), t_LevelBoundary, nextPiecePosition);
 
-				if (!m_TetrisLevel.DoesPieceFit(m_Block, Vector2D(0, 0), 0))
+				if (!t_TetrisLevel.DoesPieceFit(t_Block, Vector2D(0, 0), 0))
 				{
 					// Game Over
-					m_GameState = TetrisGameState::IN_GAME_OVER;
+					t_GameState = TetrisGameState::IN_GAME_OVER;
 
 					// Update the highScore table
 					// m_HighScoreTable.UpdateTable(m_Score);
@@ -185,11 +185,11 @@ void Tetris::Update(uint32_t dt)
 				}
 			}
 
-			m_TimeAccumulated = 0;
+			t_TimeAccumulated = 0;
 		}
 	}
 
-	if (m_GameState == TetrisGameState::IN_GAME_OVER)
+	if (t_GameState == TetrisGameState::IN_GAME_OVER)
 	{
 		// Reset the Game
 		ResetGame();
@@ -198,41 +198,41 @@ void Tetris::Update(uint32_t dt)
 
 void Tetris::Draw(Screen& screen)
 {  
-	m_Block.Draw(screen);
-	m_NextBlock.Draw(screen);
+	t_Block.Draw(screen);
+	t_NextBlock.Draw(screen);
 	
 	// Draw the level
-	m_TetrisLevel.Draw(screen, m_Level, m_Score);
+	t_TetrisLevel.Draw(screen, t_Level, t_Score);
 }
 
 
 void Tetris::ResetGame()
 {
-	m_TetrisLevel.Init(Vector2D(TetrisBlock::BLOCK_WIDTH, TetrisBlock::BLOCK_HEIGHT));
+	t_TetrisLevel.Init(Vector2D(TetrisBlock::BLOCK_WIDTH, TetrisBlock::BLOCK_HEIGHT));
 
-	m_CompletedLines = 0;
+	t_CompletedLines = 0;
 	
-	m_LevelBoundary = m_TetrisLevel.GetLevelBoundary();
+	t_LevelBoundary = t_TetrisLevel.GetLevelBoundary();
 
-	m_PieceStartPosition = { m_LevelBoundary.GetTopLeftPoint().GetX() + TetrisBlock::BLOCK_WIDTH * 3, m_LevelBoundary.GetTopLeftPoint().GetY() };
+	t_PieceStartPosition = { t_LevelBoundary.GetTopLeftPoint().GetX() + TetrisBlock::BLOCK_WIDTH * 3, t_LevelBoundary.GetTopLeftPoint().GetY() };
 
-	Vector2D nextPiecePosition = { m_LevelBoundary.GetBottomRightPoint().GetX() + 20, m_LevelBoundary.GetTopLeftPoint().GetY()};
+	Vector2D nextPiecePosition = { t_LevelBoundary.GetBottomRightPoint().GetX() + 20, t_LevelBoundary.GetTopLeftPoint().GetY()};
 	
-	m_Block.Init(static_cast<TetrominoType>(rand() % 7), m_LevelBoundary, m_PieceStartPosition);
-	m_NextBlock.Init(static_cast<TetrominoType>(rand() % 7), m_LevelBoundary, nextPiecePosition);
+	t_Block.Init(static_cast<TetrominoType>(rand() % 7), t_LevelBoundary, t_PieceStartPosition);
+	t_NextBlock.Init(static_cast<TetrominoType>(rand() % 7), t_LevelBoundary, nextPiecePosition);
 
 	// m_HighScoreTable.Init("Tetris");
 	// m_Score.PlayerName = "ABC";
-	m_Score = 0;
+	t_Score = 0;
 
-	m_GameState = TetrisGameState::IN_SERVE;
+	t_GameState = TetrisGameState::IN_SERVE;
 	
-	m_Level = 500;
-	m_CompletedLines = 0;
+	t_Level = 500;
+	t_CompletedLines = 0;
 }
 
 const std::string& Tetris::GetName() const
 {
-	static std::string name = "Tetris";
+	static std::string name = "Tetrus";
 	return name;
 }

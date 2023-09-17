@@ -7,41 +7,41 @@
 #include "vector2D.h"
 
 
-TetrisBlock::TetrisBlock() : m_SignificantIndices(4, 0)
+TetrisBlock::TetrisBlock() : t_SignificantIndices(4, 0)
 {
-	m_Colour = Black();
-	m_Type = TetrominoType::I_TYPE;
-	m_XDirection = XBlockDirection::STOP;
-	m_YDirection = YBlockDirection::STOP;
-	m_IsMoving = true;
-	m_Rotation = 0;
+	t_Colour = Black();
+	t_Type = TetrominoType::I_TYPE;
+	t_XDirection = XBlockDirection::STOP;
+	t_YDirection = YBlockDirection::STOP;
+	t_IsMoving = true;
+	t_Rotation = 0;
 
 	// Fill mBlockData with empty rectangle
 	Rectangle emptyRectangle = { Vector2D::Zero, Vector2D::Zero };
 	for (size_t i = 0; i < 16; i++)
 	{
-		m_BlockData.push_back(emptyRectangle);
+		t_BlockData.push_back(emptyRectangle);
 	}
 
 };
 
 TetrisBlock::TetrisBlock(const TetrisBlock& other)
 {
-	m_Colour = other.m_Colour;
-	m_Type = other.m_Type;
-	m_XDirection = other.m_XDirection;
-	m_YDirection = other.m_YDirection;
-	m_IsMoving = other.m_IsMoving;
-	m_Rotation = other.m_Rotation;
+	t_Colour = other.t_Colour;
+	t_Type = other.t_Type;
+	t_XDirection = other.t_XDirection;
+	t_YDirection = other.t_YDirection;
+	t_IsMoving = other.t_IsMoving;
+	t_Rotation = other.t_Rotation;
 
 	for (size_t i = 0; i < 16; i++)
 	{
-		m_BlockData.push_back(other.m_BlockData[i]);
+		t_BlockData.push_back(other.t_BlockData[i]);
 	}
 
 	for (size_t i = 0; i < 4; i++)
 	{
-		m_SignificantIndices.push_back(other.m_SignificantIndices[i]);
+		t_SignificantIndices.push_back(other.t_SignificantIndices[i]);
 	}
 }
 
@@ -51,8 +51,8 @@ TetrisBlock::~TetrisBlock() {
 
 void TetrisBlock::Init(TetrominoType type, const Rectangle& boundary, const Vector2D& startPosition)
 {
-	m_Type = type;
-	m_Boundary = boundary;
+	t_Type = type;
+	t_Boundary = boundary;
 
 	Vector2D yOffset = Vector2D::Zero;
 	Vector2D xOffset = Vector2D::Zero;
@@ -71,7 +71,7 @@ void TetrisBlock::Init(TetrominoType type, const Rectangle& boundary, const Vect
 			yOffset += Vector2D(0.0f, TetrisBlock::BLOCK_HEIGHT);
 		}
 
-		m_BlockData[i] = { startPosition + xOffset + yOffset, TetrisBlock::BLOCK_WIDTH, TetrisBlock::BLOCK_HEIGHT };
+		t_BlockData[i] = { startPosition + xOffset + yOffset, TetrisBlock::BLOCK_WIDTH, TetrisBlock::BLOCK_HEIGHT };
 	}
 
 	// Set the indices for the specified bloack type
@@ -82,7 +82,7 @@ void TetrisBlock::MoveBy(const Vector2D& vector)
 {
 	for (size_t i = 0; i < 16; i++)
 	{
-		m_BlockData[i].MoveBy(vector);
+		t_BlockData[i].MoveBy(vector);
 	}
 }
 
@@ -91,7 +91,7 @@ void TetrisBlock::Rotate(int rotation)
 	// Rotate the significant indices
 	for (size_t i = 0; i < 4; i++)
 	{
-		m_SignificantIndices[i] = FindRotatedIndex(m_SignificantIndices[i], rotation);
+		t_SignificantIndices[i] = FindRotatedIndex(t_SignificantIndices[i], rotation);
 	}
 }
 
@@ -99,8 +99,8 @@ void TetrisBlock::Draw(Screen& theScreen)
 {
 	for (size_t i = 0; i < 4; i++)
 	{
-		unsigned int index = m_SignificantIndices[i];
-		theScreen.Draw(m_BlockData[index], White(), true, m_Colour);
+		unsigned int index = t_SignificantIndices[i];
+		theScreen.Draw(t_BlockData[index], White(), true, t_Colour);
 	}
 }
 
@@ -110,56 +110,56 @@ void TetrisBlock::Update(uint32_t dt)
 	MoveBy(GetPositionChange());
 	Rotate(GetRotationChange());
 
-	m_XDirection = XBlockDirection::STOP;
-	m_YDirection = YBlockDirection::STOP;
-	m_Rotation = 0;
+	t_XDirection = XBlockDirection::STOP;
+	t_YDirection = YBlockDirection::STOP;
+	t_Rotation = 0;
 }
 
 void TetrisBlock::SetInitialIndices()
 {
 	// Set the array with the significant indices.
-	switch (m_Type)
+	switch (t_Type)
 	{
 	case TetrominoType::I_TYPE:
 	{
-		m_SignificantIndices = { 8, 9, 10, 11 };
-		m_Colour = Cyan();
+		t_SignificantIndices = { 8, 9, 10, 11 };
+		t_Colour = Cyan();
 		break;
 	}
 	case TetrominoType::J_TYPE:
 	{
-		m_SignificantIndices = { 5, 6, 7, 11 };
-		m_Colour = Blue();
+		t_SignificantIndices = { 5, 6, 7, 11 };
+		t_Colour = Blue();
 		break;
 	}
 	case TetrominoType::L_TYPE:
 	{
-		m_SignificantIndices = { 5, 6, 7, 9 };
-		m_Colour = Orange();
+		t_SignificantIndices = { 5, 6, 7, 9 };
+		t_Colour = Orange();
 		break;
 	}
 	case TetrominoType::O_TYPE:
 	{
-		m_SignificantIndices = { 5, 6, 9, 10 };
-		m_Colour = Yellow();
+		t_SignificantIndices = { 5, 6, 9, 10 };
+		t_Colour = Yellow();
 		break;
 	}
 	case TetrominoType::S_TYPE:
 	{
-		m_SignificantIndices = { 8, 9, 5, 6 };
-		m_Colour = Green();
+		t_SignificantIndices = { 8, 9, 5, 6 };
+		t_Colour = Green();
 		break;
 	}
 	case TetrominoType::T_TYPE:
 	{
-		m_SignificantIndices = { 4, 5, 6, 9 };
-		m_Colour = Pink();
+		t_SignificantIndices = { 4, 5, 6, 9 };
+		t_Colour = Pink();
 		break;
 	}
 	case TetrominoType::Z_TYPE:
 	{
-		m_SignificantIndices = { 4, 5, 9, 10 };
-		m_Colour = Red();
+		t_SignificantIndices = { 4, 5, 9, 10 };
+		t_Colour = Red();
 		break;
 	}
 	}
@@ -171,9 +171,9 @@ std::vector<Rectangle> TetrisBlock::GetSignificantBlocks() const
 
 	int j = 0;
 
-	for (const auto& i : m_SignificantIndices)
+	for (const auto& i : t_SignificantIndices)
 	{
-		significantBlocks.push_back(m_BlockData[i]);
+		significantBlocks.push_back(t_BlockData[i]);
 	}
 	
 	return significantBlocks;
@@ -199,9 +199,9 @@ int TetrisBlock::FindRotatedIndex(int index, int r)
 Vector2D TetrisBlock::GetPositionChange() const
 {
 	Vector2D dir = Vector2D::Zero;
-	if (m_XDirection != XBlockDirection::STOP)
+	if (t_XDirection != XBlockDirection::STOP)
 	{
-		if (m_XDirection == XBlockDirection::RIGHT)
+		if (t_XDirection == XBlockDirection::RIGHT)
 		{
 			dir += Vector2D(1.0f, 0.0f);
 		}
@@ -211,9 +211,9 @@ Vector2D TetrisBlock::GetPositionChange() const
 		}
 	}
 
-	if (m_YDirection != YBlockDirection::STOP)
+	if (t_YDirection != YBlockDirection::STOP)
 	{
-		if (m_YDirection == YBlockDirection::DOWN)
+		if (t_YDirection == YBlockDirection::DOWN)
 		{
 			dir += Vector2D(0.0f, 1.0f);
 		}
@@ -226,5 +226,5 @@ Vector2D TetrisBlock::GetPositionChange() const
 
 int TetrisBlock::GetRotationChange() const
 {
-	return m_Rotation;
+	return t_Rotation;
 }

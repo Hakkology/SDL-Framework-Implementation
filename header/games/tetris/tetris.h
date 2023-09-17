@@ -27,23 +27,23 @@ public:
 
 private:
 
-	TetrisGameState m_GameState;
-	TetrisBlock m_Block;
-	TetrisBlock m_NextBlock;
-	TetrisLevel m_TetrisLevel;
+	TetrisGameState t_GameState;
+	TetrisBlock t_Block;
+	TetrisBlock t_NextBlock;
+	TetrisLevel t_TetrisLevel;
 	
-	uint32_t m_Score;
+	uint32_t t_Score;
 	// HighScoreTable m_HighScoreTable;
 
-	int m_BlocksAccumulated;
+	int t_BlocksAccumulated;
 	
-	Rectangle m_LevelBoundary;
-	uint32_t m_TimeAccumulated = 0;
+	Rectangle t_LevelBoundary;
+	uint32_t t_TimeAccumulated = 0;
 
-	Vector2D m_PieceStartPosition;
+	Vector2D t_PieceStartPosition;
 	
-	int m_CompletedLines;
-	int m_Level;
+	int t_CompletedLines;
+	int t_Level;
 };
 
 #endif  //!_GAMES_TETRIS_TETRIS__H__

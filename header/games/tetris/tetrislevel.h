@@ -15,7 +15,6 @@ class TetrisLevel
 public:
 	static const uint8_t LEVEL_WIDTH = 10;
 	static const uint8_t LEVEL_HEIGHT = 20;
-	//static const Colour colours[7];
 
 	TetrisLevel();
 	~TetrisLevel() {};
@@ -27,19 +26,19 @@ public:
 	void AddPiece(const TetrisBlock& newPiece);
 	bool DoesPieceFit(TetrisBlock pieceToFit, const Vector2D& vector, int rotation);
 
-	inline const Rectangle GetLevelBoundary() const { return m_LevelBoundary; }
-	inline const int GetCompletedLines() const { return m_Lines; }
+	inline const Rectangle GetLevelBoundary() const { return t_LevelBoundary; }
+	inline const int GetCompletedLines() const { return t_Lines; }
 
 private:
 
 	uint32_t GetLevelIndex(float x, float y);
-	uint32_t m_PlayingField[LEVEL_WIDTH * LEVEL_HEIGHT];
+	uint32_t t_PlayingField[LEVEL_WIDTH * LEVEL_HEIGHT];
 
-	Rectangle m_LevelBoundary;
+	Rectangle t_LevelBoundary;
 
-	uint32_t m_Lines;
+	uint32_t t_Lines;
 
-	BmpFont m_Font;
+	BmpFont t_Font;
 };
 
 #endif  //!_GAMES_TETRIS_TETRISLEVEL__H__

@@ -47,9 +47,9 @@ public:
 	void Draw(Screen& theScreen);
 	void Update(uint32_t dt);
 
-	inline void SetXMovementDirection(XBlockDirection dir) { m_XDirection = dir; }
-	inline void SetYMovementDirection(YBlockDirection dir) { m_YDirection = dir; }
-	inline void SetPieceRotation(const uint8_t rotation) { m_Rotation = rotation; }
+	inline void SetXMovementDirection(XBlockDirection dir) { t_XDirection = dir; }
+	inline void SetYMovementDirection(YBlockDirection dir) { t_YDirection = dir; }
+	inline void SetPieceRotation(const uint8_t rotation) { t_Rotation = rotation; }
 	
 	std::vector<Rectangle> GetSignificantBlocks() const;
 
@@ -63,27 +63,27 @@ public:
 	static const uint32_t BLOCK_HEIGHT = 12;
 	static const uint32_t BLOCK_WIDTH = 12;
 
-	inline const bool IsBlockMoving() const{ return m_IsMoving; }
-	inline std::vector<Rectangle> GetPieceBlocks() const{ return m_BlockData; }
-	inline std::vector<unsigned int> GetSignificantIndices() const { return m_SignificantIndices; }
-	inline const TetrominoType GetPieceType() const { return m_Type; }
+	inline const bool IsBlockMoving() const{ return t_IsMoving; }
+	inline std::vector<Rectangle> GetPieceBlocks() const{ return t_BlockData; }
+	inline std::vector<unsigned int> GetSignificantIndices() const { return t_SignificantIndices; }
+	inline const TetrominoType GetPieceType() const { return t_Type; }
 
 private:
     // Each tetromino fits within a 4x4 array of squares
-	std::vector<Rectangle> m_BlockData;
-	TetrominoType m_Type;
-	Color m_Colour;
-	bool m_IsMoving;
+	std::vector<Rectangle> t_BlockData;
+	TetrominoType t_Type;
+	Color t_Colour;
+	bool t_IsMoving;
 	
-	Rectangle m_Boundary;
+	Rectangle t_Boundary;
 
 	// All shapes will have 4 cubes getting drawn at once
-	std::vector<unsigned int> m_SignificantIndices;
+	std::vector<unsigned int> t_SignificantIndices;
 
 	// Possible directions of movement of the tetromino piece
-	XBlockDirection m_XDirection;
-	YBlockDirection m_YDirection;
-	uint8_t m_Rotation;
+	XBlockDirection t_XDirection;
+	YBlockDirection t_YDirection;
+	uint8_t t_Rotation;
 	
 	// Helper methods
 	void SetInitialIndices();
