@@ -21,6 +21,7 @@ public:
     void Init (const std::string& animationsPath, const SpriteSheet& spriteSheet, const Color& color = White());
     void Update (uint32_t dt);
     void Draw (Screen& theScreen);
+    void Draw(Screen& theScreen, const float rotationAngle = 0.0f);
 
     void SetAnimation(const std::string& animationName, bool looped);
 
@@ -31,6 +32,7 @@ public:
     inline Vector2D Position() const {return mPosition;}
     inline void SetPosition(const Vector2D& position) {mPosition = position;}
     inline void MoveBy(const Vector2D& delta) {mPosition += delta;}
+    inline void MoveTo(const Vector2D& position) { mPosition = position; }
     inline bool IsFinishedPlayingAnimation() const {return mAnimationPlayer.IsFinishedPlaying();}
     inline const Color& GetColor() const {return mColor;}
     inline const SpriteSheet* GetSpriteSheet() const {return mnoptrSpriteSheet;}

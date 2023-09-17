@@ -64,7 +64,7 @@ void PacmanActor::Update(uint32_t dt){
 
 void PacmanActor::Draw(Screen &screen){
 
-    pSprite.Draw(screen);
+    pSprite.Draw(screen, 0.0f);
 }
 
 void PacmanActor::Stop(){

@@ -9,7 +9,7 @@ void Actor::Init(const SpriteSheet& spriteSheet, const std::string& animationsPa
 
 void Actor::Draw(Screen& screen)
 {
-	m_Sprite.Draw(screen);
+	m_Sprite.Draw(screen, 0.0f);
 }
 
 void Actor::SetAnimation(const std::string& animationName, bool looped)

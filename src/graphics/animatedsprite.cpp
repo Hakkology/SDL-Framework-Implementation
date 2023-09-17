@@ -37,6 +37,25 @@ void AnimatedSprite::Draw (Screen& theScreen){
     }
 }
 
+void AnimatedSprite::Draw(Screen& theScreen, const float rotationAngle)
+{
+	AnimationFrame frame = mAnimationPlayer.GetCurrentAnimationFrame();
+
+	Color frameColour = frame.frameColor;
+
+	if (!frame.frameColorSet)
+	{
+		frameColour = mColor;
+	}
+
+	theScreen.Draw(*mnoptrSpriteSheet, frame.frame, mPosition + frame.offset, frameColour, rotationAngle);
+
+	if (frame.overlay.size() > 0)
+	{
+		theScreen.Draw(*mnoptrSpriteSheet, frame.overlay, mPosition, frame.overlayColor, rotationAngle);
+	}
+}
+
 void AnimatedSprite::SetAnimation(const std::string& animationName, bool looped){
     
     mAnimationPlayer.Play(animationName, looped);

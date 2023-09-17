@@ -56,8 +56,8 @@ public:
     void Draw (const Rectangle& rectangle, const Color& color, bool fill=false, const Color& fillColor = White());
     void Draw (const Circle& circle, const Color& color, bool fill=false, const Color& fillColor = White());
 
-    void Draw (const BMPImage& image, const Sprite& sprite, const Vector2D& pos, const Color& overlayColor = White());
-    void Draw (const SpriteSheet& ss, const std::string& spriteName, const Vector2D& pos, const Color& overlayColor = White());
+    void Draw (const BMPImage& image, const Sprite& sprite, const Vector2D& pos, const Color& overlayColor = White(), float rotation = 0.0f);
+    void Draw (const SpriteSheet& ss, const std::string& spriteName, const Vector2D& pos, const Color& overlayColor = White(), float rotation = 0.0f);
     void Draw (const BmpFont& font, const std::string& textLine, const Vector2D& pos, const Color& overlayColor = White());
 
 private:

@@ -248,7 +248,7 @@ void Screen::Draw(const Circle &circle, const Color &color, bool fill, const Col
     
 }
 
-void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& pos, const Color& overlayColor){
+void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& pos, const Color& overlayColor, float rotation){
 
     float rVal = static_cast<float>(overlayColor.GetRed()) / 255.0f;
     float gVal = static_cast<float>(overlayColor.GetGreen()) / 255.0f;
@@ -260,12 +260,23 @@ void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& p
 
     const std::vector<Color>& pixels = image.GetPixels();
 
+    Vector2D spritePos = Vector2D(sprite.xPos, sprite.yPos);
+
     auto topLeft = pos;
     auto topRight = pos + Vector2D(width, 0);
     auto bottomLeft = pos + Vector2D(0, height);
     auto bottomRight = pos + Vector2D(width, height);
 
+    Vector2D centerPoint = Vector2D((topRight.GetX() - topLeft.GetX()) / 2, (bottomLeft.GetY() - topLeft.GetY()) / 2) + topLeft;
+	float cosine = cosf(rotation);
+	float sine = sinf(rotation);
+
     std::vector<Vector2D> points = {topLeft, bottomLeft, bottomRight, topRight};
+
+    for (auto& point : points)
+	{
+		point.Rotate(rotation, centerPoint);
+	}
 
     Vector2D xAxis = topRight - topLeft;
     Vector2D yAxis = bottomLeft - topLeft;
@@ -298,9 +309,9 @@ void Screen::Draw(const BMPImage &image, const Sprite& sprite, const Vector2D& p
     });
 }
 
-void Screen::Draw(const SpriteSheet &ss, const std::string &spriteName, const Vector2D &pos, const Color& overlayColor){
+void Screen::Draw(const SpriteSheet &ss, const std::string &spriteName, const Vector2D &pos, const Color& overlayColor, float rotation){
     
-    Draw(ss.GetBMPImage(), ss.GetSprite(spriteName), pos, overlayColor);
+    Draw(ss.GetBMPImage(), ss.GetSprite(spriteName), pos, overlayColor, rotation);
 }
 
 void Screen::Draw(const BmpFont& font, const std::string& textLine, const Vector2D& pos, const Color& overlayColor){
