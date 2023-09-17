@@ -96,4 +96,6 @@ float MISSILE_SPEED = 0.15f;
 static const float ASTEROID_ROTATING_SPEED = 0.002f;
 static const float ASTEROID_SPEED = 0.008f;
 
+const uint32_t LEVEL_STARTING_TIME = 3000;
+
 #endif

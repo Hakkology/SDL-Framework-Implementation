@@ -8,8 +8,8 @@
 
 
 
-Asteroid::Asteroid() :a_Size(AsteroidSize::SMALL), a_Destroyed(false), a_Rotation(0), a_Reproduce(true), a_Score(0)
-{
+Asteroid::Asteroid() :a_Size(AsteroidSize::SMALL), a_Destroyed(false), a_Rotation(0), a_Reproduce(true), a_Score(0){
+    
 }
 
 void Asteroid::Init(const SpriteSheet& spriteSheet, const Vector2D& direction, const Vector2D& position, AsteroidSize size, const Color& spriteColour)
