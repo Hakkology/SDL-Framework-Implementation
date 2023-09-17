@@ -87,4 +87,10 @@ static const int HEIGHT = 20;
 
 static const int tBLockSize = 4;
 
+// Asteroids details
+
+uint32_t MISSILE_WIDTH = 10;
+uint32_t MISSILE_HEIGHT = 10;
+float MISSILE_SPEED = 0.15f;
+
 #endif
