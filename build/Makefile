@@ -177,6 +177,126 @@ src/app/button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s
 .PHONY : src/app/button.cpp.s
 
+src/games/asteroids/asteroids.o: src/games/asteroids/asteroids.cpp.o
+.PHONY : src/games/asteroids/asteroids.o
+
+# target to build an object file
+src/games/asteroids/asteroids.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o
+.PHONY : src/games/asteroids/asteroids.cpp.o
+
+src/games/asteroids/asteroids.i: src/games/asteroids/asteroids.cpp.i
+.PHONY : src/games/asteroids/asteroids.i
+
+# target to preprocess a source file
+src/games/asteroids/asteroids.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.i
+.PHONY : src/games/asteroids/asteroids.cpp.i
+
+src/games/asteroids/asteroids.s: src/games/asteroids/asteroids.cpp.s
+.PHONY : src/games/asteroids/asteroids.s
+
+# target to generate assembly for a file
+src/games/asteroids/asteroids.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.s
+.PHONY : src/games/asteroids/asteroids.cpp.s
+
+src/games/asteroids/asteroidsactor.o: src/games/asteroids/asteroidsactor.cpp.o
+.PHONY : src/games/asteroids/asteroidsactor.o
+
+# target to build an object file
+src/games/asteroids/asteroidsactor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o
+.PHONY : src/games/asteroids/asteroidsactor.cpp.o
+
+src/games/asteroids/asteroidsactor.i: src/games/asteroids/asteroidsactor.cpp.i
+.PHONY : src/games/asteroids/asteroidsactor.i
+
+# target to preprocess a source file
+src/games/asteroids/asteroidsactor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.i
+.PHONY : src/games/asteroids/asteroidsactor.cpp.i
+
+src/games/asteroids/asteroidsactor.s: src/games/asteroids/asteroidsactor.cpp.s
+.PHONY : src/games/asteroids/asteroidsactor.s
+
+# target to generate assembly for a file
+src/games/asteroids/asteroidsactor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.s
+.PHONY : src/games/asteroids/asteroidsactor.cpp.s
+
+src/games/asteroids/asteroidsgame.o: src/games/asteroids/asteroidsgame.cpp.o
+.PHONY : src/games/asteroids/asteroidsgame.o
+
+# target to build an object file
+src/games/asteroids/asteroidsgame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o
+.PHONY : src/games/asteroids/asteroidsgame.cpp.o
+
+src/games/asteroids/asteroidsgame.i: src/games/asteroids/asteroidsgame.cpp.i
+.PHONY : src/games/asteroids/asteroidsgame.i
+
+# target to preprocess a source file
+src/games/asteroids/asteroidsgame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.i
+.PHONY : src/games/asteroids/asteroidsgame.cpp.i
+
+src/games/asteroids/asteroidsgame.s: src/games/asteroids/asteroidsgame.cpp.s
+.PHONY : src/games/asteroids/asteroidsgame.s
+
+# target to generate assembly for a file
+src/games/asteroids/asteroidsgame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.s
+.PHONY : src/games/asteroids/asteroidsgame.cpp.s
+
+src/games/asteroids/asteroidsmissile.o: src/games/asteroids/asteroidsmissile.cpp.o
+.PHONY : src/games/asteroids/asteroidsmissile.o
+
+# target to build an object file
+src/games/asteroids/asteroidsmissile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o
+.PHONY : src/games/asteroids/asteroidsmissile.cpp.o
+
+src/games/asteroids/asteroidsmissile.i: src/games/asteroids/asteroidsmissile.cpp.i
+.PHONY : src/games/asteroids/asteroidsmissile.i
+
+# target to preprocess a source file
+src/games/asteroids/asteroidsmissile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.i
+.PHONY : src/games/asteroids/asteroidsmissile.cpp.i
+
+src/games/asteroids/asteroidsmissile.s: src/games/asteroids/asteroidsmissile.cpp.s
+.PHONY : src/games/asteroids/asteroidsmissile.s
+
+# target to generate assembly for a file
+src/games/asteroids/asteroidsmissile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.s
+.PHONY : src/games/asteroids/asteroidsmissile.cpp.s
+
+src/games/asteroids/asteroidsplayer.o: src/games/asteroids/asteroidsplayer.cpp.o
+.PHONY : src/games/asteroids/asteroidsplayer.o
+
+# target to build an object file
+src/games/asteroids/asteroidsplayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o
+.PHONY : src/games/asteroids/asteroidsplayer.cpp.o
+
+src/games/asteroids/asteroidsplayer.i: src/games/asteroids/asteroidsplayer.cpp.i
+.PHONY : src/games/asteroids/asteroidsplayer.i
+
+# target to preprocess a source file
+src/games/asteroids/asteroidsplayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.i
+.PHONY : src/games/asteroids/asteroidsplayer.cpp.i
+
+src/games/asteroids/asteroidsplayer.s: src/games/asteroids/asteroidsplayer.cpp.s
+.PHONY : src/games/asteroids/asteroidsplayer.s
+
+# target to generate assembly for a file
+src/games/asteroids/asteroidsplayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.s
+.PHONY : src/games/asteroids/asteroidsplayer.cpp.s
+
 src/games/breakout/ball.o: src/games/breakout/ball.cpp.o
 .PHONY : src/games/breakout/ball.o
 
@@ -1272,6 +1392,21 @@ help:
 	@echo "... src/app/button.o"
 	@echo "... src/app/button.i"
 	@echo "... src/app/button.s"
+	@echo "... src/games/asteroids/asteroids.o"
+	@echo "... src/games/asteroids/asteroids.i"
+	@echo "... src/games/asteroids/asteroids.s"
+	@echo "... src/games/asteroids/asteroidsactor.o"
+	@echo "... src/games/asteroids/asteroidsactor.i"
+	@echo "... src/games/asteroids/asteroidsactor.s"
+	@echo "... src/games/asteroids/asteroidsgame.o"
+	@echo "... src/games/asteroids/asteroidsgame.i"
+	@echo "... src/games/asteroids/asteroidsgame.s"
+	@echo "... src/games/asteroids/asteroidsmissile.o"
+	@echo "... src/games/asteroids/asteroidsmissile.i"
+	@echo "... src/games/asteroids/asteroidsmissile.s"
+	@echo "... src/games/asteroids/asteroidsplayer.o"
+	@echo "... src/games/asteroids/asteroidsplayer.i"
+	@echo "... src/games/asteroids/asteroidsplayer.s"
 	@echo "... src/games/breakout/ball.o"
 	@echo "... src/games/breakout/ball.i"
 	@echo "... src/games/breakout/ball.s"

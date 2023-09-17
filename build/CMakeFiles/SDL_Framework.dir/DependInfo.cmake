@@ -10,6 +10,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsmissile.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o.d"
+  "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsplayer.cpp" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o.d"
   "/home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o" "gcc" "CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o.d"

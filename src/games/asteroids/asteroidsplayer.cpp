@@ -1,0 +1,1 @@
+#include "asteroidsplayer.h"

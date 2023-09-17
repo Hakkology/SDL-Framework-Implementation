@@ -71,6 +71,13 @@ set(SOURCES
     src/games/tetris/tetrisblock.cpp 
     src/games/tetris/tetrislevel.cpp
 
+    # asteroids files
+    src/games/asteroids/asteroids.cpp
+    src/games/asteroids/asteroidsactor.cpp 
+    src/games/asteroids/asteroidsgame.cpp
+    src/games/asteroids/asteroidsmissile.cpp 
+    src/games/asteroids/asteroidsplayer.cpp
+
 )
 
 # Add header files
@@ -144,6 +151,13 @@ set(HEADERS
     header/games/tetris/tetrislevel.h
     header/games/tetris/tetris.h
 
+    # asteroids files
+    header/games/asteroids/asteroids.h
+    header/games/asteroids/asteroidsactor.h 
+    header/games/asteroids/asteroidsgame.h
+    header/games/asteroids/asteroidsmissile.h 
+    header/games/asteroids/asteroidsplayer.h
+
 )
 
 # Create an executable target
@@ -156,6 +170,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     header/games/breakout
     header/games/pacman
     header/games/tetris
+    header/games/asteroids
     header/graphics
     header/shapes
     header/scenes

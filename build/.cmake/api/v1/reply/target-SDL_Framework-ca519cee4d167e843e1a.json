@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 150,
+				"line" : 164,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 167,
+				"line" : 182,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 152,
+				"line" : 166,
 				"parent" : 0
 			}
 		]
@@ -71,6 +71,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/tetris"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids"
 				},
 				{
 					"backtrace" : 3,
@@ -147,7 +151,12 @@
 				43,
 				44,
 				45,
-				46
+				46,
+				47,
+				48,
+				49,
+				50,
+				51
 			]
 		}
 	],
@@ -227,7 +236,12 @@
 				43,
 				44,
 				45,
-				46
+				46,
+				47,
+				48,
+				49,
+				50,
+				51
 			]
 		}
 	],
@@ -513,6 +527,36 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/games/tetris/tetrislevel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/asteroids/asteroids.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/asteroids/asteroidsactor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/asteroids/asteroidsgame.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/asteroids/asteroidsmissile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/games/asteroids/asteroidsplayer.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
