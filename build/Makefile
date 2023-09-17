@@ -921,6 +921,30 @@ src/scenes/asteroidstartScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.s
 .PHONY : src/scenes/asteroidstartScene.cpp.s
 
+src/scenes/breakoutstartScene.o: src/scenes/breakoutstartScene.cpp.o
+.PHONY : src/scenes/breakoutstartScene.o
+
+# target to build an object file
+src/scenes/breakoutstartScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o
+.PHONY : src/scenes/breakoutstartScene.cpp.o
+
+src/scenes/breakoutstartScene.i: src/scenes/breakoutstartScene.cpp.i
+.PHONY : src/scenes/breakoutstartScene.i
+
+# target to preprocess a source file
+src/scenes/breakoutstartScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.i
+.PHONY : src/scenes/breakoutstartScene.cpp.i
+
+src/scenes/breakoutstartScene.s: src/scenes/breakoutstartScene.cpp.s
+.PHONY : src/scenes/breakoutstartScene.s
+
+# target to generate assembly for a file
+src/scenes/breakoutstartScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.s
+.PHONY : src/scenes/breakoutstartScene.cpp.s
+
 src/scenes/buttonoptionsScene.o: src/scenes/buttonoptionsScene.cpp.o
 .PHONY : src/scenes/buttonoptionsScene.o
 
@@ -1341,6 +1365,9 @@ help:
 	@echo "... src/scenes/asteroidstartScene.o"
 	@echo "... src/scenes/asteroidstartScene.i"
 	@echo "... src/scenes/asteroidstartScene.s"
+	@echo "... src/scenes/breakoutstartScene.o"
+	@echo "... src/scenes/breakoutstartScene.i"
+	@echo "... src/scenes/breakoutstartScene.s"
 	@echo "... src/scenes/buttonoptionsScene.o"
 	@echo "... src/scenes/buttonoptionsScene.i"
 	@echo "... src/scenes/buttonoptionsScene.s"

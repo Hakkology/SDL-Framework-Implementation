@@ -1,8 +1,7 @@
-CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp \
- /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
+CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o: \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/breakoutstartScene.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -37,6 +36,13 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/ext/alloc_traits.h \
  /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/initializer_list \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -50,14 +56,10 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/initializer_list /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
- /usr/include/c++/11/bits/functional_hash.h \
- /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/shared_ptr.h /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
  /usr/include/c++/11/cwchar /usr/include/wchar.h \
@@ -116,16 +118,15 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/iostream \
- /usr/include/c++/11/ostream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
- /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/breakoutstartScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/buttonoptionsScene.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
- /usr/include/ctype.h /usr/include/c++/11/bits/ios_base.h \
- /usr/include/c++/11/bits/locale_classes.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/ostream_insert.h \
+ /usr/include/ctype.h /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/string_view.tcc \
@@ -152,25 +153,6 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/system_error \
- /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/streambuf \
- /usr/include/c++/11/bits/streambuf.tcc \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/basic_ios.tcc \
- /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/buttonoptionsScene.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
@@ -327,7 +309,25 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
- /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/streambuf \
+ /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cassert \
+ /usr/include/assert.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
@@ -341,15 +341,17 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/app/app.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/arcadeScene.h \
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/notimplementedScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/breakout.h \
@@ -360,9 +362,4 @@ CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/boundaryedge.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/levelboundary.h \
  /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/bgamelevel.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/pacmanstartScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/tetrisstartScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/asteroidstartScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/breakoutstartScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/notimplementedScene.h
+ /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/breakout/block.h

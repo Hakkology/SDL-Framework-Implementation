@@ -65,6 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o.d"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o"
+  "CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o"
   "CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d"
   "CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
