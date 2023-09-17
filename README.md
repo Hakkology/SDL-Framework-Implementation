@@ -1,8 +1,8 @@
-# SDL-Framework-Implementation
-SDL is used for input and window creation. Starting from a vector class, shapes and other implementations, a game station container app is created to carry 4 games with a button navigation system. Pacman, breakout and tetris is complete. More details to come once complete.
+# SDL-Game-Station
 
 Following section explains the procedure on this repository step by step, used as a reminder for myself and other projects.
 Main purpose was to create a C++ game engine and an application that works on that engine in 2D space with basic rendering functionality.
+All classes and functions are also glued together with CMake.txt file on a very manual level.
 Steps are basically divided for easy readability.
 
 Application:
