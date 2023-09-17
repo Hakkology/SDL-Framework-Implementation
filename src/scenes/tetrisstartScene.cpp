@@ -5,6 +5,7 @@
 #include "app.h"
 #include "notimplementedScene.h"
 #include "gameScene.h"
+#include "tetris.h"
 
 TetrisStartScene::TetrisStartScene(): ButtonOptionsScene({"Play Game", "High Scores"}, Orange()){
 
@@ -26,10 +27,11 @@ void TetrisStartScene::Init(){
     std::vector<Button::ButtonAction> actions;
     actions.push_back([this](){
 
-        // auto tetrisGame = std::make_unique<Tetris>();
-        // App::Singleton().PushScene(std::make_unique<GameScene>(std::move(tetrisGame)));
+        auto tetrisGame = std::make_unique<Tetris>();
+        App::Singleton().PushScene(std::make_unique<GameScene>(std::move(tetrisGame)));
 
-        App::Singleton().PushScene(std::make_unique<NotImplementedScene>());
+        //App::Singleton().PushScene(std::make_unique<NotImplementedScene>());
+
     });
 
     actions.push_back([this](){

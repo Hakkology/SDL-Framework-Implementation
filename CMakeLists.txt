@@ -64,8 +64,11 @@ set(SOURCES
     src/games/pacman/pacmanghostai.cpp 
     src/games/pacman/pacman.cpp
 
+    # tetris files
+    src/games/tetris/tetris.cpp
     src/games/tetris/tetrisblock.cpp 
-    src/games/tetris/tetrisgamegrid.cpp
+    src/games/tetris/tetrislevel.cpp
+
 )
 
 # Add header files
@@ -132,8 +135,10 @@ set(HEADERS
     header/games/pacman/pacmanghostai.h
     header/games/pacman/pacman.h
 
-    header/games/pacman/tetrisblock.h
-    header/games/pacman/tetrisgamegrid.h
+    #tetris headers
+    header/games/tetris/tetrisblock.h
+    header/games/tetris/tetrislevel.h
+    header/games/tetris/tetris.h
 
 )
 
@@ -147,7 +152,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     header/games/breakout
     header/games/pacman
     header/games/tetris
-    header/games/tetris/tetrisblocks
     header/graphics
     header/shapes
     header/scenes

@@ -513,6 +513,78 @@ src/games/pacman/pacmanplayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s
 .PHONY : src/games/pacman/pacmanplayer.cpp.s
 
+src/games/tetris/tetris.o: src/games/tetris/tetris.cpp.o
+.PHONY : src/games/tetris/tetris.o
+
+# target to build an object file
+src/games/tetris/tetris.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o
+.PHONY : src/games/tetris/tetris.cpp.o
+
+src/games/tetris/tetris.i: src/games/tetris/tetris.cpp.i
+.PHONY : src/games/tetris/tetris.i
+
+# target to preprocess a source file
+src/games/tetris/tetris.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.i
+.PHONY : src/games/tetris/tetris.cpp.i
+
+src/games/tetris/tetris.s: src/games/tetris/tetris.cpp.s
+.PHONY : src/games/tetris/tetris.s
+
+# target to generate assembly for a file
+src/games/tetris/tetris.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.s
+.PHONY : src/games/tetris/tetris.cpp.s
+
+src/games/tetris/tetrisblock.o: src/games/tetris/tetrisblock.cpp.o
+.PHONY : src/games/tetris/tetrisblock.o
+
+# target to build an object file
+src/games/tetris/tetrisblock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o
+.PHONY : src/games/tetris/tetrisblock.cpp.o
+
+src/games/tetris/tetrisblock.i: src/games/tetris/tetrisblock.cpp.i
+.PHONY : src/games/tetris/tetrisblock.i
+
+# target to preprocess a source file
+src/games/tetris/tetrisblock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.i
+.PHONY : src/games/tetris/tetrisblock.cpp.i
+
+src/games/tetris/tetrisblock.s: src/games/tetris/tetrisblock.cpp.s
+.PHONY : src/games/tetris/tetrisblock.s
+
+# target to generate assembly for a file
+src/games/tetris/tetrisblock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.s
+.PHONY : src/games/tetris/tetrisblock.cpp.s
+
+src/games/tetris/tetrislevel.o: src/games/tetris/tetrislevel.cpp.o
+.PHONY : src/games/tetris/tetrislevel.o
+
+# target to build an object file
+src/games/tetris/tetrislevel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o
+.PHONY : src/games/tetris/tetrislevel.cpp.o
+
+src/games/tetris/tetrislevel.i: src/games/tetris/tetrislevel.cpp.i
+.PHONY : src/games/tetris/tetrislevel.i
+
+# target to preprocess a source file
+src/games/tetris/tetrislevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.i
+.PHONY : src/games/tetris/tetrislevel.cpp.i
+
+src/games/tetris/tetrislevel.s: src/games/tetris/tetrislevel.cpp.s
+.PHONY : src/games/tetris/tetrislevel.s
+
+# target to generate assembly for a file
+src/games/tetris/tetrislevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Framework.dir/build.make CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.s
+.PHONY : src/games/tetris/tetrislevel.cpp.s
+
 src/graphics/animatedsprite.o: src/graphics/animatedsprite.cpp.o
 .PHONY : src/graphics/animatedsprite.o
 
@@ -1194,6 +1266,15 @@ help:
 	@echo "... src/games/pacman/pacmanplayer.o"
 	@echo "... src/games/pacman/pacmanplayer.i"
 	@echo "... src/games/pacman/pacmanplayer.s"
+	@echo "... src/games/tetris/tetris.o"
+	@echo "... src/games/tetris/tetris.i"
+	@echo "... src/games/tetris/tetris.s"
+	@echo "... src/games/tetris/tetrisblock.o"
+	@echo "... src/games/tetris/tetrisblock.i"
+	@echo "... src/games/tetris/tetrisblock.s"
+	@echo "... src/games/tetris/tetrislevel.o"
+	@echo "... src/games/tetris/tetrislevel.i"
+	@echo "... src/games/tetris/tetrislevel.s"
 	@echo "... src/graphics/animatedsprite.o"
 	@echo "... src/graphics/animatedsprite.i"
 	@echo "... src/graphics/animatedsprite.s"

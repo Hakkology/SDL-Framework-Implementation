@@ -22,6 +22,8 @@ public:
     static InputKey RightKey();
     static InputKey UpKey();
     static InputKey DownKey();
+    static InputKey PushKey();
+    static InputKey ModifyKey();
 
     inline const MouseMovedAction GetMouseMoveAction() {return gMouseMovedAction;}
     inline void SetMouseMovedAction(const MouseMovedAction& mouseMovedAction) {gMouseMovedAction=mouseMovedAction;}

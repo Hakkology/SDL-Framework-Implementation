@@ -52,6 +52,16 @@ InputKey GameController::CancelKey(){
     return static_cast<InputKey>(SDLK_q);
 }
 
+InputKey GameController::PushKey(){
+
+    return static_cast<InputKey>(SDLK_f);
+}
+
+InputKey GameController::ModifyKey(){
+
+    return static_cast<InputKey>(SDLK_r);
+}
+
 InputKey GameController::LeftKey(){
 
     return static_cast<InputKey>(SDLK_a);
