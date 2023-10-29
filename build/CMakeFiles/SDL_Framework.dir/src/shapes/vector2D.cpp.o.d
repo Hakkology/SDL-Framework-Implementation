@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/vector2D.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/vector2D.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -171,7 +171,7 @@ CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/utilities.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \

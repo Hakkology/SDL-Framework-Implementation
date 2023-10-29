@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/color.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

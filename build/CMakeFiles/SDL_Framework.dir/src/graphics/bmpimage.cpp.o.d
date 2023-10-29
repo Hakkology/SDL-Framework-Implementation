@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpimage.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpimage.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/bmpimage.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -133,8 +133,8 @@ CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \

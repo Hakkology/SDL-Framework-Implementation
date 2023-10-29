@@ -1,8 +1,8 @@
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/inputcontroller.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputcontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/inputcontroller.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/inputaction.h \
  /usr/include/c++/11/functional \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -250,4 +250,4 @@ CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/gamecontroller.h

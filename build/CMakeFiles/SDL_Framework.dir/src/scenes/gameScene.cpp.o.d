@@ -1,8 +1,8 @@
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/gameScene.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/gameScene.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/scenes/scene.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/scenes/gameScene.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/scenes/scene.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -129,8 +129,8 @@ CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/inputaction.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
@@ -288,7 +288,7 @@ CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/game.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/games/game.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \

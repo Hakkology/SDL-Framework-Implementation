@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmangameutils.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/pacman/pacmangameutils.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/games/pacman/pacmangameutils.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -44,7 +44,7 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -175,8 +175,8 @@ CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/constants.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \

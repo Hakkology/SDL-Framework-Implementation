@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hakan/Desktop/Hakan/Programming/C++/SDL
+CMAKE_SOURCE_DIR = /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hakan/Desktop/Hakan/Programming/C++/SDL/build
+CMAKE_BINARY_DIR = /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SDL_Framework.dir/depend.make
@@ -72,758 +72,758 @@ include CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/main.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/SDL_Framework.dir/src/main.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_Framework.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/main.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/main.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_Framework.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/main.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/main.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/main.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/main.cpp
 
 CMakeFiles/SDL_Framework.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp > CMakeFiles/SDL_Framework.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/main.cpp > CMakeFiles/SDL_Framework.dir/src/main.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/main.cpp -o CMakeFiles/SDL_Framework.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/main.cpp -o CMakeFiles/SDL_Framework.dir/src/main.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o: ../src/shapes/vector2D.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/vector2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/vector2D.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/vector2D.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/vector2D.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/vector2D.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/vector2D.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/vector2D.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: ../src/utils/utilities.cpp
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/utilities.cpp
 
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/utilities.cpp > CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/utilities.cpp > CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/utilities.cpp -o CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/utilities.cpp -o CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o: ../src/utils/filecommandloader.cpp
 CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/filecommandloader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/filecommandloader.cpp
 
 CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/filecommandloader.cpp > CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/filecommandloader.cpp > CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/filecommandloader.cpp -o CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/filecommandloader.cpp -o CMakeFiles/SDL_Framework.dir/src/utils/filecommandloader.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: ../src/graphics/color.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/color.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/color.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/color.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/color.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/color.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: ../src/graphics/screenbuffer.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screenbuffer.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screenbuffer.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screenbuffer.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screenbuffer.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/screenbuffer.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: ../src/graphics/screen.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screen.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screen.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/screen.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/screen.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/screen.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o: ../src/graphics/bmpimage.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpimage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpimage.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpimage.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpimage.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpimage.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpimage.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpimage.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: ../src/graphics/spritesheet.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/spritesheet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/spritesheet.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/spritesheet.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/spritesheet.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/spritesheet.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/spritesheet.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/spritesheet.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: ../src/graphics/bmpfont.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpfont.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpfont.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpfont.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o: ../src/graphics/animation.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animation.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animation.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animation.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animation.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animation.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animation.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o: ../src/graphics/animationplayer.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animationplayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animationplayer.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animationplayer.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animationplayer.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animationplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animationplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animationplayer.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o: ../src/graphics/animatedsprite.cpp
 CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animatedsprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animatedsprite.cpp
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animatedsprite.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animatedsprite.cpp > CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/animatedsprite.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/animatedsprite.cpp -o CMakeFiles/SDL_Framework.dir/src/graphics/animatedsprite.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: ../src/shapes/line2D.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/line2D.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/line2D.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/line2D.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/line2D.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/line2D.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o: ../src/shapes/shape.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/shape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/shape.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/shape.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/shape.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/shape.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/shape.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/shape.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o: ../src/shapes/triangle.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/triangle.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/triangle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/triangle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/triangle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/triangle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/triangle.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: ../src/shapes/rectangle.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/rectangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/rectangle.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/rectangle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/rectangle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/rectangle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/rectangle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: ../src/shapes/circle.cpp
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/circle.cpp
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/circle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/circle.cpp > CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/circle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/circle.cpp -o CMakeFiles/SDL_Framework.dir/src/shapes/circle.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: ../src/app/app.cpp
 CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/app/app.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/app.cpp
 
 CMakeFiles/SDL_Framework.dir/src/app/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/app/app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp > CMakeFiles/SDL_Framework.dir/src/app/app.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/app.cpp > CMakeFiles/SDL_Framework.dir/src/app/app.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/app.cpp -o CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/app.cpp -o CMakeFiles/SDL_Framework.dir/src/app/app.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o: ../src/app/button.cpp
 CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/app/button.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/button.cpp
 
 CMakeFiles/SDL_Framework.dir/src/app/button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/app/button.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp > CMakeFiles/SDL_Framework.dir/src/app/button.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/button.cpp > CMakeFiles/SDL_Framework.dir/src/app/button.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/app/button.cpp -o CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/app/button.cpp -o CMakeFiles/SDL_Framework.dir/src/app/button.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o: ../src/games/excluder.cpp
 CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/excluder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/excluder.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/excluder.cpp > CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/excluder.cpp > CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/excluder.cpp -o CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/excluder.cpp -o CMakeFiles/SDL_Framework.dir/src/games/excluder.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o: ../src/games/actor.cpp
 CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/actor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/actor.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/actor.cpp > CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/actor.cpp > CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/actor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/actor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/actor.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o: ../src/games/game.cpp
 CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/game.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/game.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/game.cpp > CMakeFiles/SDL_Framework.dir/src/games/game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/game.cpp > CMakeFiles/SDL_Framework.dir/src/games/game.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/game.cpp -o CMakeFiles/SDL_Framework.dir/src/games/game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/game.cpp -o CMakeFiles/SDL_Framework.dir/src/games/game.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o: ../src/scenes/buttonoptionsScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/buttonoptionsScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/buttonoptionsScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/buttonoptionsScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/buttonoptionsScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/buttonoptionsScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o: ../src/scenes/notimplementedScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/notimplementedScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/notimplementedScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/notimplementedScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/notimplementedScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/notimplementedScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/notimplementedScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/notimplementedScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: ../src/scenes/arcadeScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/arcadeScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/arcadeScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/arcadeScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/arcadeScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/arcadeScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: ../src/scenes/gameScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/gameScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/gameScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/gameScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/gameScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/gameScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: ../src/scenes/pacmanstartScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/pacmanstartScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/pacmanstartScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/pacmanstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/pacmanstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/pacmanstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/pacmanstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/pacmanstartScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o: ../src/scenes/tetrisstartScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/tetrisstartScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/tetrisstartScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/tetrisstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/tetrisstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/tetrisstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/tetrisstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/tetrisstartScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o: ../src/scenes/asteroidstartScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/asteroidstartScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/asteroidstartScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/asteroidstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/asteroidstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/asteroidstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/asteroidstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/asteroidstartScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o: ../src/scenes/breakoutstartScene.cpp
 CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/breakoutstartScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/breakoutstartScene.cpp
 
 CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/breakoutstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/breakoutstartScene.cpp > CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/scenes/breakoutstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/scenes/breakoutstartScene.cpp -o CMakeFiles/SDL_Framework.dir/src/scenes/breakoutstartScene.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o: ../src/input/gamecontroller.cpp
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/gamecontroller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/gamecontroller.cpp
 
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/gamecontroller.cpp > CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/gamecontroller.cpp > CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/gamecontroller.cpp -o CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/gamecontroller.cpp -o CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o: ../src/input/inputcontroller.cpp
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/inputcontroller.cpp
 
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp > CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/inputcontroller.cpp > CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/inputcontroller.cpp -o CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/inputcontroller.cpp -o CMakeFiles/SDL_Framework.dir/src/input/inputcontroller.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: ../src/games/breakout/breakout.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/breakout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/breakout.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/breakout.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/breakout.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/breakout.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/breakout.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/breakout.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: ../src/games/breakout/paddle.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/paddle.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/paddle.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/paddle.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/paddle.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/paddle.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o: ../src/games/breakout/ball.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/ball.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/ball.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/ball.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/ball.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/ball.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o: ../src/games/breakout/levelboundary.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/levelboundary.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/levelboundary.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/levelboundary.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/levelboundary.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/levelboundary.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o: ../src/games/breakout/block.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/block.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/block.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/block.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/block.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/block.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o: ../src/games/breakout/bgamelevel.cpp
 CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/bgamelevel.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/bgamelevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/breakout/bgamelevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/breakout/bgamelevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/breakout/bgamelevel.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: ../src/games/pacman/pacmanlevel.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanlevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanlevel.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanlevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanlevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanlevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanlevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanlevel.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: ../src/games/pacman/pacmangameutils.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmangameutils.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmangameutils.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmangameutils.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmangameutils.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmangameutils.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: ../src/games/pacman/pacmanactor.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanactor.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanactor.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanactor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanactor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanactor.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: ../src/games/pacman/pacmanplayer.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanplayer.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanplayer.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanplayer.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o: ../src/games/pacman/pacmanghost.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghost.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghost.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghost.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghost.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghost.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghost.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghost.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: ../src/games/pacman/pacmanghostai.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghostai.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghostai.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghostai.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghostai.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacmanghostai.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacmanghostai.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacmanghostai.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: ../src/games/pacman/pacman.cpp
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacman.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacman.cpp > CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/pacman/pacman.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/pacman/pacman.cpp -o CMakeFiles/SDL_Framework.dir/src/games/pacman/pacman.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o: ../src/games/tetris/tetris.cpp
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetris.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetris.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetris.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetris.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetris.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetris.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetris.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o: ../src/games/tetris/tetrisblock.cpp
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrisblock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrisblock.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrisblock.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrisblock.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrisblock.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrisblock.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrisblock.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o: ../src/games/tetris/tetrislevel.cpp
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrislevel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrislevel.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrislevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrislevel.cpp > CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/tetris/tetrislevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/tetris/tetrislevel.cpp -o CMakeFiles/SDL_Framework.dir/src/games/tetris/tetrislevel.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o: ../src/games/asteroids/asteroids.cpp
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroids.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroids.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroids.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroids.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroids.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: ../src/games/asteroids/asteroidsactor.cpp
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsactor.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsactor.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsactor.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o: ../src/games/asteroids/asteroidsgame.cpp
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsgame.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsgame.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsgame.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsgame.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsgame.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o: ../src/games/asteroids/asteroidsmissile.cpp
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsmissile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsmissile.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsmissile.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsmissile.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsmissile.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsmissile.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsmissile.cpp.s
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o: CMakeFiles/SDL_Framework.dir/flags.make
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o: ../src/games/asteroids/asteroidsplayer.cpp
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o: CMakeFiles/SDL_Framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o -c /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsplayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o -MF CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o.d -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.o -c /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsplayer.cpp
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsplayer.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsplayer.cpp > CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.i
 
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsplayer.cpp -o CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.cpp.s
 
 # Object files for target SDL_Framework
 SDL_Framework_OBJECTS = \
@@ -942,10 +942,10 @@ SDL_Framework: CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsplayer.
 SDL_Framework: CMakeFiles/SDL_Framework.dir/build.make
 SDL_Framework: /usr/lib/x86_64-linux-gnu/libSDL2.so
 SDL_Framework: CMakeFiles/SDL_Framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Linking CXX executable SDL_Framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Linking CXX executable SDL_Framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Framework.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Copying Assets folder to build directory"
-	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/assets /home/hakan/Desktop/Hakan/Programming/C++/SDL/build//Assets
+	/usr/bin/cmake -E copy_directory /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/assets /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build//Assets
 
 # Rule to build all files generated by this target.
 CMakeFiles/SDL_Framework.dir/build: SDL_Framework
@@ -956,6 +956,6 @@ CMakeFiles/SDL_Framework.dir/clean:
 .PHONY : CMakeFiles/SDL_Framework.dir/clean
 
 CMakeFiles/SDL_Framework.dir/depend:
-	cd /home/hakan/Desktop/Hakan/Programming/C++/SDL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hakan/Desktop/Hakan/Programming/C++/SDL /home/hakan/Desktop/Hakan/Programming/C++/SDL /home/hakan/Desktop/Hakan/Programming/C++/SDL/build /home/hakan/Desktop/Hakan/Programming/C++/SDL/build /home/hakan/Desktop/Hakan/Programming/C++/SDL/build/CMakeFiles/SDL_Framework.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/build/CMakeFiles/SDL_Framework.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SDL_Framework.dir/depend
 

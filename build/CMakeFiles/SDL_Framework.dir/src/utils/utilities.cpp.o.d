@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/utils/utilities.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/utils/utilities.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/utils/utilities.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/utilities.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

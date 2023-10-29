@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/games/asteroids/asteroidsactor.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/games/asteroids/asteroidsactor.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/asteroids/asteroidsactor.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/games/asteroids/asteroidsactor.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -130,7 +130,7 @@ CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -176,8 +176,8 @@ CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/rectangle.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/utilities.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -203,10 +203,10 @@ CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/circle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/shape.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/circle.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -321,19 +321,19 @@ CMakeFiles/SDL_Framework.dir/src/games/asteroids/asteroidsactor.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/games/actor.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animatedsprite.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animationplayer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/animation.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screen.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/screenbuffer.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/line2D.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/triangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/games/actor.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/animatedsprite.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/animationplayer.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/animation.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/constants.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/screen.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/screenbuffer.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/line2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/triangle.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/spritesheet.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/filecommandloader.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

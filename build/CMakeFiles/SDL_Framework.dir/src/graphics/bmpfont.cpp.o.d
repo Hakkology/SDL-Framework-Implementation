@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/graphics/bmpfont.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/graphics/bmpfont.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpfont.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/bmpfont.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -17,7 +17,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/spritesheet.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/spritesheet.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -133,8 +133,8 @@ CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/bmpimage.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/bmpimage.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -271,7 +271,7 @@ CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/filecommandloader.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/filecommandloader.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
@@ -313,14 +313,14 @@ CMakeFiles/SDL_Framework.dir/src/graphics/bmpfont.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/iostream \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/graphics/color.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/graphics/color.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/utilities.h \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/constants.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/constants.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/rectangle.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/shape.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h

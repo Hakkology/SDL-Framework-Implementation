@@ -1,7 +1,7 @@
 CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/shapes/rectangle.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/shapes/rectangle.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/rectangle.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/rectangle.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -86,7 +86,7 @@ CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/utils/utilities.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/utils/utilities.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
@@ -177,8 +177,8 @@ CMakeFiles/SDL_Framework.dir/src/shapes/rectangle.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/shape.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/shapes/vector2D.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/shape.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/shapes/vector2D.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

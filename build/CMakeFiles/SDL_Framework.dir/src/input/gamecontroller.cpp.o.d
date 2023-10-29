@@ -1,8 +1,8 @@
 CMakeFiles/SDL_Framework.dir/src/input/gamecontroller.cpp.o: \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/src/input/gamecontroller.cpp \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/src/input/gamecontroller.cpp \
  /usr/include/stdc-predef.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/gamecontroller.h \
- /home/hakan/Desktop/Hakan/Programming/C++/SDL/header/input/inputaction.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/gamecontroller.h \
+ /home/hakan/Desktop/Projects/C++/Games/SDL-Framework-Implementation/header/input/inputaction.h \
  /usr/include/c++/11/functional \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
